@@ -70,6 +70,19 @@ echo $Email."<br><br>";
 			mail($to, $subject, $message, $headers);
 
 		}
+
+public function VerificoEmail($sql){
+
+$con = new ConnectionMySQL();
+			$con->CreateConnection();
+			$res = $con->SeleccionarAdmin($sql);
+			$con->buscar($sql);
+			
+
+
+}
+
+		
 	}
 	
 ?>

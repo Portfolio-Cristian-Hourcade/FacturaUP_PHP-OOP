@@ -130,6 +130,24 @@ if($("#nombre").val()==""){
                 }
             });
 
+
 }
 
+function verificoemail(){
 
+    $.ajax({
+                        url:"scripts/verifico-email.php",
+            
+            success:function(result){
+                if(result==0){
+                    alert("Este email no se encuentra en nuestra base de datos.");
+                }else{
+                    alert("Este email se encuentra en nuestra base de datos.");
+                }
+            }
+        });
+
+
+
+
+}

@@ -40,5 +40,19 @@ class ConnectionMySQL{
 		$result = $this->conn->query($sql);
 		return $result;
 	}
+
+	public function buscar($sql){
+	 	$result = $this->conn->query($sql);
+	 	if(mysqli_num_rows($result)==0){
+
+echo 0;
+
+	 	}else{
+
+echo 1;
+
+	 	}
+	}
+
 }
 ?>
