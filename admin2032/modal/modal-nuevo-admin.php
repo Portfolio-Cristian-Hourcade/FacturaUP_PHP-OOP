@@ -7,18 +7,14 @@
 		<div class="modal-body">
 			
 			
-			<div class="col-md-6"><label>Nombre</label></div>
-			<div class="col-md-6"><input type="text" id="nombre"></div>
+			<div class="col-md-6"><label>Usuario</label></div>
+			<div class="col-md-6"><input type="text" id="usuario"></div>
 			<br><br>
-			<div class="col-md-6"><label>Apellido</label></div>
-			<div class="col-md-6"><input type="text" id="apellido"></div>
-			<br><br>
-			<div class="col-md-6"><label>Email</label></div>
-			<div class="col-md-6"><input type="text" id="email"></div>
 			<div class="col-md-6"><label>Contraseña</label></div>
-			<div class="col-md-6"><input type="text" id="contrasena"></div>
-			<div class="col-md-6"><label>Telefono</label></div>
-			<div class="col-md-6"><input type="text" id="telefono"></div>
+			<div class="col-md-6"><input type="text" id="contra"></div>
+			<br><br>
+			<div class="col-md-6"><label>Contraseña</label></div>
+			<div class="col-md-6"><input type="text" id="contrad"></div>
 			<br><br>
 			<div class="modal-footer">
 				<center>

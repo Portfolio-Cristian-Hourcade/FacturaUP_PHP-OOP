@@ -144,8 +144,7 @@ if(is_null(@$_SESSION["adm_user"])){
                                             <input type="checkbox" class="todos">
                                         </th>
                                         <th>Usuario</th>
-                                        <th>Contraseña</th>
-                                    </tr>
+                                        </tr>
                                 </thead>
                                 <tbody id="list-admin">
                                     
