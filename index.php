@@ -363,17 +363,17 @@ session_start();
                   <div class="col-md-6 mx-auto">
                      <form class="col-md-12">
                         <div class="form-group">
-                           <label class="control-label" for="nombre"><b>Nombre y apellido</b></label>
+                           <label class="control-label" for="nombre">Nombre y apellido</label>
                            <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre y apellido">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group mb-4">
                            <label class="control-label" for="email">Email</label>
                               <input type="email" class="form-control" id="email" placeholder="Escriba su email">
                         </div>
                         <textarea class="form-control" cols="40" id="id_message" maxlength="1000" name="message" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                         <div class="form-group">
                            <div class="btn d-block">
-                              <button type="submit" class="btn btn-warning text-center">Enviar</button>
+                              <button type="submit" class="btn btn-secondary text-center">Enviar</button>
                            </div>
                         </div>
                      </form>
