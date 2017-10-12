@@ -2,7 +2,7 @@
 
 session_start();
 
-if(@$_SESSION["adm_user"]==""){
+if(empty(@$_SESSION["adm_user"])){
     header('Location: ../pages/login.php');	// Con esta linea evitamos entradas indeseadas. //
 }
 
