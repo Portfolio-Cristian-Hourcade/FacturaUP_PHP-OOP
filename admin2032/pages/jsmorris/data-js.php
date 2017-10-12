@@ -1,7 +1,7 @@
 <?php 
 @$MesActual=date(n);
 @$ano="20".date(y);
-
+//
 if(($MesActual == 1)||($MesActual == 3)||($MesActual == 5)||($MesActual == 7)||($MesActual == 8)||($MesActual == 10)||($MesActual == 12)){
 	
 	for ($i=1; $i<=31 ; $i++){
