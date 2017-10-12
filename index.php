@@ -1,10 +1,7 @@
-<?php 
-
- session_start();
-
+<?php
+session_start();
 ?>
 <!DOCTYPE html>
-
 <html>
    <head>
       <input type="hidden" id="usuario" value="<?php echo @$_SESSION["cl_email"]?>">
@@ -41,7 +38,6 @@
             <div class="collapse navbar-collapse my-auto align-self-start mr-2 justify-content-end" id="navbar-links">
                <ul class="navbar-nav">
                   <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-
                   <li class="nav-item"><a class="nav-link" href="#services" data-ancla="services">Características</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">¿Cómo Funciona?</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">Planes</a></li>
@@ -200,8 +196,7 @@
                                     <span>$</span>
                                     <span>4.00 <sup>00</sup></span>
                                  </p>
-                                                                  <div class="text-center"><a href="#" class="btn btn-primary demo-button">Comprar</a></div>
-
+                                 <div class="text-center"><a href="#" class="btn btn-primary demo-button">Comprar</a></div>
                               </div>
                            </div>
                            <div class="col-md-4 my-auto price-col">
@@ -211,197 +206,220 @@
                                     <span>$</span>
                                     <span>4.00 <sup>00</sup></span>
                                  </p>
-                                                                 <div class="text-center"><a href="#" class="btn btn-primary demo-button">Comprar</a></div>
-
+                                 <div class="text-center"><a href="#" class="btn btn-primary demo-button">Comprar</a></div>
+                              </div>
                            </div>
+                           </div> <!-- end row -->
                         </div>
-                        </div> <!-- end row -->
+                     </div>
+                  </section>
+               </div>
+               <section id="sec-planes" class="col-md-12 section-blanco pt-4">
+                  <div class="container">
+                     <h2 class="text-center display-4 my-4">Lorem Ipsum</h2>
+                     <div class="row">
+                        <article class="col-md-4 px-2">
+                           <div>
+                              <img class="img-fluid" src="images/plan-inicial.jpg">
+                              <div class="p-3">
+                                 <hr id="hr-1">
+                                 <h4 class="text-center mb-3">Lorem ipsum</h4>
+                                 <ul class="list-unstyled">
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="col-md-4 px-2">
+                           <div>
+                              <img class="img-fluid" src="images/plan-avanzado.jpg">
+                              <div class="p-3">
+                                 <hr id="hr-2">
+                                 <h4 class="text-center mb-3">Lorem ipsum</h4>
+                                 <ul class="list-unstyled">
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </article>
+                        <article class="col-md-4 px-2">
+                           <div>
+                              <img class="img-fluid" src="images/plan-premium.jpg">
+                              <div class="p-3 bg-light">
+                                 <hr id="hr-3">
+                                 <h4 class="text-center mb-3">Lorem ipsum</h4>
+                                 <ul class="list-unstyled">
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </article>
                      </div>
                   </div>
                </section>
-            </div>
-            <section id="sec-planes" class="col-md-12 section-blanco pt-4">
-               <div class="container">
+               
+               <section class="container-fluid tiled text-white">
                   <h2 class="text-center display-4 my-4">Lorem Ipsum</h2>
                   <div class="row">
-                     <article class="col-md-4 px-2">
-                        <div>
-                           <img class="img-fluid" src="images/plan-inicial.jpg">
-                           <div class="p-3">
-                              <hr id="hr-1">
-                              <h4 class="text-center mb-3">Lorem ipsum</h4>
-                              <ul class="list-unstyled">
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                              </ul>
-                           </div>
-                        </div>
+                     <article class="col-md-3">
+                        <div class=""><img src="images/old_woman.jpg" class="img-fluid"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
                      </article>
-                     <article class="col-md-4 px-2">
-                        <div>
-                           <img class="img-fluid" src="images/plan-avanzado.jpg">
-                           <div class="p-3">
-                              <hr id="hr-2">
-                              <h4 class="text-center mb-3">Lorem ipsum</h4>
-                              <ul class="list-unstyled">
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                              </ul>
-                           </div>
-                        </div>
+                     <article class="col-md-6 central">
+                        <div class=""><img src="images/old_woman_ldscp.jpg" class="img-fluid"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                      </article>
-                     <article class="col-md-4 px-2">
-                        <div>
-                           <img class="img-fluid" src="images/plan-premium.jpg">
-                           <div class="p-3 bg-light">
-                              <hr id="hr-3">
-                              <h4 class="text-center mb-3">Lorem ipsum</h4>
-                              <ul class="list-unstyled">
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                                 <li>Lorem ipsum</li>
-                              </ul>
-                           </div>
-                        </div>
+                     <article class="col-md-3">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                        
+                        <div class="push-12"><img src="images/old_woman.jpg" class="img-fluid"></div>
+                        
                      </article>
                   </div>
-               </div>
-            </section>
-            
-            <section class="container-fluid tiled text-white">
-               <h2 class="text-center display-4 my-4">Lorem Ipsum</h2>
-               <div class="row">
-                  <article class="col-md-3">
-                     <div class=""><img src="images/old_woman.jpg" class="img-fluid"></div>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                     consequat.</p>
-                  </article>
-                  <article class="col-md-6 central">
-                     <div class=""><img src="images/old_woman_ldscp.jpg" class="img-fluid"></div>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </article>
-                  <article class="col-md-3">
-                     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                     consequat.</p>
-                     
-                     <div class="push-12"><img src="images/old_woman.jpg" class="img-fluid"></div>
-                     
-                  </article>
-               </div>
-            </section>
-            <!-- secccion articulos con iconitos -->
-            <section class="section-blanco media-icons">
-            <div class="row">
-               <div class="media col-md-4">
-                  <img class="d-flex align-self-start mr-3" src="images/icons/hand.png" alt="Generic placeholder image">
-                  <div class="media-body">
-                     <h5 class="mt-0"><b>Top-aligned media</b></h5>
-                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                     
+               </section>
+               <!-- secccion articulos con iconitos -->
+               <section class="section-blanco media-icons">
+                  <div class="row">
+                     <div class="media col-md-4">
+                        <img class="d-flex align-self-start mr-3" src="images/icons/hand.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                           <h5 class="mt-0"><b>Top-aligned media</b></h5>
+                           <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="media col-md-4">
+                        <img class="d-flex align-self-start mr-3" src="images/icons/text.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                           <h5 class="mt-0"><b>Top-aligned media</b></h5>
+                           <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="media col-md-4">
+                        <img class="d-flex align-self-start mr-3" src="images/icons/monitor.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                           <h5 class="mt-0"><b>Top-aligned media</b></h5>
+                           <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="media col-md-4">
+                        <img class="d-flex align-self-start mr-3" src="images/icons/landscape.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                           <h5 class="mt-0"><b>Top-aligned media</b></h5>
+                           <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="media col-md-4">
+                        <img class="d-flex align-self-start mr-3" src="images/icons/star.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                           <h5 class="mt-0"><b>Top-aligned media</b></h5>
+                           <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                           
+                        </div>
+                     </div>
+                     <div class="media col-md-4">
+                        <img class="d-flex align-self-start mr-3" src="images/icons/screen.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                           <h5 class="mt-0"><b>Top-aligned media</b></h5>
+                           <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                           
+                        </div>
+                     </div>
                   </div>
-               </div>
-               <div class="media col-md-4">
-                  <img class="d-flex align-self-start mr-3" src="images/icons/text.png" alt="Generic placeholder image">
-                  <div class="media-body">
-                     <h5 class="mt-0"><b>Top-aligned media</b></h5>
-                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                     
+               </section>
+               <section class="section-gris">
+                  <div class="mb-4">
+                     <h1 class="text-center">¿Tiene alguna consulta?</h1>
                   </div>
-               </div>
-               <div class="media col-md-4">
-                  <img class="d-flex align-self-start mr-3" src="images/icons/monitor.png" alt="Generic placeholder image">
-                  <div class="media-body">
-                     <h5 class="mt-0"><b>Top-aligned media</b></h5>
-                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                   
+                  <div class="col-md-6 mx-auto">
+                     <form class="col-md-12">
+                        <div class="form-group">
+                           <label class="control-label" for="nombre"><b>Nombre y apellido</b></label>
+                           <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre y apellido">
+                        </div>
+                        <div class="form-group">
+                           <label class="control-label" for="email">Email</label>
+                              <input type="email" class="form-control" id="email" placeholder="Escriba su email">
+                        </div>
+                        <textarea class="form-control" cols="40" id="id_message" maxlength="1000" name="message" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                        <div class="form-group">
+                           <div class="btn d-block">
+                              <button type="submit" class="btn btn-warning text-center">Enviar</button>
+                           </div>
+                        </div>
+                     </form>
                   </div>
+                  
+               </section>
+               </div> <!-- end sections wrapper -->
+               </div> <!-- end body wrapper -->
+               <!-- barra de telefono anclada al final -->
+               <div class="tel-bottom text-white d-flex d-xs-none">
+                  <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
                </div>
-               <div class="media col-md-4">
-                  <img class="d-flex align-self-start mr-3" src="images/icons/landscape.png" alt="Generic placeholder image">
-                  <div class="media-body">
-                     <h5 class="mt-0"><b>Top-aligned media</b></h5>
-                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                   
+               <!-- footer -->
+               <footer class="col-md-12 container">
+                  <div class="row pt-4">
+                     <div class="col-md-4 text-white">
+                        <ul class="text-center">
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                        </ul>
+                     </div>
+                     <div class="col-md-4 text-white">
+                        <ul class="text-center">
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                        </ul>
+                     </div>
+                     <div class="col-md-4 text-white">
+                        <ul class="text-center">
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                        </ul>
+                     </div>
                   </div>
-               </div>
-               <div class="media col-md-4">
-                  <img class="d-flex align-self-start mr-3" src="images/icons/star.png" alt="Generic placeholder image">
-                  <div class="media-body">
-                     <h5 class="mt-0"><b>Top-aligned media</b></h5>
-                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                     
-                  </div>
-               </div>
-               <div class="media col-md-4">
-                  <img class="d-flex align-self-start mr-3" src="images/icons/screen.png" alt="Generic placeholder image">
-                  <div class="media-body">
-                     <h5 class="mt-0"><b>Top-aligned media</b></h5>
-                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                     
-                  </div>
-               </div>
-               </div>
-            </section>
-            </div> <!-- end sections wrapper -->
-            </div> <!-- end body wrapper -->
-            <!-- barra de telefono anclada al final -->
-            <div class="tel-bottom text-white d-flex d-xs-none">
-               <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
+               </footer>
             </div>
-            <!-- footer -->
-            <footer class="col-md-12 container">
-               <div class="row pt-4">
-                  <div class="col-md-4 text-white">
-                     <ul class="text-center">
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                     </ul>
-                  </div>
-                  <div class="col-md-4 text-white">
-                     <ul class="text-center">
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                     </ul>
-                  </div>
-                  <div class="col-md-4 text-white">
-                     <ul class="text-center">
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                        <li>lorem ipsum</li>
-                     </ul>
-                  </div>
-               </div>
-            </footer>
-         </div>
-         <div id="modal-adm" class="modal fade" role="dialog"></div>
-         <div id="modal-log" class="modal fade" role="dialog"></div>
-      </body>
-   </html>
+            <div id="modal-adm" class="modal fade" role="dialog"></div>
+            <div id="modal-log" class="modal fade" role="dialog"></div>
+         </body>
+      </html>
