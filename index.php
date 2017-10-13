@@ -32,7 +32,7 @@ session_start();
             </button>
             <div class="envolto-logo ml-5">
                <a class="navbar-brand" href="index.html">
-                  <img src="images/logo2.png" class="mx-auto d-block img-fluid">
+                  <img src="images/logo3.png" class="mx-auto d-block img-fluid">
                </a>
             </div>
             <div class="collapse navbar-collapse my-auto align-self-start mr-2 justify-content-end" id="navbar-links">
@@ -357,28 +357,27 @@ session_start();
                   </div>
                </section>
                <section class="section-gris">
-                  <div class="mb-4">
-                     <h1 class="text-center">¿Tiene alguna consulta?</h1>
-                  </div>
-                  <div class="col-md-6 mx-auto">
-                     <form class="col-md-12">
-                        <div class="form-group">
-                           <label class="control-label" for="nombre">Nombre y apellido</label>
-                           <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre y apellido">
-                        </div>
-                        <div class="form-group mb-4">
-                           <label class="control-label" for="email">Email</label>
-                              <input type="email" class="form-control" id="email" placeholder="Escriba su email">
-                        </div>
-                        <textarea class="form-control" cols="40" id="id_message" maxlength="1000" name="message" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
-                        <div class="form-group">
-                           <div class="btn d-block">
-                              <button type="submit" class="btn btn-secondary text-center">Enviar</button>
+                     <div class="mb-4">
+                        <h1 class="text-center">¿Tiene alguna consulta?</h1>
+                     </div>
+                     <div class="col-md-6 mx-auto">
+                        <form class="col-md-12">
+                           <div class="form-group">
+                              <label class="control-label" for="nombre">Nombre y apellido</label>
+                              <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre y apellido">
                            </div>
-                        </div>
-                     </form>
-                  </div>
-                  
+                           <div class="form-group mb-4">
+                              <label class="control-label" for="email">Email</label>
+                              <input type="email" class="form-control" id="email" placeholder="Escriba su email">
+                           </div>
+                           <textarea class="form-control" cols="40" id="id_message" maxlength="1000" name="message" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                           <div class="form-group">
+                              <div class="btn d-block">
+                                 <button type="submit" class="btn btn-secondary text-center">Enviar</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
                </section>
                </div> <!-- end sections wrapper -->
                </div> <!-- end body wrapper -->

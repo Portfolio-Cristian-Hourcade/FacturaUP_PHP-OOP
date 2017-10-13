@@ -140,8 +140,10 @@ footer ul{
 	.section-gris{
 		/*min-height:490px;*/
 		padding: 80px 0;
-		background-color:#dedede;	
+		background-color:#dedede;
+
 	}
+	
 	.table {
     /*border-radius: 5px;
     width: 50%;
