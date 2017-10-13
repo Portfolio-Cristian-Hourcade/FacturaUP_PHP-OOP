@@ -4,14 +4,15 @@
 //
 if(($MesActual == 1)||($MesActual == 3)||($MesActual == 5)||($MesActual == 7)||($MesActual == 8)||($MesActual == 10)||($MesActual == 12)){
 	
-	for ($i=1; $i<=31 ; $i++){
-		if($i!=31){
-			@$resto=$resto."{period:'Dia ".$i."', 'sale':20 , 'Pago':70},";
+	for ($i=2; $i<=3 ; $i++){
+		if($i!=3){
+			@$resto=$resto."{period:'Dia ".$i."', 'sale':56 , 'Pago':70},";
+							
 		}else{
-			@$resto=$resto."{period:'Dia ".$i."', 'sale':20 , 'Pago':70}";
+			@$resto=$resto."{period:'Dia ".$i."', 'sale':56 , 'Pago':70}";
 		}
 	}
-	echo $String="[".$resto."]";
+	echo json_encode("[".$resto."]");
 }elseif(($MesActual==4) || ($MesActual==6) || ($MesActual==9) || ($MesActual== 11)){
 	for ($i=1; $i<=30 ; $i++){
 		if($i!=30){
@@ -40,7 +41,7 @@ elseif($MesActual==2){
 				@$resto=$resto."{period:'Dia' '".$i."', 'sale':20 , 'Pago':70}";
 			}
 		}
-	echo $String="[".$resto."]";
+	echo $String=$resto;
 	}
 }
 

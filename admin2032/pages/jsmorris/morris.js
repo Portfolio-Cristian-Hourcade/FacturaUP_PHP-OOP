@@ -1,16 +1,30 @@
 $(document).ready(function() {
  
 
-
-
+var strings="{period:'Dia 2', 'sale':56 , 'Pago':70},{period:'Dia 3', 'sale':56 , 'Pago':70}";
 $.ajax({
   url:"jsmorris/data-js.php",
   success:function(result){
-    var datajson=result;
-    alert(datajson)
+
+
+
+var newstr = result.replace(/[ '"]+/g, ' ');
+alert("aver:"+newstr);
+
+alert("Resultado"+result);
+alert("Asi:"+strings);
+    var datajson=JSON.stringify(result);
+    alert("JsonParse:"+JSON.parse(datajson));
+
+    if(strings==result){
+        alert(hola)
+    }
+
+
+
     new Morris.Line({
     element: 'grafico',
-    data: result,
+    data: newstr,
     xkey: 'period', 
     ykeys: ['sale', 'Pago'],
     labels: ['Descargas demo','Descargas Pago'],
@@ -21,6 +35,7 @@ $.ajax({
     stacked: true
 
 });
+
   }
 });
  //
