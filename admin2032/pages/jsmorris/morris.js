@@ -1,45 +1,74 @@
 $(document).ready(function() {
  
 
-var strings="{period:'Dia 2', 'sale':56 , 'Pago':70},{period:'Dia 3', 'sale':56 , 'Pago':70}";
+var strings="[{period:'Dia 2', 'sale':56 , 'Pago':70}]";
 $.ajax({
+
   url:"jsmorris/data-js.php",
+
   success:function(result){
 
 
-
-var newstr = result.replace(/[ '"]+/g, ' ');
-alert("aver:"+newstr);
-
-alert("Resultado"+result);
-alert("Asi:"+strings);
-    var datajson=JSON.stringify(result);
-    alert("JsonParse:"+JSON.parse(datajson));
-
-    if(strings==result){
-        alert(hola)
-    }
+var NuevaVariable=JSON.parse(result);
+alert(NuevaVariable)
+alert(strings)
+if(NuevaVariable==strings){
+    alert("HOLA")
+}
+// var newstr = result.replace(/[ ""]/, '');
+var f = JSON.stringify(NuevaVariable);
+dataso:{data:f}
+// alert(strings);
 
 
+//     var datajson=JSON.stringify(newstr);
+    // alert(JSON.parse(datajson));
 
-    new Morris.Line({
+
+    // prueba=datajson.replace(/[\\"]/g, '');
+    // jose=prueba.replace("rnrn", '');
+    // jose=JSON.stringify(jose);
+// alert(jose)
+// alert(jose.length);
+// alert(strings.length)
+
+
+
+    var Mor = Morris.Line({
+
     element: 'grafico',
-    data: newstr,
+    data: [],
     xkey: 'period', 
     ykeys: ['sale', 'Pago'],
+    parseTime: false,
     labels: ['Descargas demo','Descargas Pago'],
-    lineColors: ['red','black'],
-    parseTime:false,
-    hideHover:true,
-    lineWidth:'3px',
-    stacked: true
+  
 
 });
+Variable =(strings);
+alert(Variable)
+Mor.setData(JSON.parse(result));
+// anotherDataSet = [{
+//     date: '03-04-2015', value: 301
+// }, {
+//     date: '03-05-2015', value: 35
+// }, {
+//     date: '03-06-2015', value: 55
+// }]
 
-  }
-});
+// bar = Morris.Line({
+//   element: 'chart',
+//   data: [],
+//   xkey: 'date',
+//   ykeys: ['value'],
+//   labels: ['Orders']
+// });
+// bar.setData(anotherDataSet);
+//   }
+// });
  //
- 
+ }
+});
 });
 
 
