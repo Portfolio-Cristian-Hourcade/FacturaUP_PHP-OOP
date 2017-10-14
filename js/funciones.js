@@ -90,47 +90,47 @@ $(".demo-btn").on("click",function(){
 
 
 
-function LogeoRegistro(){
-$(".clientes-nuevo").on("click",function(){
+// function LogeoRegistro(){
+// $(".clientes-nuevo").on("click",function(){
     
-if($("#nombre").val()==""){
-                    alert("Ingrese nombre");
-                }
-                else if($("#apellido").val()==""){
-                    alert("Ingrese apellido");
-                }
-                else if($("#email").val()==""){
-                    alert("Ingrese email");
-                }
-                else if($("#contrasena").val()==""){
-                    alert("Ingrese contrasena");
-                }
-                 else if($("#contrasena").val()!=$("#contrasena2").val()){
-                    alert("las contraseñas deben ser iguales");
-                }
+// if($("#nombre").val()==""){
+//                     alert("Ingrese nombre");
+//                 }
+//                 else if($("#apellido").val()==""){
+//                     alert("Ingrese apellido");
+//                 }
+//                 else if($("#email").val()==""){
+//                     alert("Ingrese email");
+//                 }
+//                 else if($("#contrasena").val()==""){
+//                     alert("Ingrese contrasena");
+//                 }
+//                  else if($("#contrasena").val()!=$("#contrasena2").val()){
+//                     alert("las contraseñas deben ser iguales");
+//                 }
 
 
                 
-                else{
-                    $.ajax({
-                        type:"POST",
-                        url:"scripts/clientes-store.php",
-                        data:{
-                            nombre:$("#nombre").val(),
-                            telefono:$("#telefono").val(),
-                            apellido:$("#apellido").val(),
-                            email:$("#email").val(),
-                            contrasena:$("#contrasena").val()
-                        },
-                        success:function(result){
+//                 else{
+//                     $.ajax({
+//                         type:"POST",
+//                         url:"scripts/clientes-store.php",
+//                         data:{
+//                             nombre:$("#nombre").val(),
+//                             telefono:$("#telefono").val(),
+//                             apellido:$("#apellido").val(),
+//                             email:$("#email").val(),
+//                             contrasena:$("#contrasena").val()
+//                         },
+//                         success:function(result){
                  
-                            $("#modal-log").modal("hide");
-                            $("#modal-log").html("");
-                            alert("Registro exitoso, confirme el email para terminar el registro.")
-                        }
+//                             $("#modal-log").modal("hide");
+//                             $("#modal-log").html("");
+//                             alert("Registro exitoso, confirme el email para terminar el registro.")
+//                         }
 
-                    });
-                }
-            });
+//                     });
+//                 }
+//             });
 
-}
+// }

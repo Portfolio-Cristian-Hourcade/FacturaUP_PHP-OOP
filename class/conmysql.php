@@ -8,10 +8,7 @@ class ConnectionMySQL{
 	private $conn;
 	 
 	public function __construct(){ 
-	define('HOST', 'localhost');
-	define('USER', 'root');
-	define('PASSWORD', '');
-	define('DATABASE', 'facturaup');
+	include_once("config.php");
 	$this->host=HOST;
 	$this->user=USER;
 	$this->password=PASSWORD;

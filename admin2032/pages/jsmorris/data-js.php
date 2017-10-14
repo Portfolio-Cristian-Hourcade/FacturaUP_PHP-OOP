@@ -2,14 +2,21 @@
 @$MesActual=date(n);
 @$ano="20".date(y);
 
+	include '../../../class/demo.php';
+	include '../../../class/conmysql.php';
+
+$NuevoObjeto = new Demos();
+
 if(($MesActual == 1)||($MesActual == 3)||($MesActual == 5)||($MesActual == 7)||($MesActual == 8)||($MesActual == 10)||($MesActual == 12)){
 	
 	for ($i=1; $i<=31 ; $i++){
+		$demo = $NuevoObjeto->SeleccionarFechaDemo($i.'/9/2017');
+		$Com = $NuevoObjeto->SeleccionarFechaCom($i.'/9/2017');
 		if($i!=31){
-			@$resto=$resto."{'period':'Dia ".$i."', 'sale':56 , 'Pago':70},";
+			@$resto=$resto."{'period':'Dia ".$i."', 'sale':".$demo.", 'Pago':".$Com."},";
 							
 		}else{
-			@$resto=$resto."{'period':'Dia ".$i."', 'sale':56 , 'Pago':70}";
+			@$resto=$resto."{'period':'Dia ".$i."', 'sale':".$demo." , 'Pago':".$Com."}";
 		}					
 	}
 	echo json_encode("[".$resto."]");
