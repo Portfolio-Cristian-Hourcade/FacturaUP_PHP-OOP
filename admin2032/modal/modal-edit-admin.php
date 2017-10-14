@@ -27,7 +27,7 @@
 			<div class="col-md-6"><input type="text" value="<?php echo $fila["adm_user"]?>" id="usuario"></div>
 			<br><br>
 			<div class="col-md-6"><label>Contraseña</label></div>
-			<div class="col-md-6"><input type="password" value="<?php echo $fila["adm_pass"]?>" id="contra"></div>
+			<div class="col-md-6"><input type="password" placeholder="Campo en blanco" id="contra"></div>
 			<br><br>
 			<div class="modal-footer">
 				<center>

@@ -307,7 +307,7 @@ if(is_null(@$_SESSION["adm_user"])){
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-envelope fa-fw"></i> Consultas contestadas
+                                    <i class="fa fa-envelope fa-fw"></i> Mensaje de soporte
                                     <span class="pull-right text-muted small"><em>(tiempo)</em>
                                     </span>
                                 </a>
@@ -333,7 +333,7 @@ if(is_null(@$_SESSION["adm_user"])){
                     <!-- /.panel -->
                     <div class="chat-panel panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-comments fa-fw"></i> Chat
+                            <i class="fa fa-comments fa-fw"></i> Ultimos mensajes de soporte
                             <div class="btn-group pull-right">
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-chevron-down"></i>
