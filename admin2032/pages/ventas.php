@@ -3,7 +3,6 @@
 if(is_null(@$_SESSION["adm_user"])){
     header('Location: login.php');
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -104,7 +103,7 @@ if(is_null(@$_SESSION["adm_user"])){
                         <li>
                             <a href="ventas.php"><i class="fa fa-edit fa-fw"></i>Ventas</a>
                         </li>
-                        <li>
+                         <li>
                             <a href="links.php"><i class="fa fa-dashboard fa-fw"></i> Links</a>
                         </li>
                         <li>
@@ -130,11 +129,12 @@ if(is_null(@$_SESSION["adm_user"])){
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            DataTables Advanced Tables
+                           Tabla de administradores
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            
+                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                     <tr>
                                         <th>Id</th>
@@ -147,7 +147,7 @@ if(is_null(@$_SESSION["adm_user"])){
                                 <tbody id="list-ventas"></tbody>
                             </table>
                             <!-- /.table-responsive -->
-                           
+                        </div>  
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -168,14 +168,14 @@ if(is_null(@$_SESSION["adm_user"])){
     <script src="../dist/js/sb-admin-2.js"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
+    <!-- <script>
     $(document).ready(function() {
         $('#dataTables-example').DataTable({
             responsive: true
         });
     });
-    </script>
-
+    </script> -->
+<div id="modal-adm" class="modal fade" role="dialog">
 </body>
 
 </html>
