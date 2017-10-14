@@ -1,7 +1,8 @@
  window.onload = function() {
-   ListarLinks();
-ListarAdmin();
-ListarClientes();
+	ListarLinks();
+	ListarAdmin();
+	ListarClientes();
+	ListarVentas();
 
 /*$(document).ready(function(){
 
@@ -348,6 +349,15 @@ function ListarClientes(){
 		url:"../scripts/clientes-list.php",
 		success:function(result){
 			$("#list-clientes").html(result);
+			
+		}
+	});
+}
+function ListarVentas(){
+	$.ajax({
+		url:"../scripts/ventas-list.php",
+		success:function(result){
+			$("#list-ventas").html(result);
 			
 		}
 	});

@@ -147,7 +147,6 @@ if(is_null(@$_SESSION["adm_user"])){
                                         <th>Apellido</th>
                                         <th>email</th>                                     
                                         <th>telefono</th>
-                                        
                                     </tr>
                                 </thead>
                                 <tbody id="list-clientes">
