@@ -361,16 +361,16 @@ session_start();
                         <h1 class="text-center">¿Tiene alguna consulta?</h1>
                      </div>
                      <div class="col-md-6 mx-auto">
-                        <form class="col-md-12">
+                        <form class="col-md-12" action="enviar.php" method="post">
                            <div class="form-group">
                               <label class="control-label" for="nombre">Nombre y apellido</label>
-                              <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre y apellido">
+                              <input type="text" class="form-control" name="nombre" placeholder="Escriba su nombre y apellido">
                            </div>
                            <div class="form-group mb-4">
                               <label class="control-label" for="email">Email</label>
-                              <input type="email" class="form-control" id="email" placeholder="Escriba su email">
+                              <input type="email" class="form-control" name="email" placeholder="Escriba su email">
                            </div>
-                           <textarea class="form-control" cols="40" id="id_message" maxlength="1000" name="message" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                           <textarea class="form-control" cols="40" maxlength="1000" name="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                            <div class="form-group">
                               <div class="btn d-block">
                                  <button type="submit" class="btn btn-secondary text-center">Enviar</button>
