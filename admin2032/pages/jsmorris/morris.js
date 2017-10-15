@@ -41,9 +41,21 @@ $.ajax({
     }
 });
 
-
+$.ajax({
+    url:"jsmorris/data-js-donut.php",
+    dataType: "json",
+    success:function(res){
+    codigoJson3 = res.replace(/'/g, "\""); //Arreglamos las comillas   
+        var te1 = codigoJson3;
+        var yax1 = JSON.parse(te1);
+        console.log(res);
+    var donut = Morris.Donut({
+        element: 'donut',
+        data:yax1
+    }); 
+}
 });
-
+});
 
 
 

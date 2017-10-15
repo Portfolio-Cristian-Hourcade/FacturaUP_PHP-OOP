@@ -27,7 +27,7 @@ if(empty($_SESSION["cl_email"])){
 		<script type="text/javascript" src="js/bootstrap.js"></script>
 		<script type="text/javascript" src="js/funciones.js"></script>
 		<script type="text/javascript" src="jslogin/functions.js"></script>
-		<script type="text/javascript" src="js/funciones.js"></script>
+
 	</head>
 	<body>
 		<div class="container-fluid"> <!-- boby wrapper -->
@@ -61,7 +61,7 @@ if(empty($_SESSION["cl_email"])){
 			<h2 class="col-md-12 text-center padding-unhiding pb-4">Descargue su versión de <em><b>Factura Up </b></em> </h2>
 				<article class="col-md-6">
 					<img src="images/demo_img.png" class="img-fuid d-block mx-auto">
-					<a href="#"  class="btn btn-md btn-info d-block mx-auto my-4 descarga-demo demo-btn">Descargar</a>
+					<a href="#"  class="btn btn-md btn-info my-4 demo-btn">Descargar</a>
 					<h3>Versión demo</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -83,5 +83,6 @@ if(empty($_SESSION["cl_email"])){
 			</article>
 		</div>
 	</div>
+
 </body>
 </html>
