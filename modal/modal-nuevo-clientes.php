@@ -3,6 +3,7 @@
 	<div class="loginmodal-container">
 		<h1>Regístrese</h1><br>
 		<input type="text" id="email" placeholder="E-mail *" onblur="verificoemail()">
+		<div id="tilde-verde"></div>
 		<input type="text" id="nombre" placeholder="Nombre *" required>
 		<input type="text" id="apellido" placeholder="Apellido *">
 		<input type="text" id="telefono" placeholder="Teléfono">

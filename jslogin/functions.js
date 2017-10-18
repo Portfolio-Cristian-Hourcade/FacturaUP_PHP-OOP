@@ -84,6 +84,15 @@ $(".btn-log-clientes").on("click",function(){
         }
     });
 });
+
+
+$(".clientes-nuevo").on("click",function(){
+     verificoemail();
+        
+});
+
+
+
 });
 
 /*-----cierro login de clientes----*/
@@ -147,7 +156,7 @@ function verificoemail(){
             },
             success:function(result){
                 if(result==0){
-                    alert("Este email no se encuentra en nuestra base de datos.");
+                    $("#tilde-verde").html("<img src=images/tilde-verde.png>");
                        $('.clientes-nuevo').attr('disabled', false);
                 }else{
                     alert("Este email se encuentra en nuestra base de datos.");
@@ -159,3 +168,7 @@ function verificoemail(){
 
 
 }
+
+
+
+
