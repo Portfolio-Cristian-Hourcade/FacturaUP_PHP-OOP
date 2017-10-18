@@ -20,7 +20,7 @@ $contrasena = md5($_POST["contrasena"]);
 
 /* ------------------------- */
 
-echo $sql="SELECT * FROM clientes WHERE cl_email='".$email."' AND cl_pass='".$contrasena."' AND cl_status=1";
+$sql="SELECT * FROM clientes WHERE cl_email='".$email."' AND cl_pass='".$contrasena."' AND cl_status=1";
 	
 $NewConnect = new Clientes();
 echo $NewConnect->Login($sql,$email,$contrasena);

@@ -41,6 +41,15 @@ $(".demo-btn").on("click",function(){
 			alert(result)
 		}
 	});
+    $.ajax({
+        type:"POST",
+        url:"admin2032/scripts/links-store",
+        data:{
+            fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
+        }
+    });
+
+
 });
 
 

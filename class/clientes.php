@@ -61,19 +61,27 @@ class Clientes{
 			return $fila["cl_nombre"];
 		}
 		public function EmailDemo($Email){
-echo $Email."<br><br>";
+
 			$to = "'".$Email."'";
+			
 			$subject = "¡Descarge ahora su demo!";
-			$message = "Hola, muchas gracias por haber contratado nuestro servicio, espero que le sea de mucha ayuda, no dude en contactarse con contacto al cliente si es necesario. El equipo de FacturaUp. <br><br> www.google.com";
+			$message = "Hola, muchas gracias por haber contratado nuestro servicio, espero que le sea de mucha ayuda, no dude en contactarse con contacto al cliente si es necesario. El equipo de FacturaUp. <br><br> www.facturaup.com/admin2032/scripts/email-demo-descarga?email='".$Email."'";
 			$headers = "From: facturaup@gmail.com" . "\r\n" . "CC:'".$Email."'";
  
 			mail($to, $subject, $message, $headers);
 
 		}
+	public function DescargarDemo($email){
+			$enlace = "version-demo/ss.txt";
+			header ("Content-Disposition: attachment; filename=$enlace ");
+			header ("Content-Type: application/force-download");
+			header ("Content-Length: ".filesize($enlace));
+			readfile($enlace);
 
-public function VerificoEmail($sql){
+	}
+	public function VerificoEmail($sql){
 
-$con = new ConnectionMySQL();
+			$con = new ConnectionMySQL();
 			$con->CreateConnection();
 			$res = $con->SeleccionarAdmin($sql);
 			$con->buscar($sql);
