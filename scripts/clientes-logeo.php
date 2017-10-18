@@ -12,15 +12,15 @@ session_start();
 // }
 
 $email = $_POST["email"];
-$contrasena = $_POST["contrasena"];
+$contrasena = md5($_POST["contrasena"]);
 
 
-$email= preg_replace('([^A-Za-z0-9])', '', $email);	/* Con esta linea evitamos una */
-$contrasena = preg_replace('([^A-Za-z0-9])', '', $contrasena);	/*		 injeccion sql  	   */
+// $email= preg_replace('([^A-Za-z0-9])', '', $email);	/* Con esta linea evitamos una */
+// $contrasena = preg_replace('([^A-Za-z0-9])', '', $contrasena);	/*		 injeccion sql  	   */
 
 /* ------------------------- */
 
-$sql="SELECT * FROM clientes WHERE cl_email='".$email."' AND cl_pass='".$contrasena."' AND cl_status=1";
+echo $sql="SELECT * FROM clientes WHERE cl_email='".$email."' AND cl_pass='".$contrasena."' AND cl_status=1";
 	
 $NewConnect = new Clientes();
 echo $NewConnect->Login($sql,$email,$contrasena);

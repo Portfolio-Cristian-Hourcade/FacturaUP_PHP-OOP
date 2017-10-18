@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 if($("#usuario").val()!=""){
     $(".btn-log-clientes").css("visibility","hidden");
     $(".btn-nuevo-clientes").css("visibility","hidden");
@@ -70,6 +71,7 @@ $(".btn-log-clientes").on("click",function(){
                         "contrasena":$("#contrasena").val()
                     },
                     success:function(result){
+                        alert(result)
                        if(result=="Error"){
                         alert("Contraseña y/o email incorrectos. Vuelva a intentarlo.");
                        }else{
@@ -122,6 +124,7 @@ if($("#nombre").val()==""){
                         },
                         success:function(result){
                             alert("¡Registro exitoso!");
+                            location.reload();
                             $("#modal-adm").modal("hide");
                             $("#modal-adm").html("");
                         }
