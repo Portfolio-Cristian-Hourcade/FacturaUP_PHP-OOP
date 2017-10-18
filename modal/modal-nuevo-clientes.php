@@ -2,14 +2,13 @@
 	
 	<div class="loginmodal-container">
 		<h1>Regístrese</h1><br>
-		
+		<input type="text" id="email" placeholder="E-mail *" onblur="verificoemail()">
 		<input type="text" id="nombre" placeholder="Nombre *" required>
 		<input type="text" id="apellido" placeholder="Apellido *">
+		<input type="text" id="telefono" placeholder="Teléfono">
 		<input type="password" id="contrasena" placeholder="Contraseña *">
 		<input type="password" id="contrasena2" placeholder="Repita la contraseña">
-		<input type="text" id="email" placeholder="E-mail *" onblur="verificoemail()">
-		<input type="text" id="telefono" placeholder="Teléfono">
-		<div class="login-help mb-2">
+				<div class="login-help mb-2">
 			Los campos con * son obligatorios
 		</div>
 		<input type="submit" name="login" class="login loginmodal-submit clientes-nuevo" value="Regristrarse" disabled>

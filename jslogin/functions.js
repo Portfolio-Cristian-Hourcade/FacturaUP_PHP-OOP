@@ -136,11 +136,16 @@ if($("#nombre").val()==""){
 function verificoemail(){
 
     $.ajax({
-                        url:"scripts/verifico-email.php",
-            
+            type:"POST",
+            url:"scripts/verifico-email.php",
+            data:{
+                "email":$("#email").val(),
+               
+            },
             success:function(result){
                 if(result==0){
                     alert("Este email no se encuentra en nuestra base de datos.");
+                       $('.clientes-nuevo').attr('disabled', false);
                 }else{
                     alert("Este email se encuentra en nuestra base de datos.");
                 }

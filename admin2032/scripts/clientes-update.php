@@ -18,7 +18,21 @@ $telefono= $_POST["telefono"];
 
 /*------- SQL ---------------*/
 
-$sql = "	UPDATE  clientes SET cl_nombre='".$nombre."', cl_apellido='".$apellido."',cl_email='".$email."',cl_pass='".$contrasena."',cl_tel='".$telefono."' WHERE cl_id='".$id."'";
+if($contrasena==""){
+
+$sql = "	UPDATE  clientes SET cl_nombre='".$nombre."', cl_apellido='".$apellido."',cl_email='".$email."',cl_tel='".$telefono."' WHERE cl_id='".$id."'";
+
+}else{
+
+
+
+$sql = "	UPDATE  clientes SET cl_nombre='".$nombre."', cl_apellido='".$apellido."',cl_email='".$email."',cl_pass='".md5($contrasena)."',cl_tel='".$telefono."' WHERE cl_id='".$id."'";
+
+}
+
+
+
+
 
 /*...........................*/
 

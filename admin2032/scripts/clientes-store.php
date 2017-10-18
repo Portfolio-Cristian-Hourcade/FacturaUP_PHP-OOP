@@ -9,12 +9,12 @@ session_start();
 
 $nombre= $_POST["nombre"];
 $apellido = $_POST["apellido"];
-$contrasena=$_POST["contrasena"];
+$contrasena=md5($_POST["contrasena"]);
 $telefono=$_POST["telefono"];
 $email=$_POST["email"];
 /*--------------------------------.*/
 
-echo  $sql="INSERT INTO clientes (cl_nombre,cl_apellido,cl_email,cl_pass,cl_tel,cl_status) VALUES ('".$nombre."','".$apellido."','".$email."','".$contrasena."','".$telefono."',1)";
+  $sql="INSERT INTO clientes (cl_nombre,cl_apellido,cl_email,cl_pass,cl_tel,cl_status) VALUES ('".$nombre."','".$apellido."','".$email."','".$contrasena."','".$telefono."',1)";
 	
 $NewConnect = new Clientes();
 $NewConnect->Alta($sql);

@@ -9,7 +9,7 @@
 
 $nombre= $_POST["nombre"];
 $apellido = $_POST["apellido"];
-$contrasena=$_POST["contrasena"];
+$contrasena=md5($_POST["contrasena"]);
 $telefono=$_POST["telefono"];
 $email=$_POST["email"];
 /*--------------------------------.*/
