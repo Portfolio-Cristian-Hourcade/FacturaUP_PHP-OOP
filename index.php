@@ -17,11 +17,12 @@ session_start();
       <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
       <link rel="stylesheet" type="text/css" href="css/custom.css">
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="jslogin/functions.js"></script>
+    
       <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>
       <script type="text/javascript" src="js/funciones.js"></script>
+        <script type="text/javascript" src="jslogin/functions.js"></script>
    </head>
    <body>
       <div class="container-fluid"> <!-- boby wrapper -->
