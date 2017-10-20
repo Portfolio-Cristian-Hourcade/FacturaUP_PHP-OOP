@@ -71,7 +71,7 @@ $(".btn-log-clientes").on("click",function(){
                         "contrasena":$("#contrasena").val()
                     },
                     success:function(result){
-                        alert(result)
+                        
                        if(result=="Error"){
                         alert("Contraseña y/o email incorrectos. Vuelva a intentarlo.");
                        }else{
