@@ -357,7 +357,24 @@ session_start();
                   </div>
                </section>
                <!-- FORMULARIO DE CONSULTA -->
-               
+               <!-- <?php
+                     $mensaje="";
+                     if(isset($_POST["envio"])){
+                     include("envioCorreo.php");
+                     $email = new email("","","");
+                     $email->agregar($_POST["email"],$_POST["nombre"]);
+                     
+                     if ($email->enviar('Prueba envio de correos',$contenido_html)){
+                     
+                     $mensaje= 'Mensaje enviado';
+                     
+                     }else{
+                     
+                     $mensaje= 'El mensaje no se pudo enviar';
+                     $email->ErrorInfo;
+                     }
+                     }
+               ?> -->
                <section class="section-gris">
                   <div class="mb-4">
                      <h1 class="text-center">¿Tiene alguna consulta?</h1>
