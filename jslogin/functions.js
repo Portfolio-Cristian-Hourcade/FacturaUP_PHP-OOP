@@ -71,6 +71,7 @@ $(".btn-log-clientes").on("click",function(){
                         "contrasena":$("#contrasena").val()
                     },
                     success:function(result){
+                        
                        if(result=="Error"){
                         alert("Contraseña y/o email incorrectos. Vuelva a intentarlo.");
                        }else{
@@ -86,7 +87,9 @@ $(".btn-log-clientes").on("click",function(){
 
 
 $(".clientes-nuevo").on("click",function(){
+  
      verificoemail();
+
         
 });
 
@@ -131,10 +134,18 @@ if($("#nombre").val()==""){
                             contrasena:$("#contrasena").val()
                         },
                         success:function(result){
-                            alert("¡Registro exitoso!");
+
+                           if(result==0){
+
+alert("¡Registro exitoso!");
                             location.reload();
                             $("#modal-adm").modal("hide");
                             $("#modal-adm").html("");
+
+
+                           }else{alert("Este email se encuentra en nuestra base de datos.");}
+
+                            
                         }
 
                     });
@@ -156,7 +167,7 @@ function verificoemail(){
             success:function(result){
                 if(result==0){
                     $("#tilde-verde").html("<img src=images/tilde-verde.png>");
-                       $('.clientes-nuevo').attr('disabled', false);
+                       //$('.clientes-nuevo').attr('disabled', false);
                 }else{
                     alert("Este email se encuentra en nuestra base de datos.");
                 }
