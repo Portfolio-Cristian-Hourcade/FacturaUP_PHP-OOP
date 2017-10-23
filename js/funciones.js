@@ -53,6 +53,49 @@ $(".demo-btn").on("click",function(){
 });
 
 
+	
+	$(".envio-formulario").on("click",function(){
+
+if($("#nombre").val()==""){
+					alert("Ingrese nombre");
+				}
+				else if($("#mesaje").val()==""){
+					alert("Ingrese mensaje");
+				}
+				else if($("#email").val()==""){
+					alert("Ingrese email");
+				}
+				
+
+
+				
+				else{
+					$.ajax({
+						type:"POST",
+						url:"envioconsulta.php",
+						data:{
+							nombre:$("#nombre").val(),
+							telefono:$("#mensaje").val(),
+							
+							email:$("#email").val(),
+							
+						},
+						success:function(result){
+							
+							alert("su consulta fue enviada a la brevedad le responderemos")
+						}
+
+					});
+				}
+			});
+		
+	
+
+
+
+
+
+
 });
 // var scroll_pos = 0;
 // $(document).scroll(function() { 

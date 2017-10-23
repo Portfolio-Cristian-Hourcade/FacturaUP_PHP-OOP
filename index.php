@@ -357,31 +357,13 @@ session_start();
                      </div>
                   </div>
                </section>
-               <!-- FORMULARIO DE CONSULTA -->
-               <?php
-                     $mensaje="";
-                     if(isset($_POST["envio"])){
-                     include("envioCorreo.php");
-                     $email = new email("","","");
-                     $email->agregar($_POST["email"],$_POST["nombre"]);
-                     
-                     if ($email->enviar('Prueba envio de correos',$contenido_html)){
-                     
-                     $mensaje= 'Mensaje enviado';
-                     
-                     }else{
-                     
-                     $mensaje= 'El mensaje no se pudo enviar';
-                     $email->ErrorInfo;
-                     }
-                     }
-               ?>
+              
                <section class="section-gris">
                   <div class="mb-4">
                      <h1 class="text-center">¿Tiene alguna consulta?</h1>
                   </div>
                   <div class="col-md-6 mx-auto">
-                     <form class="col-md-12" action="enviar.php" method="post">
+                     <form class="col-md-12" action="envioconsulta.php" method="post">
                         <div class="form-group">
                            <label class="control-label" for="nombre">Nombre y apellido</label>
                            <input type="text" class="form-control" name="nombre" placeholder="Escriba su nombre y apellido">
@@ -393,7 +375,7 @@ session_start();
                         <textarea class="form-control" cols="40" maxlength="1000" name="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                         <div class="form-group">
                            <div class="btn d-block">
-                              <button type="submit" class="btn btn-secondary text-center">Enviar</button>
+                              <button type="submit" class="btn btn-secondary text-center envio-formulario">Enviar</button>
                            </div>
                         </div>
                      </form>

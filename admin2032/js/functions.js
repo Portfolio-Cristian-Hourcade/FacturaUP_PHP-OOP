@@ -2,6 +2,7 @@
 	ListarLinks();
 	ListarAdmin();
 	ListarClientes();
+	ListarConsultas();
 	ListarVentas();
 
 /*$(document).ready(function(){
@@ -353,6 +354,18 @@ function ListarClientes(){
 		}
 	});
 }
+function ListarConsultas(){
+	$.ajax({
+		url:"../scripts/consultas-list.php",
+		success:function(result){
+			$("#list-consultas").html(result);
+			
+		}
+	});
+}
+
+
+
 function ListarVentas(){
 	$.ajax({
 		url:"../scripts/ventas-list.php",
