@@ -23,19 +23,24 @@
 			?>
 			
 			<input type="hidden" value="<?php echo $fila["cl_id"]?>" id="id">
-			<div class="col-md-6"><label>Mensaje</label></div>
-			<div class="col-md-6"><textarea value="<?php echo $fila["so_mensaje"]?>"></textarea>
-			<div class="col-md-6"><label>Respuesta</label></div>
-			<div class="col-md-6"><textarea value=""></textarea>	
+			<div class="col-md-4"><label>Mensaje</label></div>
+			<div class="col-md-8"><textarea style="width:100%;height: 100px;" placeholder="<?php echo $fila["so_mensaje"]?>"></textarea></div>
+			<br><br>
+			<div class="col-md-4"><label>Respuesta</label></div>
+			<div class="col-md-8"><textarea style="width:100%;height: 100px;"></textarea></div>
+			<br><br><br>
+			<br><br><br>
+			<br><br><br>
+		</div>
 			<div class="modal-footer">
 				<center>
-				<button class="btn btn-lg btn-info btn-up-clientes">Editar</button>
+				<button class="btn btn-lg btn-info btn-contestar">Contestar!</button>
 				</center>
 			</div>
 		</div>
 		
 	</div>
 	
-</div>
+
 
 

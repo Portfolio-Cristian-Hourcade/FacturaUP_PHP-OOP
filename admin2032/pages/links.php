@@ -109,7 +109,9 @@ if(is_null(@$_SESSION["adm_user"])){
                         <li>
                             <a href="estadisticas.php"><i class="fa fa-dashboard fa-fw"></i> Estadísticas</a>
                         </li>
-                        
+                         <li>
+                            <a href="soporte.php"><i class="fa fa-dashboard fa-fw"></i> Soporte</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

@@ -1,4 +1,5 @@
  window.onload = function() {
+ 	Notif();
 	ListarLinks();
 	ListarAdmin();
 	ListarClientes();
@@ -253,21 +254,7 @@ $(".btn-borrar-clientes").on("click",function(){
 			});
 		}
 	});
-$(".res-mensaje").on("click",function(){
-	alert("hola");
-	$.ajax({
-		type:"POST",
-		url:"../modal/modal-edit-soporte.php",
-		data:{
-			id:this.value
-		},
-		success:function(result){
-			$("#modal-soporte").html("");
-			$("#modal-soporte").html(result);
-			$("#modal-soporte").modal("show");
-		}
-	})
-});
+
 
 $(".btn-editar-clientes").on("click", function() {
 
@@ -364,8 +351,9 @@ function ListarSoporte(){
 	$.ajax({
 		url:"../scripts/soporte-list.php",
 		success:function(result){
-			alert(result)
+			
 			$("#list-soporte").html(result);
+			Contestar();
 		}
 	});
 }
@@ -426,5 +414,31 @@ function ActivarLink(id){
 	});
 }
 
+function Contestar(){
+	$(".res-mensaje").on("click",function(){
+		var valor=$(this).val();
 
- }
+		$.ajax({
+			type:"POST",
+			url:"../modal/modal-edit-soporte.php",
+			data:{
+				id:valor
+			},
+			success:function(result){
+				$("#modal-soporte").html("");
+				$("#modal-soporte").html(result);
+				$("#modal-soporte").modal("show");
+			}
+		});
+	});
+}
+
+function Notif(){
+	$.ajax({
+		url:"../scripts/soporte-notif.php",
+		success:function(result){
+			$(".not-soport").html(result);
+		}
+	});
+}
+}
