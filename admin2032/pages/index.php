@@ -111,6 +111,9 @@ if(is_null(@$_SESSION["adm_user"])){
                         <li>
                             <a href="estadisticas.php"><i class="fa fa-dashboard fa-fw"></i> Estadísticas</a>
                         </li>
+                         <li>
+                            <a href="soporte.php"><i class="fa fa-dashboard fa-fw"></i> Soporte</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -201,12 +204,12 @@ if(is_null(@$_SESSION["adm_user"])){
                                     <i class="fa fa-support fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">0</div>
+                                    <div class="huge not-soport">0</div>
                                     <div>Soporte!</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="soporte.php">
                             <div class="panel-footer">
                                 <span class="pull-left">Saber más</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
