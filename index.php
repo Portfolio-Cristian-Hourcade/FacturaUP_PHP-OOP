@@ -17,12 +17,12 @@ session_start();
       <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
       <link rel="stylesheet" type="text/css" href="css/custom.css">
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    
+      
       <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>
       <script type="text/javascript" src="js/funciones.js"></script>
-        <script type="text/javascript" src="jslogin/functions.js"></script>
+      <script type="text/javascript" src="jslogin/functions.js"></script>
    </head>
    <body>
       <div class="container-fluid"> <!-- boby wrapper -->
@@ -92,6 +92,7 @@ session_start();
          <a id="services"></a>
          <div class="container mt-5 servicios">
             <div class="row">
+
                <article class="mb-3">
                   <h2 class="text-center display-4 my-3">Facturá tus alquileres</h2>
                   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -109,54 +110,58 @@ session_start();
          <section class="container-fluid soluciones">
             <div class="row text-white">
                <h2 class="col-md-12 text-center display-4 my-3">Soluciones</h2>
-               <article class="col-4 col-sm-3 col-md-2">
+               <div class="col-md-10 container-fluid mx-auto">
+                  <div class="row">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-tag fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-file-o fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
+               </div>
+               </div>
             </div>
          </section>
          <!-- seccion como funciona -->
@@ -173,7 +178,7 @@ session_start();
                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                </div>
             </section>
-            <section class="col-md-12 section-cold text-white pricing-panel d-flex">
+            <section class="col-md-12 section-planes text-white pricing-panel d-flex">
                <div class="container my-auto">
                   <div id="tabla-2">
                      <div class="col-md-9 tabla-wrapper container-fluid mx-auto">
@@ -274,11 +279,11 @@ session_start();
                   </div>
                </section>
                
-               <section class="container-fluid tiled text-white">
+               <section class="tiled text-white">
                   <h2 class="text-center display-4 my-4">Lorem Ipsum</h2>
                   <div class="row">
                      <article class="col-md-3">
-                        <div class=""><img src="images/old_woman.jpg" class="img-fluid"></div>
+                        <div class=""><img src="images/invoice_clear.jpg" class="img-fluid"></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -357,9 +362,9 @@ session_start();
                      </div>
                   </div>
                </section>
+
                <!-- FORMULARIO DE CONSULTA -->
-               
-               <section class="section-gris">
+               <section class="section-gris text-white">
                   <div class="mb-4">
                      <h1 class="text-center">¿Tiene alguna consulta?</h1>
                   </div>
@@ -367,61 +372,61 @@ session_start();
                      <form class="col-md-12" action="mail.php" method="post">
                         <div class="form-group">
                            <label class="control-label" for="nombre">Nombre y apellido</label>
-                           <input type="text" class="form-control" name="nombre" placeholder="Escriba su nombre y apellido">
+                           <input type="text" class="form-control text-white" id="nombre" placeholder="Escriba su nombre y apellido">
                         </div>
                         <div class="form-group mb-4">
                            <label class="control-label" for="email">Email</label>
-                           <input type="email" class="form-control" name="email" placeholder="Escriba su email">
+                           <input type="email" class="form-control text-white" id="email" placeholder="Escriba su email">
                         </div>
-                        <textarea class="form-control" cols="40" maxlength="1000" name="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                        <textarea class="form-control text-white" cols="40" maxlength="1000" id="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                         <div class="form-group">
                            <div class="btn d-block">
-                              <button type="submit" class="btn btn-secondary text-center">Enviar</button>
+                              <button type="button" class="btn btn-outline-info text-center enviar-formulario">Enviar</button>
                            </div>
                         </div>
-                     </form>
+                        
+                     </div>
+                  </section>
+                  </div> <!-- end sections wrapper -->
+                  </div> <!-- end body wrapper -->
+                  <!-- barra de telefono anclada al final -->
+                  <div class="tel-bottom text-white d-flex d-xs-none">
+                     <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
                   </div>
-               </section>
-               </div> <!-- end sections wrapper -->
-               </div> <!-- end body wrapper -->
-               <!-- barra de telefono anclada al final -->
-               <div class="tel-bottom text-white d-flex d-xs-none">
-                  <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
+                  <!-- footer -->
+                  <footer class="col-md-12 container">
+                     <div class="row pt-4">
+                        <div class="col-md-4 text-white">
+                           <ul class="text-center">
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                           </ul>
+                        </div>
+                        <div class="col-md-4 text-white">
+                           <ul class="text-center">
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                           </ul>
+                        </div>
+                        <div class="col-md-4 text-white">
+                           <ul class="text-center">
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </footer>
                </div>
-               <!-- footer -->
-               <footer class="col-md-12 container">
-                  <div class="row pt-4">
-                     <div class="col-md-4 text-white">
-                        <ul class="text-center">
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                        </ul>
-                     </div>
-                     <div class="col-md-4 text-white">
-                        <ul class="text-center">
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                        </ul>
-                     </div>
-                     <div class="col-md-4 text-white">
-                        <ul class="text-center">
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                        </ul>
-                     </div>
-                  </div>
-               </footer>
-            </div>
-            <div id="modal-adm" class="modal fade" role="dialog"></div>
-            <div id="modal-log" class="modal fade" role="dialog"></div>
-         </body>
-      </html>
+               <div id="modal-adm" class="modal fade" role="dialog"></div>
+               <div id="modal-log" class="modal fade" role="dialog"></div>
+            </body>
+         </html>

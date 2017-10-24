@@ -2,8 +2,9 @@
 	ListarLinks();
 	ListarAdmin();
 	ListarClientes();
+	ListarConsultas();
 	ListarVentas();
-
+	ListarSoporte();
 /*$(document).ready(function(){
 
 ListarLinks();
@@ -252,6 +253,21 @@ $(".btn-borrar-clientes").on("click",function(){
 			});
 		}
 	});
+$(".res-mensaje").on("click",function(){
+	alert("hola");
+	$.ajax({
+		type:"POST",
+		url:"../modal/modal-edit-soporte.php",
+		data:{
+			id:this.value
+		},
+		success:function(result){
+			$("#modal-soporte").html("");
+			$("#modal-soporte").html(result);
+			$("#modal-soporte").modal("show");
+		}
+	})
+});
 
 $(".btn-editar-clientes").on("click", function() {
 
@@ -344,6 +360,15 @@ function ListarAdmin(){
 		}
 	});
 }
+function ListarSoporte(){
+	$.ajax({
+		url:"../scripts/soporte-list.php",
+		success:function(result){
+			alert(result)
+			$("#list-soporte").html(result);
+		}
+	});
+}
 function ListarClientes(){
 	$.ajax({
 		url:"../scripts/clientes-list.php",
@@ -353,6 +378,18 @@ function ListarClientes(){
 		}
 	});
 }
+function ListarConsultas(){
+	$.ajax({
+		url:"../scripts/consultas-list.php",
+		success:function(result){
+			$("#list-consultas").html(result);
+			
+		}
+	});
+}
+
+
+
 function ListarVentas(){
 	$.ajax({
 		url:"../scripts/ventas-list.php",
