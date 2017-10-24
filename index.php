@@ -33,7 +33,7 @@ session_start();
             </button>
             <div class="envolto-logo ml-5">
                <a class="navbar-brand" href="index.html">
-                  <img src="images/logo3.png" class="mx-auto d-block img-fluid">
+                  <img src="images/logo2.png" class="mx-auto d-block img-fluid">
                </a>
             </div>
             <div class="collapse navbar-collapse my-auto align-self-start mr-2 justify-content-end" id="navbar-links">
