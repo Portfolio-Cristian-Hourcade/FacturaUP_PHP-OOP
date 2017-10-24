@@ -1,8 +1,6 @@
 <?php
 class Consultas{
-	
-		
-		
+
 	 	public function Alta($sql){
 			$con = new ConnectionMySQL();
 			$con->CreateConnection();
@@ -21,10 +19,7 @@ public function ListarConsultas($sql){
 						<td><?php echo $fila["con_contacto"]?></td>
 						<td><?php echo $fila["con_email"]?></td>
 						<td><?php echo $fila["con_mensaje"]?></td>									
-						<td><?php echo $fila["con_fechaenvio"]?></td>
-						
-						
-						
+						<td><?php echo $fila["con_fechaenvio"]?></td>	
 						<td><?php echo $fila["con_horarespuesta"]?></td>
 						<td><?php echo $fila["con_respuesta"]?></td>
 						<td><?php echo $fila["con_horaenvio"]?></td>
