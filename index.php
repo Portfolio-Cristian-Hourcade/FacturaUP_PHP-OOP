@@ -364,7 +364,7 @@ session_start();
                      <h1 class="text-center">¿Tiene alguna consulta?</h1>
                   </div>
                   <div class="col-md-6 mx-auto">
-                     <form class="col-md-12" action="mail2.php" method="post">
+                     <form class="col-md-12" action="mail.php" method="post">
                         <div class="form-group">
                            <label class="control-label" for="nombre">Nombre y apellido</label>
                            <input type="text" class="form-control" name="nombre" placeholder="Escriba su nombre y apellido">
