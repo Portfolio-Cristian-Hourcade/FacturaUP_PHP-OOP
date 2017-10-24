@@ -75,7 +75,7 @@ $(".demo-btn").on("click",function(){
 						url:"envioconsulta.php",
 						data:{
 							nombre:$("#nombre").val(),
-							telefono:$("#mensaje").val(),
+							mensaje:$("#mensaje").val(),
 							email:$("#email").val()
 						},
 						success:function(result){
