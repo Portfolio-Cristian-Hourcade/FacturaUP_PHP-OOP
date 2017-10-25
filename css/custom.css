@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 @import url('https://fonts.googleapis.com/css?family=Mukta+Mahee:600');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 body{
 	font-family: 'Inconsolata', monospace;
 	font-family: 'Cabin', sans-serif;
 	font-family: 'Open Sans', sans-serif!important;
 }
-
+footer{
+	font-family: 'Dosis', sans-serif;
+}
 .container-fluid{
 	padding:0 !important;
 }
@@ -95,10 +98,11 @@ footer {
   position: absolute;
   bottom: 0;
   min-height: 200px;
- 
+ padding: 30px 0 50px 0;
 }
 footer ul{
 	list-style: none;
+	padding: 0;
 }
 .tel-bottom{
 	width: 248px;
@@ -373,6 +377,17 @@ font-size: 12px;
 	background-color: transparent !important;
 }
 
+.secc-iconMedia{
+	padding: 0 45px;
+	font-size: 1.4em;
+}
+
+.secc-iconMedia > div > div{
+	height: 4.5vw;
+	width: 4.5vw;
+	border-radius: 50%;
+	background-color: #2b3a65;
+}
 
 
 
