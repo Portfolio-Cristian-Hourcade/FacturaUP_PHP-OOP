@@ -353,16 +353,16 @@ session_start();
                      
                         <div class="form-group">
                            <label class="control-label" for="nombre">Nombre y apellido</label>
-                           <input type="text" class="form-control" name="nombre" placeholder="Escriba su nombre y apellido">
+                           <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre y apellido">
                         </div>
                         <div class="form-group mb-4">
                            <label class="control-label" for="email">Email</label>
-                           <input type="email" class="form-control" name="email" placeholder="Escriba su email">
+                           <input type="email" class="form-control" id="email" placeholder="Escriba su email">
                         </div>
-                        <textarea class="form-control" cols="40" maxlength="1000" name="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                        <textarea class="form-control" cols="40" maxlength="1000" id="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                         <div class="form-group">
                            <div class="btn d-block">
-                              <button type="button" class="btn btn-secondary text-center">Enviar</button>
+                              <button type="button" class="btn btn-secondary text-center enviar-formulario">Enviar</button>
                            </div>
                         </div>
                      

@@ -1,5 +1,6 @@
  window.onload = function() {
  	Notif();
+ 	Notifconsultas();
 	ListarLinks();
 	ListarAdmin();
 	ListarClientes();
@@ -500,6 +501,16 @@ function Notif(){
 		url:"../scripts/soporte-notif.php",
 		success:function(result){
 			$(".not-soport").html(result);
+		}
+	});
+}
+
+
+function Notifconsultas(){
+	$.ajax({
+		url:"../scripts/consulta-notif.php",
+		success:function(result){
+			$(".not-consulta").html(result);
 		}
 	});
 }
