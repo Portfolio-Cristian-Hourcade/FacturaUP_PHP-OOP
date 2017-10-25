@@ -91,7 +91,6 @@ session_start();
          <a id="services"></a>
          <div class="container mt-5 servicios">
             <div class="row">
-
                <article class="mb-3">
                   <h2 class="text-center display-4 my-3">Facturá tus alquileres</h2>
                   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -111,55 +110,39 @@ session_start();
                <h2 class="col-md-12 text-center display-4 my-3">Soluciones</h2>
                <div class="col-md-10 container-fluid mx-auto">
                   <div class="row">
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-tag fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-file-o fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               <article class="col-md-3">
-                  <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                  <h2 class="text-center h2-artIcon">Ventas</h2>
-               </article>
-               </div>
+                     <article class="col-md-3">
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-tag fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     </article>
+                     <article class="col-md-3">
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     </article>
+                     <article class="col-md-3">
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-file-o fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     </article>
+                     <article class="col-md-3">
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     </article>
+                     <article class="col-md-3">
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     </article>
+                     <article class="col-md-3">
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     </article>
+                     <article class="col-md-3">
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     </article>
+                     <article class="col-md-3">
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     </article>
+                  </div>
                </div>
             </div>
          </section>
@@ -303,7 +286,7 @@ session_start();
                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.</p>
                         
-                        <div class="push-12"><img src="images/old_woman.jpg" class="img-fluid"></div>
+                        <div class="push-12"><img src="images/invoice_2.jpg" class="img-fluid"></div>
                         
                      </article>
                   </div>
@@ -361,7 +344,6 @@ session_start();
                      </div>
                   </div>
                </section>
-
                <!-- FORMULARIO DE CONSULTA -->
                <section class="section-gris">
                   <div class="mb-4">
@@ -385,6 +367,7 @@ session_start();
                         </div>
                      
                   </div>
+
                </section>
                </div> <!-- end sections wrapper -->
                </div> <!-- end body wrapper -->
@@ -392,35 +375,46 @@ session_start();
                <div class="tel-bottom text-white d-flex d-xs-none">
                   <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
                </div>
-               <!-- footer -->
-               <footer class="col-md-12 container">
-                  <div class="row pt-4">
-                     <div class="col-md-4 text-white">
-                        <ul class="text-center">
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                        </ul>
-                     </div>
-                     <div class="col-md-4 text-white">
-                        <ul class="text-center">
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                        </ul>
-                     </div>
-                     <div class="col-md-4 text-white">
-                        <ul class="text-center">
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                        </ul>
+              
+                  <!-- footer -->
+                  <footer class="col-md-12 container">
+                     <div class="col-md-11 mx-auto">
+                        <div class="row pt-4">
+                           <div class="col-md-4 text-white">
+                              <h3 class="text-center">Contáctenos</h3>
+                              <ul class="text-center">
+                                 <li>lorem ipsum</li>
+                                 <li>lorem ipsum</li>
+                                 <li>lorem ipsum</li>
+                                 <li>lorem ipsum</li>
+                                 <li>lorem ipsum</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-4 text-white secc-iconMedia">
+                              <h3 class="text-center mb-4">Síganos</h3>
+                              <div class="row">
+                                 <div class="d-flex mx-auto">
+                                 <i class="fa fa-facebook mx-auto align-self-center" aria-hidden="true"></i></div>
+                                 <div class="d-flex mx-auto">
+                                 <i class="fa fa-twitter mx-auto align-self-center" aria-hidden="true"></i></div>
+                                 <div class="d-flex mx-auto">
+                                 <i class="fa fa-instagram mx-auto align-self-center" aria-hidden="true"></i></div>
+                                 <div class="d-flex mx-auto">
+                                 <i class="fa fa-linkedin mx-auto align-self-center" aria-hidden="true"></i></div>
+                                 
+                              </div>
+                           </div>
+                           <div class="col-md-4 text-white">
+                              <h3 class="text-center mb-4">Recuerde</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           </ul>
+                        </div>
+
                      </div>
                   </div>
                </footer>
