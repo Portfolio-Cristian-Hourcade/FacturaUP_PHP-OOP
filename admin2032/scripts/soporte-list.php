@@ -10,7 +10,7 @@ if(empty(@$_SESSION["adm_user"])){
 	include '../../class/conmysql.php';
 	
 
-$sql="SELECT * FROM soporte WHERE so_status=1 AND so_respuesta=''";
+$sql="SELECT * FROM soporte WHERE so_status=1";
 	
 $NewConnect = new Soporte();
 $NewConnect->ListarSoporte($sql);
