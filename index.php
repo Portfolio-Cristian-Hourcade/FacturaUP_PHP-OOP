@@ -17,12 +17,11 @@ session_start();
       <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
       <link rel="stylesheet" type="text/css" href="css/custom.css">
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      
+      <script type="text/javascript" src="jslogin/functions.js"></script>
       <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>
       <script type="text/javascript" src="js/funciones.js"></script>
-      <script type="text/javascript" src="jslogin/functions.js"></script>
    </head>
    <body>
       <div class="container-fluid"> <!-- boby wrapper -->
@@ -185,7 +184,7 @@ session_start();
                         <div class="row no-gutters">
                            <h2 class="text-center display-4 col-md-12 my-4">Elija su plan</h2>
                            <div class="col-md-4 my-auto price-col">
-                              <div class="stack-top"></div>
+                              <div class="stack-top" style="background-image: url('images/1.png')"></div>
                               <div class="stack-end">
                                  <p class="d-block text-center">
                                     <span>$</span>
@@ -196,7 +195,7 @@ session_start();
                            </div>
                            <div class="col-md-4 destacado bg-light">
                               <span class="d-block lead text-center">RECOMENDADO</span>
-                              <div class="stack-top bg-success"></div>
+                              <div class="stack-top bg-success" style="background-image: url('images/1.png')"></div>
                               <div class="stack-end">
                                  <p class="d-block text-center">
                                     <span>$</span>
@@ -206,7 +205,7 @@ session_start();
                               </div>
                            </div>
                            <div class="col-md-4 my-auto price-col">
-                              <div class="stack-top"></div>
+                              <div class="stack-top" style="background-image: url('images/1.png')"></div>
                               <div class="stack-end">
                                  <p class="d-block text-center">
                                     <span>$</span>
@@ -364,69 +363,69 @@ session_start();
                </section>
 
                <!-- FORMULARIO DE CONSULTA -->
-               <section class="section-gris text-white">
+               <section class="section-gris">
                   <div class="mb-4">
                      <h1 class="text-center">¿Tiene alguna consulta?</h1>
                   </div>
                   <div class="col-md-6 mx-auto">
-                     <form class="col-md-12" action="mail.php" method="post">
+                     
                         <div class="form-group">
                            <label class="control-label" for="nombre">Nombre y apellido</label>
-                           <input type="text" class="form-control text-white" id="nombre" placeholder="Escriba su nombre y apellido">
+                           <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre y apellido">
                         </div>
                         <div class="form-group mb-4">
                            <label class="control-label" for="email">Email</label>
-                           <input type="email" class="form-control text-white" id="email" placeholder="Escriba su email">
+                           <input type="email" class="form-control" id="email" placeholder="Escriba su email">
                         </div>
-                        <textarea class="form-control text-white" cols="40" maxlength="1000" id="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                        <textarea class="form-control" cols="40" maxlength="1000" id="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                         <div class="form-group">
                            <div class="btn d-block">
-                              <button type="button" class="btn btn-outline-info text-center enviar-formulario">Enviar</button>
+                              <button type="button" class="btn btn-secondary text-center enviar-formulario">Enviar</button>
                            </div>
                         </div>
-                        
-                     </div>
-                  </section>
-                  </div> <!-- end sections wrapper -->
-                  </div> <!-- end body wrapper -->
-                  <!-- barra de telefono anclada al final -->
-                  <div class="tel-bottom text-white d-flex d-xs-none">
-                     <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
+                     
                   </div>
-                  <!-- footer -->
-                  <footer class="col-md-12 container">
-                     <div class="row pt-4">
-                        <div class="col-md-4 text-white">
-                           <ul class="text-center">
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                           </ul>
-                        </div>
-                        <div class="col-md-4 text-white">
-                           <ul class="text-center">
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                           </ul>
-                        </div>
-                        <div class="col-md-4 text-white">
-                           <ul class="text-center">
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                              <li>lorem ipsum</li>
-                           </ul>
-                        </div>
-                     </div>
-                  </footer>
+               </section>
+               </div> <!-- end sections wrapper -->
+               </div> <!-- end body wrapper -->
+               <!-- barra de telefono anclada al final -->
+               <div class="tel-bottom text-white d-flex d-xs-none">
+                  <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
                </div>
-               <div id="modal-adm" class="modal fade" role="dialog"></div>
-               <div id="modal-log" class="modal fade" role="dialog"></div>
-            </body>
-         </html>
+               <!-- footer -->
+               <footer class="col-md-12 container">
+                  <div class="row pt-4">
+                     <div class="col-md-4 text-white">
+                        <ul class="text-center">
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                        </ul>
+                     </div>
+                     <div class="col-md-4 text-white">
+                        <ul class="text-center">
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                        </ul>
+                     </div>
+                     <div class="col-md-4 text-white">
+                        <ul class="text-center">
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                           <li>lorem ipsum</li>
+                        </ul>
+                     </div>
+                  </div>
+               </footer>
+            </div>
+            <div id="modal-adm" class="modal fade" role="dialog"></div>
+            <div id="modal-log" class="modal fade" role="dialog"></div>
+         </body>
+      </html>

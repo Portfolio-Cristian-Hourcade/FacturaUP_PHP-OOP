@@ -108,54 +108,58 @@ session_start();
          <section class="container-fluid soluciones">
             <div class="row text-white">
                <h2 class="col-md-12 text-center display-4 my-3">Soluciones</h2>
-               <article class="col-4 col-sm-3 col-md-2">
+               <div class="col-md-10 container-fluid mx-auto">
+                  <div class="row">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-tag fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-file-o fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
-               <article class="col-4 col-sm-3 col-md-2">
+               <article class="col-md-3">
                   <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                   <h2 class="text-center h2-artIcon">Ventas</h2>
                </article>
+               </div>
+               </div>
             </div>
          </section>
          <!-- seccion como funciona -->
@@ -172,47 +176,64 @@ session_start();
                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                </div>
             </section>
-            <section class="col-md-12 section-cold text-white pricing-panel d-flex">
-               <div class="container my-auto">
-                  <div id="tabla-2">
-                     <div class="col-md-9 tabla-wrapper container-fluid mx-auto">
-                        <div class="row no-gutters">
-                           <h2 class="text-center display-4 col-md-12 my-4">Elija su plan</h2>
-                           <div class="col-md-4 my-auto price-col">
-                              <div class="stack-top"></div>
-                              <div class="stack-end">
-                                 <p class="d-block text-center">
-                                    <span>$</span>
-                                    <span>4.00 <sup>00</sup></span>
-                                 </p>
-                                 <div class="text-center"><a href="#" class="btn btn-primary demo-button">Comprar</a></div>
+            <section id="sec-planes" class="col-md-12 section-blanco pt-4">
+                  <div class="container">
+                     <h2 class="text-center display-4 my-4">Lorem Ipsum</h2>
+                     <div class="row">
+                        <article class="col-md-4 px-2">
+                           <div>
+                              <img class="img-fluid" src="images/plan-inicial.jpg">
+                              <div class="p-3">
+                                 <hr id="hr-1">
+                                 <h4 class="text-center mb-3">Lorem ipsum</h4>
+                                 <ul class="list-unstyled">
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                 </ul>
                               </div>
                            </div>
-                           <div class="col-md-4 destacado bg-light">
-                              <span class="d-block lead text-center">RECOMENDADO</span>
-                              <div class="stack-top bg-success"></div>
-                              <div class="stack-end">
-                                 <p class="d-block text-center">
-                                    <span>$</span>
-                                    <span>4.00 <sup>00</sup></span>
-                                 </p>
-                                 <div class="text-center"><a href="#" class="btn btn-primary demo-button">Comprar</a></div>
+                        </article>
+                        <article class="col-md-4 px-2">
+                           <div>
+                              <img class="img-fluid" src="images/plan-avanzado.jpg">
+                              <div class="p-3">
+                                 <hr id="hr-2">
+                                 <h4 class="text-center mb-3">Lorem ipsum</h4>
+                                 <ul class="list-unstyled">
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                 </ul>
                               </div>
                            </div>
-                           <div class="col-md-4 my-auto price-col">
-                              <div class="stack-top"></div>
-                              <div class="stack-end">
-                                 <p class="d-block text-center">
-                                    <span>$</span>
-                                    <span>4.00 <sup>00</sup></span>
-                                 </p>
-                                 <div class="text-center"><a href="#" class="btn btn-primary demo-button">Comprar</a></div>
+                        </article>
+                        <article class="col-md-4 px-2">
+                           <div>
+                              <img class="img-fluid" src="images/plan-premium.jpg">
+                              <div class="p-3 bg-light">
+                                 <hr id="hr-3">
+                                 <h4 class="text-center mb-3">Lorem ipsum</h4>
+                                 <ul class="list-unstyled">
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                 </ul>
                               </div>
                            </div>
-                           </div> <!-- end row -->
-                        </div>
+                        </article>
                      </div>
-                  </section>
+                  </div>
+               </section>
                </div>
                <section id="sec-planes" class="col-md-12 section-blanco pt-4">
                   <div class="container">
@@ -273,11 +294,11 @@ session_start();
                   </div>
                </section>
                
-               <section class="container-fluid tiled text-white">
+               <section class="tiled text-white">
                   <h2 class="text-center display-4 my-4">Lorem Ipsum</h2>
                   <div class="row">
                      <article class="col-md-3">
-                        <div class=""><img src="images/old_woman.jpg" class="img-fluid"></div>
+                        <div class=""><img src="images/invoice_clear.jpg" class="img-fluid"></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -357,30 +378,14 @@ session_start();
                   </div>
                </section>
                <!-- FORMULARIO DE CONSULTA -->
-               <!-- <?php
-                     $mensaje="";
-                     if(isset($_POST["envio"])){
-                     include("envioCorreo.php");
-                     $email = new email("","","");
-                     $email->agregar($_POST["email"],$_POST["nombre"]);
-                     
-                     if ($email->enviar('Prueba envio de correos',$contenido_html)){
-                     
-                     $mensaje= 'Mensaje enviado';
-                     
-                     }else{
-                     
-                     $mensaje= 'El mensaje no se pudo enviar';
-                     $email->ErrorInfo;
-                     }
-                     }
-               ?> -->
+               
+               
                <section class="section-gris">
                   <div class="mb-4">
                      <h1 class="text-center">¿Tiene alguna consulta?</h1>
                   </div>
                   <div class="col-md-6 mx-auto">
-                     <form class="col-md-12" action="mail2.php" method="post">
+                     
                         <div class="form-group">
                            <label class="control-label" for="nombre">Nombre y apellido</label>
                            <input type="text" class="form-control" name="nombre" placeholder="Escriba su nombre y apellido">
@@ -392,10 +397,10 @@ session_start();
                         <textarea class="form-control" cols="40" maxlength="1000" name="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                         <div class="form-group">
                            <div class="btn d-block">
-                              <button type="submit" class="btn btn-secondary text-center">Enviar</button>
+                              <button type="button" class="btn btn-secondary text-center">Enviar</button>
                            </div>
                         </div>
-                     </form>
+                     
                   </div>
                </section>
                </div> <!-- end sections wrapper -->

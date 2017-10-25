@@ -85,8 +85,6 @@ class Clientes{
 			$con->CreateConnection();
 			$res = $con->SeleccionarAdmin($sql);
 			$con->buscar($sql);
-			
-
 
 }
 

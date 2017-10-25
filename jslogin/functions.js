@@ -161,10 +161,10 @@ function verificoemail(){
             type:"POST",
             url:"scripts/verifico-email.php",
             data:{
-                "email":$("#email").val(),
-               
+                "email":$("#email").val()       
             },
             success:function(result){
+                alert(result)
                 if(result==0){
                     $("#tilde-verde").html("<img src=images/tilde-verde.png>");
                        //$('.clientes-nuevo').attr('disabled', false);
