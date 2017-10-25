@@ -138,7 +138,7 @@ if(is_null(@$_SESSION["adm_user"])){
                                     <i class="fa fa-comments fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">0</div>
+                                    <div class="huge not-consulta"></div>
                                     <div>Consultas!</div>
                                 </div>
                             </div>

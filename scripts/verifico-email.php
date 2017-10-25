@@ -9,10 +9,10 @@
 $email=$_POST["email"];
 /*--------------------------------.*/
 
-$sql="SELECT * from clientes where cl_email='$email'";
+$sql="SELECT * from clientes where cl_email='".$email."'";
 
 	
 $NewConnect = new Clientes();
-$NewConnect->VerificoEmail($sql);
+echo $NewConnect->VerificoEmail($sql);
 
 ?>

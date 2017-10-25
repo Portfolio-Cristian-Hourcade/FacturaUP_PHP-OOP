@@ -100,6 +100,9 @@ if(is_null(@$_SESSION["adm_user"])){
                         <li>
                             <a href="clientes.php"><i class="fa fa-edit fa-fw"></i>Clientes</a>
                         </li>
+                         <li>
+                            <a href="ventas.php"><i class="fa fa-edit fa-fw"></i>Consultas</a>
+                        </li>
                         <li>
                             <a href="ventas.php"><i class="fa fa-edit fa-fw"></i>Ventas</a>
                         </li>
@@ -136,15 +139,13 @@ if(is_null(@$_SESSION["adm_user"])){
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <button type="button" class="btn btn-md btn-success btn-nuevo-clientes">Añadir</button>
+                          
                             
                             <br><br>
                             <table width="100%" class="table table-striped table-bordered table-hover" >
                                 <thead>
                                     <tr>
-                                        <th>
-                                            <input type="checkbox" class="todos">
-                                        </th>
+                                        
                                         <th>Contacto</th>
                                         <th>Email</th>
                                         <th>Mensaje</th>                                     
@@ -153,6 +154,7 @@ if(is_null(@$_SESSION["adm_user"])){
                                         <th>Respuesta</th>
                                         <th>Hora envio</th>
                                         <th>Hora respuesta</th>
+                                         <th>Respuesta</th>
                                     </tr>
                                 </thead>
                                 <tbody id="list-consultas">
@@ -188,7 +190,7 @@ if(is_null(@$_SESSION["adm_user"])){
         });
     });
     </script>
-<div id="modal-adm" class="modal fade" role="dialog">
+<div id="modal-consultas" class="modal fade" role="dialog">
 </body>
 
 </html>

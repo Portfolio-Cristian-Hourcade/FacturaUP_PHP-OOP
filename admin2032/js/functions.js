@@ -1,5 +1,6 @@
  window.onload = function() {
  	Notif();
+ 	Notifconsultas();
 	ListarLinks();
 	ListarAdmin();
 	ListarClientes();
@@ -175,7 +176,26 @@ $(".btn-editar-adm").on("click", function() {
         }
     });
 
+
+                    
+                   
+                
+
+            
+       
+    
+
+
+
+
 /*----------------------------------------------------------------*/
+
+
+
+
+
+
+
 
 /*---------------------- Desactivar Link ---------------------------*/
 /*---------Esto es para ser el store de clientes------*/
@@ -354,6 +374,7 @@ function ListarSoporte(){
 			
 			$("#list-soporte").html(result);
 			Contestar();
+
 		}
 	});
 }
@@ -371,7 +392,7 @@ function ListarConsultas(){
 		url:"../scripts/consultas-list.php",
 		success:function(result){
 			$("#list-consultas").html(result);
-			
+			Contestarconsulta();
 		}
 	});
 }
@@ -414,6 +435,47 @@ function ActivarLink(id){
 	});
 }
 
+function Contestarconsulta(){
+	$(".res-consulta").on("click",function(){
+		var valor=$(this).val();
+
+		$.ajax({
+			type:"POST",
+			url:"../modal/modal-edit-consulta.php",
+			data:{
+				id:valor
+			},
+			success:function(result){
+				$("#modal-consultas").html("");
+				$("#modal-consultas").html(result);
+				$("#modal-consultas").modal("show");
+				$(".btn-contestar-consulta").on("click", function() {
+                        $.ajax({
+                            type: "POST",
+                            url: "../scripts/consultas-update.php",
+                            data: {
+                                id:$("#id").val(),                                
+                                mensaje:$("#mensaje").val()
+                                
+                            },
+                            success: function(result) {
+                            	
+                            	ListarConsultas(); 
+                                $("#modal-consultas").html("");
+                    			$("#modal-consultas").modal("hide");
+                            }
+                        });
+                    });
+			}
+		});
+	});
+}
+
+
+
+
+
+
 function Contestar(){
 	$(".res-mensaje").on("click",function(){
 		var valor=$(this).val();
@@ -428,6 +490,7 @@ function Contestar(){
 				$("#modal-soporte").html("");
 				$("#modal-soporte").html(result);
 				$("#modal-soporte").modal("show");
+				ResponderMen();
 			}
 		});
 	});
@@ -440,5 +503,34 @@ function Notif(){
 			$(".not-soport").html(result);
 		}
 	});
+}
+
+
+function Notifconsultas(){
+	$.ajax({
+		url:"../scripts/consulta-notif.php",
+		success:function(result){
+			$(".not-consulta").html(result);
+		}
+	});
+}
+function ResponderMen(){
+					$(".btn-up-soporte").on("click", function() {
+						alert("hola");
+                        $.ajax({
+                            type: "POST",
+                            url: "../scripts/soporte-update.php",
+                            data: {
+                                "id": $("#id").val(),
+                                "mensaje":$("#mensaje").val()
+                            },
+                            success: function(result) {
+                            	alert(result);
+                            	ListarSoporte(); 
+                                $("#modal-soporte").html("");
+                    			$("#modal-soporte").modal("hide");
+                            }
+                        });
+                    });
 }
 }

@@ -7,14 +7,14 @@
 		<div class="modal-body">
 			<?php
 		
-			include '../../class/soporte.php';
+			include '../../class/consultas.php';
 			include '../../class/conmysql.php';
 
 			$id = $_POST["id"];
 
 			$con = new ConnectionMySQL();
 			
-				$sql="SELECT * FROM soporte WHERE so_id='".$_POST["id"]."'";
+				$sql="SELECT * FROM consultas WHERE con_id='".$_POST["id"]."'";
 				
 			$con->CreateConnection();
 			$result=$con->SeleccionarAdmin($sql);
@@ -22,21 +22,19 @@
 
 			?>
 			
-			<input type="hidden" value="<?php echo $fila["so_id"]?>" id="id">
+			<input type="hidden" value="<?php echo $fila["con_id"]?>" id="id">
 			<div class="col-md-4"><label>Mensaje</label></div>
-			<div class="col-md-8">
-				<p style="width:100%;height: 100px;" placeholder="<?php echo $fila["so_mensaje"]?>"></p>
-			</div>
+			<div class="col-md-8"><textarea style="width:100%;height: 100px;" placeholder="<?php echo $fila["con_mensaje"]?>"></textarea></div>
 			<br><br>
 			<div class="col-md-4"><label>Respuesta</label></div>
-			<div class="col-md-8"><textarea style="width:100%;height: 100px;" id="mensaje"></textarea></div>
+			<div class="col-md-8"><textarea id="mensaje" style="width:100%;height: 100px;"></textarea></div>
 			<br><br><br>
 			<br><br><br>
 			<br><br><br>
 		</div>
 			<div class="modal-footer">
 				<center>
-				<button class="btn btn-lg btn-info btn-contestar btn-up-soporte">Contestar!</button>
+				<button class="btn btn-lg btn-info btn-contestar-consulta">Contestar</button>
 				</center>
 			</div>
 		</div>
