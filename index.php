@@ -112,15 +112,7 @@ session_start();
                <div class="col-md-10 container-fluid mx-auto">
                   <div class="row">
                      <article class="col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-tag fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                        <h2 class="text-center h2-artIcon">Ventas</h2>
-                     </article>
-                     <article class="col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                        <h2 class="text-center h2-artIcon">Ventas</h2>
-                     </article>
-                     <article class="col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-file-o fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
                      <article class="col-md-3">
@@ -128,19 +120,27 @@ session_start();
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
                      <article class="col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
                      <article class="col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
                      <article class="col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
                      <article class="col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-shower fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     </article>
+                     <article class="col-md-3">
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     </article>
+                     <article class="col-md-3">
+                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
                   </div>
@@ -267,14 +267,15 @@ session_start();
                   <div class="row">
                      <article class="col-md-3">
                         <div class=""><img src="images/invoice_clear.jpg" class="img-fluid"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.</p>
                      </article>
                      <article class="col-md-6 central">
-                        <div class=""><img src="images/old_woman_ldscp.jpg" class="img-fluid"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                       <!--  <div class=""><img src="images/man.jpg" class="img-fluid"></div> -->
+                       <div class="d-flex mt-4"><i class="fa fa-desktop fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -282,7 +283,7 @@ session_start();
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                      </article>
                      <article class="col-md-3">
-                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.</p>
@@ -400,7 +401,6 @@ session_start();
                                  <i class="fa fa-instagram mx-auto align-self-center" aria-hidden="true"></i></div>
                                  <div class="d-flex mx-auto">
                                  <i class="fa fa-linkedin mx-auto align-self-center" aria-hidden="true"></i></div>
-                                 
                               </div>
                            </div>
                            <div class="col-md-4 text-white">
@@ -408,9 +408,7 @@ session_start();
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                 consequat.</p>
                            </ul>
                         </div>
                      </div>
