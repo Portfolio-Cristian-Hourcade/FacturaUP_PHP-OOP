@@ -1,5 +1,6 @@
  window.onload = function() {
  	Notif();
+ 	Notifconsultas();
 	ListarLinks();
 	ListarAdmin();
 	ListarClientes();
@@ -174,6 +175,18 @@ $(".btn-editar-adm").on("click", function() {
             });
         }
     });
+
+
+                    
+                   
+                
+
+            
+       
+    
+
+
+
 
 /*----------------------------------------------------------------*/
 
@@ -379,7 +392,7 @@ function ListarConsultas(){
 		url:"../scripts/consultas-list.php",
 		success:function(result){
 			$("#list-consultas").html(result);
-			
+			Contestarconsulta();
 		}
 	});
 }
@@ -422,6 +435,47 @@ function ActivarLink(id){
 	});
 }
 
+function Contestarconsulta(){
+	$(".res-consulta").on("click",function(){
+		var valor=$(this).val();
+
+		$.ajax({
+			type:"POST",
+			url:"../modal/modal-edit-consulta.php",
+			data:{
+				id:valor
+			},
+			success:function(result){
+				$("#modal-consultas").html("");
+				$("#modal-consultas").html(result);
+				$("#modal-consultas").modal("show");
+				$(".btn-contestar-consulta").on("click", function() {
+                        $.ajax({
+                            type: "POST",
+                            url: "../scripts/consultas-update.php",
+                            data: {
+                                id:$("#id").val(),                                
+                                mensaje:$("#mensaje").val()
+                                
+                            },
+                            success: function(result) {
+                            	
+                            	ListarConsultas(); 
+                                $("#modal-consultas").html("");
+                    			$("#modal-consultas").modal("hide");
+                            }
+                        });
+                    });
+			}
+		});
+	});
+}
+
+
+
+
+
+
 function Contestar(){
 	$(".res-mensaje").on("click",function(){
 		var valor=$(this).val();
@@ -447,6 +501,16 @@ function Notif(){
 		url:"../scripts/soporte-notif.php",
 		success:function(result){
 			$(".not-soport").html(result);
+		}
+	});
+}
+
+
+function Notifconsultas(){
+	$.ajax({
+		url:"../scripts/consulta-notif.php",
+		success:function(result){
+			$(".not-consulta").html(result);
 		}
 	});
 }

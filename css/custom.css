@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Mukta+Mahee:600');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
 body{
 	font-family: 'Inconsolata', monospace;
 	font-family: 'Cabin', sans-serif;
@@ -11,6 +14,8 @@ body{
 footer{
 	font-family: 'Dosis', sans-serif;
 }
+
+
 .container-fluid{
 	padding:0 !important;
 }
@@ -45,7 +50,7 @@ box-shadow:0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 	height: 100%;
 }
 .envolto-logo img{
-	width: 62%;
+	width: 55%;
 }
  #navbar-links ul li a{
  	font-size: 1.25rem;
@@ -86,7 +91,8 @@ box-shadow:0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 
 .soluciones{
 min-height: 490px;
-background-color: #797979;
+/*background-color: #797979;*/
+background: linear-gradient(to right, #4d555a , #6691b5);
 }
 
 
@@ -117,7 +123,8 @@ footer ul{
 }
 .art-cuad{
  	background-color: #2f85a7;
-    border: solid;
+    border: solid 0.5px;
+    border-radius:18px;
     width: 15vw;
     height: 15vw;
  }
@@ -143,7 +150,7 @@ footer ul{
 	}
 	.section-planes{
 		min-height:500px;
-		background-color: rgba(255, 165, 0, 0.71);
+		background-color: rgba(76, 76, 76, 0.71);
 		padding: 20px 0;
 	}
 	/*seccion gris*/
@@ -231,6 +238,10 @@ footer ul{
 .destacado > span{
 	background-color: #20a8af;
 }
+.pricing-panel h2{
+
+text-shadow: 3px 3px 2px #191919;
+}
 .pricing-panel .btn{
 	margin-top: 22px;
 }
@@ -262,17 +273,27 @@ border-top: 6px solid #190998;
 	border-top: 3px solid #190998;
 }
 .tiled {
-	background-color: #824047;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #215178;
 	padding: 30px 0;
+}
+.tiled h2{
+	text-shadow: 3px 3px 2px #191919;
 }
 
 .tiled .central img{
-	min-height:100px; 
+	width:50% 
+}
+.tiled img{
+	border-radius: 24px;
+	
+    
 }
 .media-icons{
 	padding:55px 30px;
 }
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+
 /****** LOGIN MODAL ******/
 .loginmodal-container {
 padding: 30px;
@@ -388,7 +409,9 @@ font-size: 12px;
 	border-radius: 50%;
 	background-color: #2b3a65;
 }
-
+.servicios h2{
+	color:#424242 !important;
+}
 
 
 
@@ -418,5 +441,18 @@ font-size: 12px;
 	.price-col{
 		margin-bottom: 25px;
 	}
-
+	.secc-iconMedia > div > div{
+	height: 11vw;
+	width: 11vw;
+	border-radius: 50%;
+	background-color: #2b3a65;
+}
+.secc-iconMedia h3{
+	margin-top: 20px;
  }
+ .tel-bottom{
+ 	transform: scale(0.8);
+ 	bottom: -5px;
+    left: 180px;
+ }
+}
