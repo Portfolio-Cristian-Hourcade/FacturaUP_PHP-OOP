@@ -189,6 +189,13 @@ $(".btn-editar-adm").on("click", function() {
 
 /*----------------------------------------------------------------*/
 
+
+
+
+
+
+
+
 /*---------------------- Desactivar Link ---------------------------*/
 /*---------Esto es para ser el store de clientes------*/
 
@@ -366,6 +373,7 @@ function ListarSoporte(){
 			
 			$("#list-soporte").html(result);
 			Contestar();
+
 		}
 	});
 }
@@ -481,6 +489,7 @@ function Contestar(){
 				$("#modal-soporte").html("");
 				$("#modal-soporte").html(result);
 				$("#modal-soporte").modal("show");
+				ResponderMen();
 			}
 		});
 	});
@@ -493,5 +502,24 @@ function Notif(){
 			$(".not-soport").html(result);
 		}
 	});
+}
+function ResponderMen(){
+					$(".btn-up-soporte").on("click", function() {
+						alert("hola");
+                        $.ajax({
+                            type: "POST",
+                            url: "../scripts/soporte-update.php",
+                            data: {
+                                "id": $("#id").val(),
+                                "mensaje":$("#mensaje").val()
+                            },
+                            success: function(result) {
+                            	alert(result);
+                            	ListarSoporte(); 
+                                $("#modal-soporte").html("");
+                    			$("#modal-soporte").modal("hide");
+                            }
+                        });
+                    });
 }
 }

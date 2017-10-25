@@ -143,6 +143,7 @@ if(is_null(@$_SESSION["adm_user"])){
                                         <th>Nombre</th>
                                         <th>Email</th>
                                         <th>Mensaje</th>
+                                        <th>Respuesta</th>
                                         <th>Responder</th>
                                     </tr>
                                 </thead>
