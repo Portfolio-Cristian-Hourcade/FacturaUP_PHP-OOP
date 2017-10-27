@@ -60,13 +60,13 @@ $(".demo-btn").on("click",function(){
 	
 	$(".enviar-formulario").on("click",function(){
 
-				if($("#nombre").val()==""){
+				if($("#nom").val()==""){
 					alert("Ingrese nombre");
 				}
-				else if($("#mensaje").val()==""){
+				else if($("#men").val()==""){
 					alert("Ingrese mensaje");
 				}
-				else if($("#email").val()==""){
+				else if($("#em").val()==""){
 					alert("Ingrese email");
 				}
 				else{
@@ -74,9 +74,9 @@ $(".demo-btn").on("click",function(){
 						type:"POST",
 						url:"envioconsulta.php",
 						data:{
-							nombre:$("#nombre").val(),
-							mensaje:$("#mensaje").val(),
-							email:$("#email").val()
+							nombre:$("#nom").val(),
+							mensaje:$("#men").val(),
+							email:$("#em").val()
 						},
 						success:function(result){
 							alert("Su consulta fue enviada a la brevedad le responderemos")
