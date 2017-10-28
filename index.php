@@ -31,7 +31,7 @@ session_start();
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="envolto-logo ml-5">
-               <a class="navbar-brand" href="index.html">
+               <a class="navbar-brand" href="index.php">
                   <img src="images/logo2.png" class="mx-auto d-block img-fluid">
                </a>
             </div>
@@ -43,7 +43,7 @@ session_start();
                   <li class="nav-item"><a class="nav-link" href="#">Planes</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
                   <button class="btn btn-primary btn-nuevo-clientes ml-3" type="button">Registrarse</button>
-                  <button class="btn btn-primary btn-log-clientes ml-3" type="button">Ingresar</button>
+                  <button class="btn btn-primary btn-sm btn-log-clientes ml-3" type="button">Ingresar</button>
                   <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user fa-fw"></i><?php echo @$_SESSION["cl_email"]?></a></li>
                   <li class="nav-item"><a class="nav-link btn-salir" href="#">Salir</a></li>
                </ul>
@@ -72,7 +72,7 @@ session_start();
             </div>
          </div>
          <div id="overlapCuad" class="d-flex">
-            <section id="cartel-flotante" class="ml-auto align-self-center mr-5 col-md-4">
+            <section id="cartel-flotante" class="ml-auto align-self-center mr-5 mr-xs-0 col-md-4">
                <h2 class="h2-poster mb-3 text-uppercase font-weight-bold">Emití Facturas Electrónicas <br>de manera simple.</h2>
                <h3 class="mb-3 ">Empezá a usarlo de forma gratuita.</h3>
                
@@ -110,35 +110,35 @@ session_start();
                <h2 class="col-md-12 text-center display-4 my-3">Soluciones</h2>
                <div class="col-md-10 container-fluid mx-auto">
                   <div class="row">
-                     <article class="col-md-3">
+                     <article class="col-4 col-md-3 ">
                         <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
-                     <article class="col-md-3">
+                     <article class="col-4 col-md-3">
                         <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
-                     <article class="col-md-3">
+                     <article class="col-4 col-md-3">
                         <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
-                     <article class="col-md-3">
+                     <article class="col-4 col-md-3">
                         <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
-                     <article class="col-md-3">
+                     <article class="col-4 col-md-3">
                         <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
-                     <article class="col-md-3">
+                     <article class="col-4 col-md-3">
                         <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
-                     <article class="col-md-3">
+                     <article class="col-4 col-md-3">
                         <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
-                     <article class="col-md-3">
+                     <article class="col-4 col-md-3">
                         <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <h2 class="text-center h2-artIcon">Ventas</h2>
                      </article>
@@ -282,13 +282,13 @@ session_start();
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                      </article>
                      <article class="col-md-3">
-                        <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        <div class="d-sm-block d-flex row">
+                        <p class="p-3 flex-last">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.</p>
-                        
-                        <div class="push-12"><img src="images/invoice_2.jpg" class="img-fluid"></div>
-                        
+                        <div class="flex-first"><img src="images/invoice_2.jpg" class="img-fluid"></div>
+                        </div>
                      </article>
                   </div>
                </section>
@@ -348,7 +348,7 @@ session_start();
                <!-- FORMULARIO DE CONSULTA -->
                <section class="section-gris">
                   <div class="mb-4">
-                     <h1 class="text-center">¿Tiene alguna consulta?</h1>
+                     <h1 class="text-center text-white">¿Tiene alguna consulta?</h1>
                   </div>
                   <div class="col-md-6 mx-auto">
                      
@@ -380,7 +380,7 @@ session_start();
                   <footer class="col-md-12 container">
                      <div class="col-md-11 mx-auto">
                         <div class="row pt-4">
-                           <div class="col-md-4 text-white">
+                           <div class="col-md-4 text-white mb-2">
                               <h3 class="text-center">Contáctenos</h3>
                               <ul class="text-center">
                                  <li>lorem ipsum</li>
@@ -390,7 +390,7 @@ session_start();
                                  <li>lorem ipsum</li>
                               </ul>
                            </div>
-                           <div class="col-md-4 text-white secc-iconMedia">
+                           <div class="col-md-4 text-white secc-iconMedia mb-2">
                               <h3 class="text-center mb-4">Síganos</h3>
                               <div class="row">
                                  <div class="d-flex mx-auto">
@@ -403,7 +403,7 @@ session_start();
                                  <i class="fa fa-linkedin mx-auto align-self-center" aria-hidden="true"></i></div>
                               </div>
                            </div>
-                           <div class="col-md-4 text-white">
+                           <div class="col-md-4 text-white mb-2">
                               <h3 class="text-center mb-4">Recuerde</h3>
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -418,5 +418,6 @@ session_start();
             </div>
             <div id="modal-adm" class="modal fade" role="dialog"></div>
             <div id="modal-log" class="modal fade" role="dialog"></div>
+            <div id="modal-advertencia" class="modal fade" role="dialog"></div>
          </body>
       </html>
