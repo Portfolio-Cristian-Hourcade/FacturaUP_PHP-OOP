@@ -90,7 +90,7 @@ if(is_null(@$_SESSION["adm_user"])){
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <li>
+                       <li>
                             <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
                         </li>
                         
@@ -100,10 +100,13 @@ if(is_null(@$_SESSION["adm_user"])){
                         <li>
                             <a href="clientes.php"><i class="fa fa-edit fa-fw"></i>Clientes</a>
                         </li>
+                         <li>
+                            <a href="consultas.php"><i class="fa fa-edit fa-fw"></i>Consultas</a>
+                        </li>
                         <li>
                             <a href="ventas.php"><i class="fa fa-edit fa-fw"></i>Ventas</a>
                         </li>
-                         <li>
+                        <li>
                             <a href="links.php"><i class="fa fa-dashboard fa-fw"></i> Links</a>
                         </li>
                         <li>

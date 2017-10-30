@@ -338,7 +338,7 @@ session_start();
                      <div class="media col-md-4">
                         <img class="d-flex align-self-start mr-3" src="images/icons/screen.png" alt="Generic placeholder image">
                         <div class="media-body">
-                           <h5 class="mt-0"><b>Top-aligned media</b></h5>
+                           <h5 class="mt-0"><b class="">Top-aligned media</b></h5>
                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                            
                         </div>
@@ -346,21 +346,21 @@ session_start();
                   </div>
                </section>
                <!-- FORMULARIO DE CONSULTA -->
+               <!-- FORMULARIO DE CONSULTA -->
                <section class="section-gris">
                   <div class="mb-4">
                      <h1 class="text-center text-white">¿Tiene alguna consulta?</h1>
                   </div>
                   <div class="col-md-6 mx-auto">
-                     
-                        <div class="form-group">
-                           <label class="control-label" for="nombre">Nombre y apellido</label>
-                           <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre y apellido">
-                        </div>
-                        <div class="form-group mb-4">
-                           <label class="control-label" for="email">Email</label>
-                           <input type="email" class="form-control" id="email" placeholder="Escriba su email">
-                        </div>
-                        <textarea class="form-control" cols="40" maxlength="1000" id="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                     <div class="form-group">
+                        <label class="control-label" for="nombre">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="nom" placeholder="Escriba su nombre y apellido">
+                     </div>
+                     <div class="form-group mb-4">
+                        <label class="control-label" for="email">Email</label>
+                        <input type="email" class="form-control" id="em" placeholder="Escriba su email">
+                     </div>
+                        <textarea class="form-control" cols="40" maxlength="1000" id="men" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                         <div class="form-group">
                            <div class="btn d-block">
                               <button type="button" class="btn btn-secondary text-center enviar-formulario">Enviar</button>
@@ -369,15 +369,13 @@ session_start();
                      
                   </div>
                </section>
-               </div> <!-- end sections wrapper -->
-               </div> <!-- end body wrapper -->
+               <!-- end body wrapper -->
                <!-- barra de telefono anclada al final -->
                <div class="tel-bottom text-white d-flex d-xs-none">
                   <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
                </div>
               
-                  <!-- footer -->
-                  <footer class="col-md-12 container">
+              <footer class="col-md-12 container">
                      <div class="col-md-11 mx-auto">
                         <div class="row pt-4">
                            <div class="col-md-4 text-white mb-2">

@@ -377,9 +377,7 @@ session_start();
                      </div>
                   </div>
                </section>
-               <!-- FORMULARIO DE CONSULTA -->
-               
-               
+                <!-- FORMULARIO DE CONSULTA -->
                <section class="section-gris">
                   <div class="mb-4">
                      <h1 class="text-center">¿Tiene alguna consulta?</h1>
@@ -388,16 +386,16 @@ session_start();
                      
                         <div class="form-group">
                            <label class="control-label" for="nombre">Nombre y apellido</label>
-                           <input type="text" class="form-control" name="nombre" placeholder="Escriba su nombre y apellido">
+                           <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre y apellido">
                         </div>
                         <div class="form-group mb-4">
                            <label class="control-label" for="email">Email</label>
-                           <input type="email" class="form-control" name="email" placeholder="Escriba su email">
+                           <input type="email" class="form-control" id="email" placeholder="Escriba su email">
                         </div>
-                        <textarea class="form-control" cols="40" maxlength="1000" name="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                        <textarea class="form-control" cols="40" maxlength="1000" id="mensaje" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                         <div class="form-group">
                            <div class="btn d-block">
-                              <button type="button" class="btn btn-secondary text-center">Enviar</button>
+                              <button type="button" class="btn btn-secondary text-center enviar-formulario">Enviar</button>
                            </div>
                         </div>
                      
@@ -409,35 +407,43 @@ session_start();
                <div class="tel-bottom text-white d-flex d-xs-none">
                   <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
                </div>
-               <!-- footer -->
-               <footer class="col-md-12 container">
-                  <div class="row pt-4">
-                     <div class="col-md-4 text-white">
-                        <ul class="text-center">
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                        </ul>
-                     </div>
-                     <div class="col-md-4 text-white">
-                        <ul class="text-center">
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                        </ul>
-                     </div>
-                     <div class="col-md-4 text-white">
-                        <ul class="text-center">
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                           <li>lorem ipsum</li>
-                        </ul>
+              
+                  <!-- footer -->
+                  <footer class="col-md-12 container">
+                     <div class="col-md-11 mx-auto">
+                        <div class="row pt-4">
+                           <div class="col-md-4 text-white">
+                              <h3 class="text-center">Contáctenos</h3>
+                              <ul class="text-center">
+                                 <li>lorem ipsum</li>
+                                 <li>lorem ipsum</li>
+                                 <li>lorem ipsum</li>
+                                 <li>lorem ipsum</li>
+                                 <li>lorem ipsum</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-4 text-white secc-iconMedia">
+                              <h3 class="text-center mb-4">Síganos</h3>
+                              <div class="row">
+                                 <div class="d-flex mx-auto">
+                                 <i class="fa fa-facebook mx-auto align-self-center" aria-hidden="true"></i></div>
+                                 <div class="d-flex mx-auto">
+                                 <i class="fa fa-twitter mx-auto align-self-center" aria-hidden="true"></i></div>
+                                 <div class="d-flex mx-auto">
+                                 <i class="fa fa-instagram mx-auto align-self-center" aria-hidden="true"></i></div>
+                                 <div class="d-flex mx-auto">
+                                 <i class="fa fa-linkedin mx-auto align-self-center" aria-hidden="true"></i></div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 text-white">
+                              <h3 class="text-center mb-4">Recuerde</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                 consequat.</p>
+                           </ul>
+                        </div>
+
                      </div>
                   </div>
                </footer>

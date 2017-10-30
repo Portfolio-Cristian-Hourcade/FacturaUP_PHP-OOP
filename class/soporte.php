@@ -31,8 +31,8 @@ class Soporte{
 							?>
 						</td>
 					</tr>
-				<?php
-				}
+			<?php
+			}
 		}
 		public function Notificaciones($sql){
 			$con = new ConnectionMySQL();
