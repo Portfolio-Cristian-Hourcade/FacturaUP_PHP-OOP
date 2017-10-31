@@ -61,7 +61,18 @@ $(".btn-log-clientes").on("click",function(){
             });
             $(".clientes-login").on("click",function(){
                 if($("#email").val()=="" || $("#contrasena").val()==""){
-                    alert("Complete todos campos para logearse correctamente.");
+                  $.ajax({
+                            url:"modal/modal-warning.php",
+                            success:function(result){
+                               $("#modal-advertencia").html("");
+                                // $("#modal-adm").modal("hide");
+                                $("#modal-advertencia").html(result);
+                                $("#titulo-modal").html("Error de ingreso");
+                                $("#mensaje-modal").html("Complete los campos para poder ingresar correctamente.");
+                                $("#modal-advertencia").modal("show");
+
+                            }
+                        });
                 }else{
                 $.ajax({
                     type:"POST",
@@ -73,7 +84,18 @@ $(".btn-log-clientes").on("click",function(){
                     success:function(result){
                         
                        if(result=="Error"){
-                        alert("Contraseña y/o email incorrectos. Vuelva a intentarlo.");
+                        $.ajax({
+                            url:"modal/modal-warning.php",
+                            success:function(result){
+                               $("#modal-advertencia").html("");
+                                $("#modal-advertencia").html(result);
+                                $("#titulo-modal").html("Error de ingreso");
+                                $("#mensaje-modal").html("Usted ha ingresado datos invalidos, revise sus credenciales.");
+                                $("#modal-advertencia").modal("show");
+
+                            }
+                        });
+                        // alert("Contraseña y/o email incorrectos. Vuelva a intentarlo.");
                        }else{
                         location.reload();
                        }
@@ -104,26 +126,34 @@ $(".clientes-nuevo").on("click",function(){
 function LogeoRegistro(){
 $(".clientes-nuevo").on("click",function(){
     
-if($("#nombre").val()==""){
-                    $("#modal-advertencia").modal('show');
+if($("#nombre").val()=="" || $("#apellido").val()=="" || $("#email").val()=="" || $("#contrasena").val()==""){
+                   $.ajax({
+                            url:"modal/modal-warning.php",
+                            success:function(result){
+                               $("#modal-advertencia").html("");
+                                
+                                $("#modal-advertencia").html(result);
+                                $("#titulo-modal").html("Error de registro");
+                                $("#mensaje-modal").html("Revise que los siguientes campos se hayan completado correctamente.");
+                                $("#modal-advertencia").modal("show");
+
+                            }
+                        });
                    /* alert("Ingrese nombre");*/
                 }
-                else if($("#apellido").val()==""){
-                    alert("Ingrese apellido");
-                }
-                else if($("#email").val()==""){
-                    alert("Ingrese email");
-                }
-                else if($("#contrasena").val()==""){
-                    alert("Ingrese contrasena");
-                }
                  else if($("#contrasena").val()!=$("#contrasena2").val()){
-                    alert("las contraseñas deben ser iguales");
-                }
+                    $.ajax({
+                            url:"modal/modal-warning.php",
+                            success:function(result){
+                                $("#modal-advertencia").html("");
+                                $("#modal-advertencia").html(result);
+                                $("#titulo-modal").html("Error de registro");
+                                $("#mensaje-modal").html("Las contraseñas ingresadas son diferentes");
+                                $("#modal-advertencia").modal("show");
 
-
-                
-                else{
+                            }
+                        });
+                }else{
                     $.ajax({
                         type:"POST",
                         url:"scripts/clientes-store.php",
@@ -138,15 +168,26 @@ if($("#nombre").val()==""){
 
                            if(result==0){
 
-alert("¡Registro exitoso!");
+                        $.ajax({
+                            url:"modal/modal-warning.php",
+                            success:function(result){
+                               $("#modal-advertencia").html("");
+                                $("#modal-adm").modal("hide");
+                                $("#modal-advertencia").html(result);
+                                $("#titulo-modal").html("¡Registro exitoso!");
+                                $("#mensaje-modal").html("Recuerde confirmar su email para poder concretar la descarga de su producto deseado.");
+                                $("#modal-advertencia").modal("show");
+
+                            }
+                        });
                             location.reload();
                             $("#modal-adm").modal("hide");
                             $("#modal-adm").html("");
 
 
-                           }else{alert("Este email se encuentra en nuestra base de datos.");}
-
-                            
+                           }else{
+                            alert("Este email se encuentra en nuestra base de datos.");
+                        }
                         }
 
                     });
@@ -165,18 +206,17 @@ function verificoemail(){
                 "email":$("#email").val()       
             },
             success:function(result){
-                alert(result)
+                // alert(result)
                 if(result==0){
                     $("#tilde-verde").html("<img src=images/tilde-verde.png>");
                        //$('.clientes-nuevo').attr('disabled', false);
+                       LogeoRegistro();
                 }else{
                     alert("Este email se encuentra en nuestra base de datos.");
+                    LogeoRegistro();
                 }
             }
         });
-
-
-
 
 }
 

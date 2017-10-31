@@ -353,7 +353,7 @@ session_start();
                   </div>
                   <div class="col-md-6 mx-auto">
                      <div class="form-group">
-                        <label class="control-label text-white" for="nombre">Nombre y apellido</label>
+                        <label class="control-label text-white" for="nom">Nombre y apellido</label>
                         <input type="text" class="form-control" id="nom" placeholder="Escriba su nombre y apellido">
                      </div>
                      <div class="form-group mb-4">

@@ -3,7 +3,7 @@ session_start();
 if(empty($_SESSION["cl_email"])){
    header("location:index.php");
 }
-echo $_GET["id"];
+
 ?>
 <!DOCTYPE html>
 <html>
