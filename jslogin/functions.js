@@ -105,7 +105,8 @@ function LogeoRegistro(){
 $(".clientes-nuevo").on("click",function(){
     
 if($("#nombre").val()==""){
-                    alert("Ingrese nombre");
+                    $("#modal-advertencia").modal('show');
+                   /* alert("Ingrese nombre");*/
                 }
                 else if($("#apellido").val()==""){
                     alert("Ingrese apellido");
