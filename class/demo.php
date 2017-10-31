@@ -4,7 +4,7 @@ class Demos{
 	 	public function Alta($sql){
 			$con = new ConnectionMySQL();
 			$con->CreateConnection();
-			echo $con->AltaSql($sql);
+			$con->AltaSql($sql);
 			$con->CloseConnection();
 		}
 		public function SeleccionarFechaDemo($fecha){
@@ -46,6 +46,22 @@ class Demos{
 			$resultado= $con->AltaSql($sql);
 			$numero_filas = $resultado->num_rows;
 			return $numero_filas;
+		}
+		public function Contador($sql){
+			$con = new ConnectionMySQL();
+			$con->CreateConnection();
+			$resultado = $con->AltaSql($sql);
+			$numero_filas = $resultado->num_rows;
+			return $numero_filas;
+		}
+		public function VerificarDescargas($sql){
+
+			$con = new ConnectionMySQL();
+			$con->CreateConnection();
+			$res = $con->AltaSql($sql);
+			$fila=mysqli_fetch_assoc($res);
+			return $fila["l_descargas"];
+
 		}
 	}
 	

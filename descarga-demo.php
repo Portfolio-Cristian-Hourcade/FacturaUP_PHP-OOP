@@ -8,7 +8,7 @@ echo $_GET["id"];
 <!DOCTYPE html>
 <html>
    <head>
-      <input type="hidden" id="usuario" value="<?php echo @$_SESSION["cl_email"]?>">
+      <input type="hidden" id="email" value="<?php echo $_GET["id"]?>">
       <title>Factura Up</title>
       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
       <meta charset="utf-8">

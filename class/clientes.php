@@ -65,7 +65,7 @@ class Clientes{
 				$headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
 				$headers .= 'From:FacturaUp<facturaup@gmail.com>'."\r\n";
 
-			$cuerpo ="
+	echo			$cuerpo ="
 
 			<div style='background-color:#f1f1f1;width:100%;height:682px;margin:0 auto;padding-top:10px;'>
 			<div style='width:95%;height:50px;margin:0 auto;
@@ -88,7 +88,7 @@ class Clientes{
 			Equipo de FacturaUp</div></div>
 			</div>";
  
-			mail("hourcadecristian@gmail.com","Descargue su demo ahora!", $cuerpo ,$headers);
+			echo mail("hourcadecristian@gmail.com","Descargue su demo ahora!", $cuerpo ,$headers);
 		}
 	
 	public function VerificoEmail($sql){

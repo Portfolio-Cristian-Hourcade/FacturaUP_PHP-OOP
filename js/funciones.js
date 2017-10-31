@@ -1,9 +1,39 @@
 var f = new Date();
 
 $(document).ready(function() {
+
 $(".btn-descargar-demo").on("click",function(){
-	location.href="scripts/demo-descarga.php";
+	$.ajax({
+		type:"POST",
+		url:"scripts/verifico-descargas.php",
+		data:{
+			email:$("#email").val()
+		},
+		success:function(result){
+			alert(result);
+			if(result<3){
+				location.href="scripts/demo-descarga.php";
+				location.href="index.php";
+				$.ajax({
+       				type:"POST",
+					url:"admin2032/scripts/demo-store.php",
+       				data:{
+            			fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
+        			},
+					success:function(result){
+					alert(result)
+					}
+				});
+			}else{
+				alert("Usted ha llegado al limite de descargas, si tiene alguna inquietud puede comunicarse con el equipo de facturaup")
+			}
+			
+		}
+	});
+	
+    
 });
+
 // ------------------------- Mini-Carrito ------------------------------------------ //
 
 	$(".demo-button").on("click",function(){
@@ -31,31 +61,23 @@ $(".btn-descargar-demo").on("click",function(){
 // ------------------------ Descargar Demo --------------------------------------- //
 
 $(".demo-btn").on("click",function(){
-
+	$.ajax({
+        type:"POST",
+        url:"admin2032/scripts/link-store.php",
+        data:{
+            fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
+        },
+        success:function(result){
+        	alert(result);
+        }
+    });
 	$.ajax({
 		url:"admin2032/scripts/clientes-email.php",
 		success:function(result){
 			alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
-			alert(result);
 		}
 	});
-	$.ajax({
-        type:"POST",
-		url:"admin2032/scripts/demo-store.php",
-        data:{
-            fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
-        },
-		success:function(result){
-			alert(result)
-		}
-	});
-    $.ajax({
-        type:"POST",
-        url:"admin2032/scripts/links-store",
-        data:{
-            fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
-        }
-    });
+
 });
 // ----------------------------------------------------------------------- //
 // -----------------------------EnviarFormulario---------------------------//
