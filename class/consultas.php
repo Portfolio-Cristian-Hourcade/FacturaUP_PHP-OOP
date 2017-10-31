@@ -22,7 +22,15 @@ class Consultas{
 			echo $numero_filas;
 
 		}
-public function ListarConsultas($sql){
+		public function enviaRespConsulta($sql){
+			$con = new ConnectionMySQL();
+			$con->CreateConnection();
+			$resultado= $con->AltaSql($sql);
+			$numero_filas = $resultado->num_rows;
+			echo $numero_filas;
+
+		}
+		public function ListarConsultas($sql){
 			$con = new ConnectionMySQL();
 			$con->CreateConnection();
 			$res = $con->SeleccionarAdmin($sql);

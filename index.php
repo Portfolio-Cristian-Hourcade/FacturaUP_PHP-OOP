@@ -409,7 +409,6 @@ session_start();
                                  consequat.</p>
                            </ul>
                         </div>
-
                      </div>
                   </div>
                </footer>
