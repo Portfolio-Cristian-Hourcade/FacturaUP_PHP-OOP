@@ -1,7 +1,9 @@
 var f = new Date();
 
 $(document).ready(function() {
-
+$(".btn-descargar-demo").on("click",function(){
+	location.href="scripts/demo-descarga.php";
+});
 // ------------------------- Mini-Carrito ------------------------------------------ //
 
 	$(".demo-button").on("click",function(){
@@ -87,6 +89,7 @@ $(".demo-btn").on("click",function(){
 			});
 
 });
+
 
 (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
 

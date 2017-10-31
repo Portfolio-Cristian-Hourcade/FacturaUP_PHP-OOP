@@ -516,7 +516,16 @@ function Notifconsultas(){
 }
 function ResponderMen(){
 					$(".btn-up-soporte").on("click", function() {
-						alert("hola");
+						$.ajax({
+                    				type:"POST",
+                    				url:"../scripts/soporte-respuesta.php",
+                    				data:{
+                    					mensaje:$("#mensaje").val()
+                    				},
+                    				success:function(result){
+                    					
+                    				}
+                    			});
                         $.ajax({
                             type: "POST",
                             url: "../scripts/soporte-update.php",
@@ -525,7 +534,7 @@ function ResponderMen(){
                                 "mensaje":$("#mensaje").val()
                             },
                             success: function(result) {
-                            	alert(result);
+
                             	ListarSoporte(); 
                                 $("#modal-soporte").html("");
                     			$("#modal-soporte").modal("hide");

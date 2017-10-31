@@ -61,24 +61,36 @@ class Clientes{
 			return $fila["cl_nombre"];
 		}
 		public function EmailDemo($Email){
+				$headers  = 'MIME-Version: 1.0'."\r\n";
+				$headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
+				$headers .= 'From:FacturaUp<facturaup@gmail.com>'."\r\n";
 
-			$to = "'".$Email."'";
-			
-			$subject = "¡Descarge ahora su demo!";
-			$message = "Hola, muchas gracias por haber contratado nuestro servicio, espero que le sea de mucha ayuda, no dude en contactarse con contacto al cliente si es necesario. El equipo de FacturaUp. <br><br> www.facturaup.com/admin2032/scripts/email-demo-descarga?email='".$Email."'";
-			$headers = "From: facturaup@gmail.com" . "\r\n" . "CC:'".$Email."'";
+			$cuerpo ="
+
+			<div style='background-color:#f1f1f1;width:100%;height:682px;margin:0 auto;padding-top:10px;'>
+			<div style='width:95%;height:50px;margin:0 auto;
+			background-color:#000;color:#fff;text-align:center;font-size:13px;line-height:50px;'>
+
+			<h1 style='color:#fff;text-align:center;font-size:15px;line-height:50px;'>FacturaUp</h1>
+
+
+			</div>
+			<div style='width:95%;height:400px;margin:0 auto;
+			background-color:#fff;border:#999 solid 1px;'>
+
+			<div style='width:85%;height:400px;margin:10px auto;
+			background-color:#fff;'>
+
+			Estimado/a cliente<br><br>
+
+			Haga click en el siguiente link o peguelo en la barra de direcciones de su navegador para concretar la descarga de su demo
+			<a href='localhost/factura/descarga-demo.php?id=$Email'>Descargar ahora!</a><br><br>Saluda Atte.
+			Equipo de FacturaUp</div></div>
+			</div>";
  
-			mail($to, $subject, $message, $headers);
-
+			mail("hourcadecristian@gmail.com","Descargue su demo ahora!", $cuerpo ,$headers);
 		}
-	public function DescargarDemo($email){
-			$enlace = "version-demo/ss.txt";
-			header ("Content-Disposition: attachment; filename=$enlace ");
-			header ("Content-Type: application/force-download");
-			header ("Content-Length: ".filesize($enlace));
-			readfile($enlace);
-
-	}
+	
 	public function VerificoEmail($sql){
 
 			$con = new ConnectionMySQL();

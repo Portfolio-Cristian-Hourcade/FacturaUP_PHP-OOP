@@ -16,6 +16,12 @@ class Demos{
 			return $numero_filas;
 
 		}
+		public function DescargarDemo(){
+			header("Content-disposition: attachment; filename=ss.zip");
+			header("Content-type: application/zip");
+			readfile("ss.zip");
+
+		}
 		public function SeleccionarFechaCom($fecha){
 			$sql="SELECT * FROM completos WHERE c_fecha='".$fecha."'";
 			$con = new ConnectionMySQL();

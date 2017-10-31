@@ -25,7 +25,7 @@
 			<input type="hidden" value="<?php echo $fila["so_id"]?>" id="id">
 			<div class="col-md-4"><label>Mensaje</label></div>
 			<div class="col-md-8">
-				<p style="width:100%;height: 100px;" placeholder="<?php echo $fila["so_mensaje"]?>"></p>
+				<p><?php echo $fila["so_mensaje"]?></p>
 			</div>
 			<br><br>
 			<div class="col-md-4"><label>Respuesta</label></div>

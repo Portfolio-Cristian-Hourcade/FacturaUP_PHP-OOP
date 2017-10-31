@@ -7,7 +7,7 @@ session_start();
 
 /*--------- Variables --------*/
 
-echo$fecha = $_POST["fecha"];
+$fecha = $_POST["fecha"];
 
 /*----------------------------*/
 

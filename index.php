@@ -353,11 +353,11 @@ session_start();
                   </div>
                   <div class="col-md-6 mx-auto">
                      <div class="form-group">
-                        <label class="control-label" for="nombre">Nombre y apellido</label>
+                        <label class="control-label text-white" for="nombre">Nombre y apellido</label>
                         <input type="text" class="form-control" id="nom" placeholder="Escriba su nombre y apellido">
                      </div>
                      <div class="form-group mb-4">
-                        <label class="control-label" for="email">Email</label>
+                        <label class="control-label text-white" for="email">Email</label>
                         <input type="email" class="form-control" id="em" placeholder="Escriba su email">
                      </div>
                         <textarea class="form-control" cols="40" maxlength="1000" id="men" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
