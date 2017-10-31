@@ -13,7 +13,7 @@ $(".btn-descargar-demo").on("click",function(){
 			alert(result);
 			if(result<3){
 				location.href="scripts/demo-descarga.php";
-				location.href="index.php";
+				
 				$.ajax({
        				type:"POST",
 					url:"admin2032/scripts/demo-store.php",
@@ -22,6 +22,7 @@ $(".btn-descargar-demo").on("click",function(){
         			},
 					success:function(result){
 					alert(result)
+					location.href="index.php";
 					}
 				});
 			}else{
@@ -68,16 +69,16 @@ $(".demo-btn").on("click",function(){
             fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
         },
         success:function(result){
-        	alert(result);
+        	$.ajax({
+				url:"admin2032/scripts/clientes-email.php",
+				success:function(result){
+					alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
+				}
+			});
+
         }
     });
-	$.ajax({
-		url:"admin2032/scripts/clientes-email.php",
-		success:function(result){
-			alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
-		}
-	});
-
+	
 });
 // ----------------------------------------------------------------------- //
 // -----------------------------EnviarFormulario---------------------------//
