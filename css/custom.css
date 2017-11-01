@@ -88,6 +88,26 @@ box-shadow:0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 	color:#727272!important;
 
 }
+.recuperarc{
+	width:90% !important;
+	height:600px !important; 
+	margin:200px auto !important;
+	background-position:top center !important;
+
+
+
+
+
+
+}
+#recuperarcontra{
+	margin-top:10px !important;
+
+
+
+}
+
+
 
 .soluciones{
 min-height: 490px;

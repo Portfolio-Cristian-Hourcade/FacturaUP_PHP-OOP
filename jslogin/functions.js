@@ -117,6 +117,54 @@ $(".clientes-nuevo").on("click",function(){
 
 
 
+$("#modificadacontrasena").on("click",function(){
+
+
+    $.ajax({
+            type:"POST",
+            url:"scripts/restablecerc.php",
+            data:{
+                "correo":$("#correo").val(),
+                 "cliente":$("#cliente").val(),  
+                  "contrasena":$("#contrasena").val()       
+            },
+            success:function(result){
+               
+              alert("SU CONTRASEÑA HA SIDO MODIFICADA INGRESE NUEVAMENTE A LA CUENTA");
+
+
+        location.href="http://www.institutobrienza.com.ar/factura/index.php"
+            }
+        });
+
+
+});
+
+$("#recuperarcontra").on("click",function(){
+
+
+    $.ajax({
+            type:"POST",
+            url:"scripts/buscoemail.php",
+            data:{
+                "email":$("#email").val()       
+            },
+            success:function(result){
+               
+                if(result==1){
+                  alert("enviamos un email a su casilla de correo para restablecer la contraseña")
+                       //$('.clientes-nuevo').attr('disabled', false);
+                }else{
+                   alert("ese email no se encuantra en nuestra base de datos")
+                }
+            }
+        });
+
+
+});
+
+
+
 });
 
 /*-----cierro login de clientes----*/
@@ -210,10 +258,10 @@ function verificoemail(){
                 if(result==0){
                     $("#tilde-verde").html("<img src=images/tilde-verde.png>");
                        //$('.clientes-nuevo').attr('disabled', false);
-                       LogeoRegistro();
+                      
                 }else{
                     alert("Este email se encuentra en nuestra base de datos.");
-                    LogeoRegistro();
+                   
                 }
             }
         });
