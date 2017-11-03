@@ -9,11 +9,11 @@ session_start();
 
 	$mensajote = $_POST["messageToMail"];
 
-				$headers  = 'MIME-Version: 1.0'."\r\n";
-				$headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
-				$headers .= 'From:FacturaUp<facturaup@gmail.com>'."\r\n";
+			$headers  = 'MIME-Version: 1.0'."\r\n";
+			$headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
+			$headers .= 'From:FacturaUp<facturaup@gmail.com>'."\r\n";
 
-				$cuerpo ="
+			$cuerpo ="
 
 			<div style='background-color:#f1f1f1;width:100%;height:682px;margin:0 auto;padding-top:10px;'>
 			<div style='width:95%;height:50px;margin:0 auto;
