@@ -6,7 +6,7 @@
 		<input type="password" id="contrasena" placeholder="Contraseña">
 		<input type="submit" name="login" class="login loginmodal-submit clientes-login" value="Acceder">
 		<div class="login-help">
-			<a href="#" id="registro">Registro</a> - <a href="#">Olvidé la contraseña</a>
+			<a href="#" id="registro">Registro</a> - <a href="recuperarcontrasena.php">Olvidé la contraseña</a>
 		</div>
 		<button type="button" class="btn btn-sm btn-outline-info d-block ml-auto mt-3" data-dismiss="modal">Cancelar</button>
 	</div>

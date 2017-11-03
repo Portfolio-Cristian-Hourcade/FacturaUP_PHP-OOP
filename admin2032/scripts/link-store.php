@@ -4,16 +4,26 @@ session_start();
  
 	include '../../class/links.php';
 	include '../../class/conmysql.php';
-$NewConnect = new Links();
+
 	$fecha=$_POST["fecha"];
 	$ip=$_SERVER["REMOTE_ADDR"];
-$sql = "INSERT INTO link (l_user,l_link,l_ip,l_descargas,l_fecha) VALUES ('".$_SESSION["cl_email"]."',localhost/factura/descarga-demo.php?id='".$_SESSION["cl_email"]."','".$ip."',0,'".$fecha."')";
-if($NewConnect->Contador($sql)){
+	$email=$_SESSION["cl_email"];
 
-echo $NewConnect->Alta($sql);
+	$NewConnect = new Links();
 
+if(empty($NewConnect->ContarLink($email))){
+
+ $sql = "INSERT INTO link (l_user,l_link,l_ip,l_descargas,l_fecha,l_status) VALUES ('".$_SESSION["cl_email"]."','localhost/factura/descarga-demo.php?id=$email','".$ip."',0,'".$fecha."',1)";
+ $NewConnect->Alta($sql);
+ echo 1;
 }else{
-	echo "error";
+	echo 0;
 }
+
+
+
+
+
+
 
 ?>

@@ -1,14 +1,10 @@
 <?php
 session_start();
-if(empty($_SESSION["cl_email"])){
-   header("location:index.php");
-}
-
 ?>
 <!DOCTYPE html>
 <html>
    <head>
-      <input type="hidden" id="email" value="<?php echo $_GET["id"]?>">
+      <input type="hidden" id="usuario" value="<?php echo @$_SESSION["cl_email"]?>">
       <title>Factura Up</title>
       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
       <meta charset="utf-8">
@@ -54,19 +50,23 @@ if(empty($_SESSION["cl_email"])){
             </div>
          </nav>
       </div>
-     <div class="container mt-5 descarga">
-            <div class="row">
-               <article class="mb-3">
-                  <h2 class="text-center display-4 my-5">Descarga tu demo ahora!</h2>
-                  <p class="lead">Haz click en el siguiente boton para poder descargar tu version demo de FacturaUp. Recuerde que con cualquier inconveniente a la hora de la descarga puede contactar con el equipo de FacturaUp.
-                  </p>
-                  <br>
-                  <center>
-                     <button class="btn btn-lg btn-primary btn-descargar-demo">Descargar demo</button>
-                  </center>
-               </article>
-            </div>
-         </div>
-      </div>
-   </body>
-   </html>
+      
+    
+         
+         <!-- secciones  -->
+         <section class="recuperarc">
+            
+  <input type="password"  class="form-control contrasena"  id="contrasena" placeholder="escriba nueva contraseña" required="required"  />
+      <input type="password"  class="form-control contrasena"  id="contrasena1"   placeholder="repita nueva contraseña" required="required"  /> 
+
+   <input id="correo" type="hidden" value="<?php echo $_GET['correo']?>"/>
+     <input id="cliente" type="hidden" value="<?php echo $_GET['nombre']?>"/>
+        <button type="button" class="btn btn-primary btn-block btn-large bot" id="modificadacontrasena">modificar</button>
+
+         </section>
+                 
+             
+            
+           
+         </body>
+      </html>

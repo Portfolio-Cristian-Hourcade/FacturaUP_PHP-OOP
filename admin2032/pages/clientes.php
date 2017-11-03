@@ -152,6 +152,8 @@ if(is_null(@$_SESSION["adm_user"])){
                                         <th>Apellido</th>
                                         <th>email</th>                                     
                                         <th>telefono</th>
+                                        <th>Codigo de registro</th>
+                                        <th>cofirmar email</th>
                                     </tr>
                                 </thead>
                                 <tbody id="list-clientes">

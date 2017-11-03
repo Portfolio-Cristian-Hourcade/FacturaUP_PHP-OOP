@@ -6,6 +6,22 @@ class Links{
 			$con->AltaSql($sql);
 			$con->CloseConnection();
 		}
+		public function Contador($sql){
+			$con = new ConnectionMySQL();
+			$con->CreateConnection();
+			$resultado = $con->AltaSql($sql);
+			$numero_filas = $resultado->num_rows;
+			echo $numero_filas;
+		}
+		public function ContarLink($email){
+			$sql="SELECT * FROM link WHERE l_status=1 AND l_user='".$email."'";
+			$con = new ConnectionMySQL();
+			$con->CreateConnection();
+			$resultado= $con->AltaSql($sql);
+			$numero_filas = $resultado->num_rows;
+			return $numero_filas;
+
+		}
 		public function EditarLinks($sql){
 			$con = new ConnectionMySQL();
 			$con->CreateConnection();
@@ -33,13 +49,7 @@ class Links{
 				<?php
 				}
 		}
-		public function Contador($sql){
-			$con = new ConnectionMySQL();
-			$con->CreateConnection();
-			$resultado = $con->AltaSql($sql);
-			$numero_filas = $resultado->num_rows;
-			return $numero_filas;
-		}
+		
 		
 	}
 	
