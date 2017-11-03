@@ -72,35 +72,41 @@ $(".btn-descargar-demo").on("click",function(){
 // ------------------------ Descargar Demo --------------------------------------- //
 
 $(".demo-btn").on("click",function(){
-	$.ajax({
-        type:"POST",
-        url:"admin2032/scripts/link-store.php",
-        data:{
-            fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
-        },
+    $.ajax({
+        url:"admin2032/scripts/ver-cuenta.php",
         success:function(result){
-        	$.ajax({
-				url:"admin2032/scripts/clientes-email.php",
-				success:function(result){
-					alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
-				}
-			});
+            if(result==1){
+             $.ajax({
+                 type:"POST",
+                     url:"admin2032/scripts/link-store.php",
+                      data:{
+                          fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
+                        },
+                       success:function(result){
+                       $.ajax({
+                           url:"admin2032/scripts/clientes-email.php",
+                             success:function(result){
+                            alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
+                               }
+                         });
 
+                        }
+                 });
+    //Otro Ajax que se ejecuta a continuación, (no anidado).
+    $.ajax({
+        url:"admin2032/scripts/clientes-email.php",
+        success:function(result){
+            alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
+        }
+    });   
+    }else{
+    alert(0)
+    }
         }
     });
-<<<<<<< HEAD
-
-    //Otro Ajax que se ejecuta a continuación, (no anidado).
-	$.ajax({
-		url:"admin2032/scripts/clientes-email.php",
-		success:function(result){
-			alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
-		}
-	});
-
-=======
 	
->>>>>>> 6c52745d28fdb70aa6a340f576e1bff0ec9afb32
+
+
 });
 // ----------------------------------------------------------------------- //
 // -----------------------------EnviarConsultaDesdeFrontEnd---------------------------//

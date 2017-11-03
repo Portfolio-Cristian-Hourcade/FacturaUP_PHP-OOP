@@ -54,7 +54,7 @@ background-color:#fff;'>
 
 Estimado/a ".$nombre."<br><br>
 Haga click en el siguiente link o peguelo en la barra de direcciones de su navegador
-<a href='http://www.facturaup.com/factura-master/scripts/confirmar_registro.php?email=".$email."&codigo=".$codigo."'>http://www.facturaup.com/factura-master/scripts/confirmar_registro.php?email=".$email."&codigo=".$codigo."</a><br><br>Saluda Atte.
+<a href='http://edgardovillafane.com/edgardovillafane/facturaup/scripts/confirmar_registro.php?email=".$email."&codigo=".$codigo."'>http://edgardovillafane.com/edgardovillafane/facturaup/scripts/confirmar_registro.php?email=".$email."&codigo=".$codigo."</a><br><br>Saluda Atte.
 factura Up</div></div>
 </div>";
 

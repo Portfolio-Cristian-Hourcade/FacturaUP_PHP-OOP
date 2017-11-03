@@ -25,7 +25,7 @@ class Consultas{
 		
 		public function envioRespConsulta($email,$message,$header){
 
-			echo mail($email,"Esta es su respuesta!", $cuerpo ,$headers);
+			mail($email,"Esta es su respuesta!", $cuerpo ,$headers);
 		}
 
 		public function ListarConsultas($sql){

@@ -133,7 +133,7 @@ $("#modificadacontrasena").on("click",function(){
               alert("SU CONTRASEÑA HA SIDO MODIFICADA INGRESE NUEVAMENTE A LA CUENTA");
 
 
-        location.href="http://www.institutobrienza.com.ar/factura/index.php"
+        location.href="http://edgardovillafane.com/edgardovillafane/facturaup/index.php"
             }
         });
 
@@ -213,7 +213,7 @@ if($("#nombre").val()=="" || $("#apellido").val()=="" || $("#email").val()=="" |
                             contrasena:$("#contrasena").val()
                         },
                         success:function(result){
-alert(result)
+
                            if(result==0){
 
                         $.ajax({

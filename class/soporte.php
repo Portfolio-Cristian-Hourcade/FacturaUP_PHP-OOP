@@ -48,7 +48,7 @@ class Soporte{
 			$con->AltaSql($sql);
 			$con->CloseConnection();
 		}
-		public function EmailSoporte($mensaje){
+		public function EmailSoporte($email,$mensaje){
 
 				$headers  = 'MIME-Version: 1.0'."\r\n";
 				$headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
@@ -79,7 +79,7 @@ class Soporte{
 			Equipo de FacturaUp</div></div>
 			</div>";
  
-			mail("hourcadecristian@gmail.com","Respuesta a su consulta.", $cuerpo ,$headers);
+			mail($email,"Respuesta a su consulta.", $cuerpo ,$headers);
 		}
 		
 	}

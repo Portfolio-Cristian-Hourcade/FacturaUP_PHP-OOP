@@ -106,7 +106,7 @@ public function EmailDemo($Email){
 $headers  = 'MIME-Version: 1.0'."\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
 $headers .= 'From:FacturaUp<facturaup@gmail.com>'."\r\n";
-echo			$cuerpo ="
+$cuerpo ="
 <div style='background-color:#f1f1f1;width:100%;height:682px;margin:0 auto;padding-top:10px;'>
 	<div style='width:95%;height:50px;margin:0 auto;
 		background-color:#000;color:#fff;text-align:center;font-size:13px;line-height:50px;'>
@@ -122,7 +122,7 @@ echo			$cuerpo ="
 		Equipo de FacturaUp</div></div>
 	</div>";
 	
-	echo mail("hourcadecristian@gmail.com","Descargue su demo ahora!", $cuerpo ,$headers);
+	mail($Email,"Descargue su demo ahora!", $cuerpo ,$headers);
 	}
 	
 	public function VerificoEmail($sql){
@@ -131,6 +131,14 @@ echo			$cuerpo ="
 		$res = $con->SeleccionarAdmin($sql);
 		$con->buscar($sql);
 	}
+	public function CantRegistros($sql){
+			$con = new ConnectionMySQL();
+			$con->CreateConnection();
+			$resultado= $con->AltaSql($sql);
+			$numero_filas = $resultado->num_rows;
+			echo $numero_filas;
+
+		}
 	
 	}
 	
