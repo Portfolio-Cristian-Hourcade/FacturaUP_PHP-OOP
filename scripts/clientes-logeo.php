@@ -7,16 +7,8 @@ session_start();
 
 	/*	Variables  */
 
-// if(empty($_POST["email"]) || empty($_POST["contrasena"])){
-// 	header('Location:login.php');
-// }
-
 $email = $_POST["email"];
 $contrasena = md5($_POST["contrasena"]);
-
-
-// $email= preg_replace('([^A-Za-z0-9])', '', $email);	/* Con esta linea evitamos una */
-// $contrasena = preg_replace('([^A-Za-z0-9])', '', $contrasena);	/*		 injeccion sql  	   */
 
 /* ------------------------- */
 
