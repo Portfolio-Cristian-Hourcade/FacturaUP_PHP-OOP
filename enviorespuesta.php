@@ -5,39 +5,42 @@ session_start();
 	include 'class/conmysql.php';
 	include 'class/consultas.php';
 
-/*--------- Variables --------*/
+	/*--------- Variables --------*/
 
-if(empty($_SESSION["cl_email"])){
+	$mensajote = $_POST["messageToMail"];
 
-date_default_timezone_set("America/Argentina/Buenos_Aires");
-$time=time();
-$fecha=date("Y-m-d",$time);
-$hora= date("H:i",$time);
-$nombre= $_POST["nom"];
-$email=$_POST["em"];
-$mensaje=$_POST["men"];
-/*--------------------------------.*/
+				$headers  = 'MIME-Version: 1.0'."\r\n";
+				$headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
+				$headers .= 'From:FacturaUp<facturaup@gmail.com>'."\r\n";
 
-  $sql="INSERT INTO consultas (con_contacto,con_mensaje,con_fechaenvio,con_horaenvio,con_email,status) VALUES ('".$nombre."','".$mensaje."','".$fecha."','".$hora."','".$email."',1)";
+				$cuerpo ="
+
+			<div style='background-color:#f1f1f1;width:100%;height:682px;margin:0 auto;padding-top:10px;'>
+			<div style='width:95%;height:50px;margin:0 auto;
+			background-color:#000;color:#fff;text-align:center;font-size:13px;line-height:50px;'>
+
+			<h1 style='color:#fff;text-align:center;font-size:15px;line-height:50px;'>FacturaUp</h1>
+
+
+			</div>
+			<div style='width:95%;height:400px;margin:0 auto;
+			background-color:#fff;border:#999 solid 1px;'>
+
+			<div style='width:85%;height:400px;margin:10px auto;
+			background-color:#fff;'>
+
+			Estimado/a cliente<br><br>
+
+			$mensajote
+
+			Esta ha sido nuestra respuesta a su reclamo<br><br>Saluda cordialmente a ud. el
+			Equipo de FacturaUp</div></div>
+			</div>";
+ 
+
+	/*	Constructores  */
+	$NewObjeto = new Consultas();
 	
-$NewConnect = new Consultas();
-$NewConnect->Alta($sql);
-
-}else{
-
-	date_default_timezone_set("America/Argentina/Buenos_Aires");
-	$time=time();
-	$fecha=date("Y-m-d",$time);
-	$hora= date("H:i",$time);
-	$nombre= $_POST["nombre"];
-	$email=$_POST["email"];
-	$mensaje=$_POST["mensaje"];
-/*--------------------------------.*/
-
-  $sql="INSERT INTO soporte (so_contacto,so_mensaje,so_hora_envio,so_fecha_envio,so_email,so_status) VALUES ('".$nombre."','".$mensaje."','".$hora."','".$fecha."','".$email."',1)";
-	
-	$NewConnect = new Consultas();
-	$NewConnect->Alta($sql);	
-}
+	echo $NewObjeto->envioRespConsulta("ezequiel.r.gallo@gmail.com",$cuerpo,$headers);
 
 ?>

@@ -71,6 +71,8 @@ $(".demo-btn").on("click",function(){
         	alert(result);
         }
     });
+
+    //Otro Ajax que se ejecuta a continuación, (no anidado).
 	$.ajax({
 		url:"admin2032/scripts/clientes-email.php",
 		success:function(result){
@@ -80,7 +82,7 @@ $(".demo-btn").on("click",function(){
 
 });
 // ----------------------------------------------------------------------- //
-// -----------------------------EnviarFormulario---------------------------//
+// -----------------------------EnviarConsultaDesdeFrontEnd---------------------------//
 	
 	$(".enviar-formulario").on("click",function(){
 
@@ -110,6 +112,8 @@ $(".demo-btn").on("click",function(){
 				}
 			});
 
+
+
 });
 
 
@@ -117,16 +121,4 @@ $(".demo-btn").on("click",function(){
 
 
 
-/*window.addEventListener('scroll', function() {*/
-  /*if (window.scrollY >= 2000) {
-    $('.tel-bottom').animate({left: '-150%'});
-  }*/
-/*  else if (window.scrollY >= 50 && window.scrollY <= 200){
-    $('.tel-bottom').animate({left: '25%'}, 'swing');
-  } 
-  else if (window.scrollY >= 200) {
-    $('.tel-bottom').animate({left: '100%'}, 'swing');
-  }
- 
-});*/
 

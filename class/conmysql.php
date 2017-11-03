@@ -15,7 +15,6 @@ class ConnectionMySQL{
 	$this->database=DATABASE;
 	  
 }
-  
 	public function CreateConnection(){
 		$this->conn = new mysqli($this->host, $this->user, $this->password, $this->database);
 	}
@@ -42,11 +41,9 @@ class ConnectionMySQL{
 	 	$result = $this->conn->query($sql);
 	 	if(mysqli_num_rows($result)==0){
 
-echo 0;
-
+			echo 0;
 	 	}else{
-
-echo 1;
+			echo 1;
 
 	 	}
 	}

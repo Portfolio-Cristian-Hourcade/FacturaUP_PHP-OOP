@@ -22,14 +22,12 @@ class Consultas{
 			echo $numero_filas;
 
 		}
-		public function enviaRespConsulta($sql){
-			$con = new ConnectionMySQL();
-			$con->CreateConnection();
-			$resultado= $con->AltaSql($sql);
-			$numero_filas = $resultado->num_rows;
-			echo $numero_filas;
+		
+		public function envioRespConsulta($email,$message,$header){
 
+			echo mail($email,"Esta es su respuesta!", $cuerpo ,$headers);
 		}
+
 		public function ListarConsultas($sql){
 			$con = new ConnectionMySQL();
 			$con->CreateConnection();
@@ -38,7 +36,6 @@ class Consultas{
 				if($fila["con_respuesta"]==""){
 				?>
 					<tr>
-						
 						<td><?php echo $fila["con_contacto"]?></td>
 						<td><?php echo $fila["con_email"]?></td>
 						<td><?php echo $fila["con_mensaje"]?></td>									
@@ -48,15 +45,15 @@ class Consultas{
 				if($fila["con_horarespuesta"]!=0){
 						?>
 						<td><?php echo $fila["con_horarespuesta"]?></td>
-<?php }else{ ?><td></td><?php } ?>
+						<?php }else{ ?><td></td><?php } ?>
 						<td><?php echo $fila["con_respuesta"]?></td>
 						<td><?php echo $fila["con_horaenvio"]?></td>
 						<?php
-					if($fila["con_fecharespuesta"]!=0){
+						if($fila["con_fecharespuesta"]!=0){
 						?>
 						<td><?php echo $fila["con_fecharespuesta"]?></td>
-<?php }else{ ?><td></td><?php } ?>
-						<td><button type="button" class='res-consulta' value='<?php echo $fila["con_id"];?>'>Enviar Mensaje</button></td>
+						<?php }else{ ?><td></td><?php } ?>
+						<td><button type="button" class='res-consulta' value='<?php echo $fila["con_id"];?>'>Responder Mensaje</button></td>
 					</tr>
 				<?php }else{
 ?>
@@ -65,7 +62,7 @@ class Consultas{
 						<td><?php echo $fila["con_contacto"]?></td>
 						<td><?php echo $fila["con_email"]?></td>
 						<td><?php echo $fila["con_mensaje"]?></td>									
-					<td><?php echo $fila["con_fechaenvio"]?></td>
+						<td><?php echo $fila["con_fechaenvio"]?></td>
 						<td><?php echo $fila["con_fecharespuesta"]?></td>
 						<td><?php echo $fila["con_respuesta"]?></td>
 						

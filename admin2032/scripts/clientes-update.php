@@ -31,9 +31,6 @@ $sql = "	UPDATE  clientes SET cl_nombre='".$nombre."', cl_apellido='".$apellido.
 }
 
 
-
-
-
 /*...........................*/
 
 $NewConnect = new Clientes();

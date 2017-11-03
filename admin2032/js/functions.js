@@ -333,14 +333,6 @@ $(".btn-editar-clientes").on("click", function() {
     });
 
 
-
-
-
-
-
-
-
-
 /*});/* /.DocumentReady./*/
 
 function ListarLinks(){
@@ -393,11 +385,9 @@ function ListarConsultas(){
 		success:function(result){
 			$("#list-consultas").html(result);
 			Contestarconsulta();
-		}
+		} 
 	});
 }
-
-
 
 function ListarVentas(){
 	$.ajax({
@@ -450,30 +440,41 @@ function Contestarconsulta(){
 				$("#modal-consultas").html(result);
 				$("#modal-consultas").modal("show");
 				$(".btn-contestar-consulta").on("click", function() {
+
+						//Actualización tabla consultas en bd
                         $.ajax({
                             type: "POST",
                             url: "../scripts/consultas-update.php",
                             data: {
                                 id:$("#id").val(),                                
-                                mensaje:$("#mensaje").val()
-                                
+                                mensajeResp:$("#mensaje").val()
                             },
                             success: function(result) {
-                            	
                             	ListarConsultas(); 
                                 $("#modal-consultas").html("");
                     			$("#modal-consultas").modal("hide");
                             }
                         });
-                    });
+
+                        //Función enviar mail de espuesta
+                        //Otro Ajax que se ejecuta a continuación, (no anidado).
+
+						$.ajax({
+							type: "POST",
+							url:"admin2032/scripts/enviorespuesta.php",
+							data:{
+                    			messageToMail:$("#mensaje").val()
+                    			},
+							success:function(result){
+								alert("Se ha enviado la respuesta al cliente");
+							}
+						});
+
+					});
 			}
 		});
 	});
 }
-
-
-
-
 
 
 function Contestar(){

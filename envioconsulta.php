@@ -18,7 +18,9 @@ $email=$_POST["em"];
 $mensaje=$_POST["men"];
 /*--------------------------------.*/
 
-  $sql="INSERT INTO consultas (con_contacto,con_mensaje,con_fechaenvio,con_horaenvio,con_email,status) VALUES ('".$nombre."','".$mensaje."','".$fecha."','".$hora."','".$email."',1)";
+  $sql="INSERT INTO consultas (con_contacto,con_email,con_mensaje,con_fechaenvio,con_horaenvio,status) 
+		
+  		VALUES ('".$nombre."','".$email."','".$mensaje."','".$fecha."','".$hora."',1)";
 	
 $NewConnect = new Consultas();
 $NewConnect->Alta($sql);
@@ -34,7 +36,8 @@ $NewConnect->Alta($sql);
 	$mensaje=$_POST["mensaje"];
 /*--------------------------------.*/
 
-  $sql="INSERT INTO soporte (so_contacto,so_mensaje,so_hora_envio,so_fecha_envio,so_email,so_status) VALUES ('".$nombre."','".$mensaje."','".$hora."','".$fecha."','".$email."',1)";
+  $sql="INSERT INTO soporte (so_contacto,so_mensaje,so_hora_envio,so_fecha_envio,so_email,so_status) 
+  		VALUES ('".$nombre."','".$mensaje."','".$hora."','".$fecha."','".$email."',1)";
 	
 	$NewConnect = new Consultas();
 	$NewConnect->Alta($sql);	

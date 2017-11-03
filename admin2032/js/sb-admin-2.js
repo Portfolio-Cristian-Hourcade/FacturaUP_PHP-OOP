@@ -1,4 +1,4 @@
-$(function() {
+ist$(function() {
     $('#side-menu').metisMenu();
 });
 

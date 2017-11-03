@@ -145,7 +145,6 @@ if(is_null(@$_SESSION["adm_user"])){
                             <table width="100%" class="table table-striped table-bordered table-hover" >
                                 <thead>
                                     <tr>
-                                        
                                         <th>Contacto</th>
                                         <th>Email</th>
                                         <th>Mensaje</th>                                     
@@ -157,9 +156,9 @@ if(is_null(@$_SESSION["adm_user"])){
                                          <th>Respuesta</th>
                                     </tr>
                                 </thead>
-                                <tbody id="list-consultas">
+                                <tbody id="list-consultas"> </tbody>
                                     
-                                </tbody>
+                               
                             </table>
                             <!-- /.table-responsive -->
                         </div>  
