@@ -12,7 +12,7 @@
 				<div class="login-help mb-2">
 			Los campos con * son obligatorios
 		</div>
-		<input type="submit" name="login" class="login loginmodal-submit clientes-nuevo" value="Regristrarse" >
+		<input type="button" name="login" class="login loginmodal-submit clientes-nuevo" value="Regristrarse" >
 		<button type="button" class="btn btn-sm btn-outline-info d-block ml-auto mt-3" data-dismiss="modal">Cancelar</button>
 	</div>
 </div>

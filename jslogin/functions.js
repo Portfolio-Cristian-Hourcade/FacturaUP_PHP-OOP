@@ -213,7 +213,7 @@ if($("#nombre").val()=="" || $("#apellido").val()=="" || $("#email").val()=="" |
                             contrasena:$("#contrasena").val()
                         },
                         success:function(result){
-
+alert(result)
                            if(result==0){
 
                         $.ajax({
@@ -254,7 +254,7 @@ function verificoemail(){
                 "email":$("#email").val()       
             },
             success:function(result){
-                // alert(result)
+                alert(result)
                 if(result==0){
                     $("#tilde-verde").html("<img src=images/tilde-verde.png>");
                        //$('.clientes-nuevo').attr('disabled', false);

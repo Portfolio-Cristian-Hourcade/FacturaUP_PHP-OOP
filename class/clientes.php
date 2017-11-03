@@ -44,27 +44,50 @@ class Clientes{
 	<td><?php echo $fila["cl_email"]?></td>
 	<td><?php echo $fila["cl_tel"]?></td>
 	<?php
+
 	if($fila["cl_codigo"]!=0){
+
 	?>
-	
+
 	<td><?php echo $fila["cl_codigo"]?></td>
-	<? }else{
+
+	<?php 
+	
+	}else{
+	
 	?>
+
 	<td></td>
-	<?}?>
+
 	<?php
-							if($fila["cl_confirmar"]==1){
+	} 
+	?>
+
+	<?php
+		if($fila["cl_confirmar"]==1){
 	?>
 	
-	<td><button type="button" class="btn btn-md btn-success">Email Confirmado</button></td>
-	<? }else{
+	<td>
+		<button type="button" class="btn btn-md btn-success">Email Confirmado</button>
+	</td>
+	<?php
+
+	}else{
+
 	?>
-	<td><button type="button" class="btn btn-md btn-danger">Email No Confirmado</button></td>
-	<? }
+	<td>
+		<button type="button" class="btn btn-md btn-danger">Email No Confirmado</button>
+	</td>
+	<?php
+
+	}
+	
 	?>
+
 </tr>
-<?php
-}
+	<?php
+	}
+
 }
 public function EditarClientes($sql){
 $con = new ConnectionMySQL();
@@ -103,12 +126,12 @@ echo			$cuerpo ="
 	}
 	
 	public function VerificoEmail($sql){
-	$con = new ConnectionMySQL();
-	$con->CreateConnection();
-	$res = $con->SeleccionarAdmin($sql);
-	$con->buscar($sql);
+		$con = new ConnectionMySQL();
+		$con->CreateConnection();
+		$res = $con->SeleccionarAdmin($sql);
+		$con->buscar($sql);
 	}
 	
 	}
 	
-	?>
+?>

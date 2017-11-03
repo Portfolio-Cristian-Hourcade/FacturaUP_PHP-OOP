@@ -1,7 +1,5 @@
 <?php
 
-
-
 	include '../class/clientes.php';
 	include '../class/conmysql.php';
 
@@ -26,8 +24,10 @@ $sql="UPDATE clientes set cl_confirmar=1,cl_codigo='' where cl_email='".$_GET['e
 $NewConnect = new Clientes();
 $NewConnect->EditarClientes($sql);
 
-header("Location:http://www.institutobrienza.com.ar/factura-master/");
-}else{echo"No se pudo corfirmar el email";}
+header("Location:localhost/factura-master/");
+}else{
+	echo"No se pudo corfirmar el email";
+}
 
 	
 
