@@ -13,7 +13,9 @@ $contrasena=md5($_POST["contrasena"]);
 $telefono=$_POST["telefono"];
 $email=$_POST["email"];
 $codigo=rand(0,999999999);
+
 /*--------------------------------.*/
+
 $sql="SELECT * from clientes where cl_email='".$email."'";
 
 
@@ -22,9 +24,6 @@ $NewConnect= New Clientes();
 			$con->CreateConnection();
 			$resultado= $con->AltaSql($sql);
 		
-
-
-
 	 	if($resultado->num_rows==0){
 
 echo 0;
