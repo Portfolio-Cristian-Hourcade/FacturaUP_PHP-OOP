@@ -100,7 +100,7 @@ $(".demo-btn").on("click",function(){
         }
     });   
     }else{
-    alert(0)
+    alert(result)
     }
         }
     });

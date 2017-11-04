@@ -136,7 +136,7 @@ $cuerpo ="
 			$con->CreateConnection();
 			$resultado= $con->AltaSql($sql);
 			$numero_filas = $resultado->num_rows;
-			echo $numero_filas;
+			return $numero_filas;
 
 		}
 	
