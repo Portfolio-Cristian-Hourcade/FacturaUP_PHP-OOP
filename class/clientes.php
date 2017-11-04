@@ -137,7 +137,7 @@ $cuerpo ="
 			$resultado= $con->AltaSql($sql);
 			$numero_filas = $resultado->num_rows;
 			return $numero_filas;
-
+			
 		}
 	
 	}
