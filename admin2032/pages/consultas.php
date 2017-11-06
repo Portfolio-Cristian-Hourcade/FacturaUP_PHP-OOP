@@ -150,7 +150,7 @@ if(is_null(@$_SESSION["adm_user"])){
                                         <th>Mensaje</th>                                     
                                         <th>Fecha de envio</th>
                                         <th>Fecha de respuesta</th>
-                                        <th>Respuesta</th>
+                                        <th>Mensaje respuesta</th>
                                         <th>Hora envio</th>
                                         <th>Hora respuesta</th>
                                          <th>Respuesta</th>
