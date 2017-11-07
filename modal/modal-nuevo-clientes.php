@@ -7,8 +7,8 @@
 		<input type="text" id="nombre" placeholder="Nombre *" required>
 		<input type="text" id="apellido" placeholder="Apellido *">
 		<input type="text" id="telefono" placeholder="Teléfono">
-		<input type="password" id="contrasena" placeholder="Contraseña *">
-		<input type="password" id="contrasena2" placeholder="Repita la contraseña">
+		<input type="password" id="cont" placeholder="Contraseña *">
+		<input type="password" id="cont2" placeholder="Repita la contraseña">
 				<div class="login-help mb-2">
 			Los campos con * son obligatorios
 		</div>

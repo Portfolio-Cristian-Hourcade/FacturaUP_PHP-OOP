@@ -187,9 +187,9 @@ if($("#nombre").val()=="" || $("#apellido").val()=="" || $("#email").val()=="" |
 
                             }
                         });
-                   /* alert("Ingrese nombre");*/
+                  
                 }
-                 else if($("#contrasena").val()!=$("#contrasena2").val()){
+                 else if($("#cont").val()!=$("#cont2").val()){
                     $.ajax({
                             url:"modal/modal-warning.php",
                             success:function(result){
@@ -210,13 +210,12 @@ if($("#nombre").val()=="" || $("#apellido").val()=="" || $("#email").val()=="" |
                             telefono:$("#telefono").val(),
                             apellido:$("#apellido").val(),
                             email:$("#email").val(),
-                            contrasena:$("#contrasena").val()
+                            contrasena:$("#cont").val()
                         },
                         success:function(result){
-
                            if(result==0){
 
-                        $.ajax({
+                            $.ajax({
                             url:"modal/modal-warning.php",
                             success:function(result){
                                $("#modal-advertencia").html("");
@@ -225,17 +224,23 @@ if($("#nombre").val()=="" || $("#apellido").val()=="" || $("#email").val()=="" |
                                 $("#titulo-modal").html("¡Registro exitoso!");
                                 $("#mensaje-modal").html("Recuerde confirmar su email para poder concretar la descarga de su producto deseado.");
                                 $("#modal-advertencia").modal("show");
-
-                            }
-                        });
-                            location.reload();
-                            $("#modal-adm").modal("hide");
-                            $("#modal-adm").html("");
-
-
+                                setTimeout ("r()", 5000);
+                                }
+                            });
+                          
+                            
                            }else{
-                            alert("Este email se encuentra en nuestra base de datos.");
-                        }
+                            $.ajax({
+                                url:"modal/modal-warning.php",
+                                success:function(result){
+                                    $("#modal-advertencia").html("");
+                                    $("#modal-advertencia").html(result);
+                                    $("#titulo-modal").html("Error de registro");
+                                    $("#mensaje-modal").html("Este email se encuentra en nuestra base de datos.");
+                                    $("#modal-advertencia").modal("show");
+                                }
+                            });
+                            }
                         }
 
                     });
@@ -251,13 +256,12 @@ function verificoemail(){
             type:"POST",
             url:"scripts/verifico-email.php",
             data:{
-                "email":$("#email").val()       
+                email:$("#email").val()       
             },
             success:function(result){
-                alert(result)
                 if(result==0){
                     $("#tilde-verde").html("<img src=images/tilde-verde.png>");
-                       //$('.clientes-nuevo').attr('disabled', false);
+                     
                       
                 }else{
                     alert("Este email se encuentra en nuestra base de datos.");
@@ -271,3 +275,5 @@ function verificoemail(){
 
 
 
+function r() { location.reload(); } 
+    
