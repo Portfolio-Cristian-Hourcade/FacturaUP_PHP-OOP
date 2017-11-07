@@ -131,8 +131,7 @@ $(".demo-btn").on("click",function(){
 							mensaje:$("#info-men").val(),
 							email:$("#contact").val()
 						},
-						success:function(result){
-                            alert(result);
+						success:function(){
 							alert("Su consulta fue enviada a la brevedad le responderemos")
 						}
 

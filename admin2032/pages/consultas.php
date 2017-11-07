@@ -48,7 +48,6 @@ if(is_null(@$_SESSION["adm_user"])){
 <body>
 
     <div id="wrapper">
-
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -139,8 +138,6 @@ if(is_null(@$_SESSION["adm_user"])){
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                          
-                            
                             <br><br>
                             <table width="100%" class="table table-striped table-bordered table-hover" >
                                 <thead>

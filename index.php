@@ -355,7 +355,7 @@ session_start();
                      <div class="form-group">
 
                         <label class="control-label text-white" for="cliente">Nombre y apellido</label>
-                        <input type="text" class="form-control" id="cliente" placeholder="Escriba su nombre y apellido">
+                        <input type="text" class="form-control text-white" id="cliente" placeholder="Escriba su nombre y apellido">
 
                      </div>
                      <div class="form-group mb-4">
