@@ -449,7 +449,6 @@ function Contestarconsulta(){
                     			email:$("#email-consulta").val()
                     			},
 							success:function(result){
-								alert(result)
 								alert("Se ha enviado la respuesta al cliente");
 							}
 						});
@@ -516,25 +515,25 @@ function Notifconsultas(){
 }
 function ResponderMen(){
 					$(".btn-up-soporte").on("click", function() {
+						
 						$.ajax({
                     				type:"POST",
                     				url:"../scripts/soporte-respuesta.php",
                     				data:{
+                    					email:$("#email-soporte").val(),
                     					mensaje:$("#mensaje").val()
                     				},
                     				success:function(result){
-                    					
                     				}
                     			});
                         $.ajax({
                             type: "POST",
                             url: "../scripts/soporte-update.php",
                             data: {
-                                "id": $("#id").val(),
-                                "mensaje":$("#mensaje").val()
+                                id: $("#id").val(),
+                                mensaje:$("#mensaje").val()
                             },
                             success: function(result) {
-
                             	ListarSoporte(); 
                                 $("#modal-soporte").html("");
                     			$("#modal-soporte").modal("hide");

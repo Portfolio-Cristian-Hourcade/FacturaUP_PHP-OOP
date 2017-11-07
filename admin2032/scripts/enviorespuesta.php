@@ -6,7 +6,7 @@ session_start();
 	include '../../class/consultas.php';
 
 	/*--------- Variables --------*/
-	$email=$_POST["email"];
+	echo $email=$_POST["email"];
 	$mensajote = $_POST["messageToMail"];
 
 			$headers  = 'MIME-Version: 1.0'."\r\n";
@@ -40,6 +40,6 @@ session_start();
 	/*	Constructores  */
 	$NewObjeto = new Consultas();
 	
-	echo $NewObjeto->envioRespConsulta($email,$cuerpo,$headers);
+	$NewObjeto->envioRespConsulta($email,$cuerpo,$headers);
 
 ?>

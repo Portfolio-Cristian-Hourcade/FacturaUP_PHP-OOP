@@ -6,7 +6,7 @@ session_start();
 	include '../../class/conmysql.php';
 	
 	$Objeto = New Soporte();
-	$Objeto->EmailSoporte($_SESSION["cl_email"],$_POST["mensaje"]);
+	echo $Objeto->EmailSoporte($_POST["email"],$_POST["mensaje"]);
 
 
  ?>

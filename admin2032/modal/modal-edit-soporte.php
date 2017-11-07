@@ -21,7 +21,7 @@
 			$fila=mysqli_fetch_assoc($result);
 
 			?>
-			
+			<input type="hidden" value="<?php echo $fila["so_email"]?>" id="email-soporte">
 			<input type="hidden" value="<?php echo $fila["so_id"]?>" id="id">
 			<div class="col-md-4"><label>Mensaje</label></div>
 			<div class="col-md-8">

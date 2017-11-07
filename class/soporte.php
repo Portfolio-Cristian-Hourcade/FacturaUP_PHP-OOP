@@ -49,7 +49,7 @@ class Soporte{
 			$con->CloseConnection();
 		}
 		public function EmailSoporte($email,$mensaje){
-
+		
 				$headers  = 'MIME-Version: 1.0'."\r\n";
 				$headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
 				$headers .= 'From:FacturaUp<facturaup@gmail.com>'."\r\n";
