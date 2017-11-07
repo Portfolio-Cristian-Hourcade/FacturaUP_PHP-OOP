@@ -2,8 +2,8 @@
 
 session_start();
 
-	include 'class/conmysql.php';
-	include 'class/consultas.php';
+	include '../../class/conmysql.php';
+	include '../../class/consultas.php';
 
 	/*--------- Variables --------*/
 
@@ -20,7 +20,6 @@ session_start();
 			background-color:#000;color:#fff;text-align:center;font-size:13px;line-height:50px;'>
 
 			<h1 style='color:#fff;text-align:center;font-size:15px;line-height:50px;'>FacturaUp</h1>
-
 
 			</div>
 			<div style='width:95%;height:400px;margin:0 auto;
