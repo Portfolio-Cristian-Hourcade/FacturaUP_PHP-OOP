@@ -264,7 +264,16 @@ function verificoemail(){
                      
                       
                 }else{
-                    alert("Este email se encuentra en nuestra base de datos.");
+                    $.ajax({
+                                url:"modal/modal-warning.php",
+                                success:function(result){
+                                    $("#modal-advertencia").html("");
+                                    $("#modal-advertencia").html(result);
+                                    $("#titulo-modal").html("Error de registro");
+                                    $("#mensaje-modal").html("Este email se encuentra en nuestra base de datos.");
+                                    $("#modal-advertencia").modal("show");
+                                }
+                            });
                    
                 }
             }
