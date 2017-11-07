@@ -118,7 +118,7 @@ $cuerpo ="
 			background-color:#fff;'>
 			Estimado/a cliente<br><br>
 			Haga click en el siguiente link o peguelo en la barra de direcciones de su navegador para concretar la descarga de su demo
-			<a href='localhost/factura/descarga-demo.php?id=$Email'>Descargar ahora!</a><br><br>Saluda Atte.
+			<a href='http://edgardovillafane.com/edgardovillafane/facturaup/descarga-demo.php?id=$Email'>Descargar ahora!</a><br><br>Saluda Atte.
 		Equipo de FacturaUp</div></div>
 	</div>";
 	
@@ -137,7 +137,7 @@ $cuerpo ="
 			$resultado= $con->AltaSql($sql);
 			$numero_filas = $resultado->num_rows;
 			return $numero_filas;
-			
+
 		}
 	
 	}

@@ -143,7 +143,7 @@ if(is_null(@$_SESSION["adm_user"])){
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="consultas.php">
                             <div class="panel-footer">
                                 <span class="pull-left">Saber más</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

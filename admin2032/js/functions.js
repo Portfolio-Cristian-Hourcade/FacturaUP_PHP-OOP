@@ -441,7 +441,18 @@ function Contestarconsulta(){
 				$("#modal-consultas").modal("show");
 				$(".btn-contestar-consulta").on("click", function() {
 
-						//Actualización tabla consultas en bd
+						$.ajax({
+							type: "POST",
+							url:"../scripts/enviorespuesta.php",
+							data:{
+                    			messageToMail:$("#mensaje").val(),
+                    			email:$("#email-consulta").val()
+                    			},
+							success:function(result){
+								alert(result)
+								alert("Se ha enviado la respuesta al cliente");
+							}
+						});
                         $.ajax({
                             type: "POST",
                             url: "../scripts/consultas-update.php",
@@ -456,19 +467,7 @@ function Contestarconsulta(){
                             }
                         });
 
-                        //Función enviar mail de espuesta
-                        //Otro Ajax que se ejecuta a continuación, (no anidado).
-
-						$.ajax({
-							type: "POST",
-							url:"admin2032/scripts/enviorespuesta.php",
-							data:{
-                    			messageToMail:$("#mensaje").val()
-                    			},
-							success:function(result){
-								alert("Se ha enviado la respuesta al cliente");
-							}
-						});
+                      
 
 					});
 			}

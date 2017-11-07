@@ -113,13 +113,13 @@ $(".demo-btn").on("click",function(){
 	
 	$(".enviar-formulario").on("click",function(){
 
-				if($("#nom").val()==""){
+				if($("#cliente").val()==""){
 					alert("Ingrese nombre");
 				}
-				else if($("#men").val()==""){
+				else if($("#info-men").val()==""){
 					alert("Ingrese mensaje");
 				}
-				else if($("#em").val()==""){
+				else if($("#contact").val()==""){
 					alert("Ingrese email");
 				}
 				else{
@@ -127,11 +127,12 @@ $(".demo-btn").on("click",function(){
 						type:"POST",
 						url:"envioconsulta.php",
 						data:{
-							nombre:$("#nom").val(),
-							mensaje:$("#men").val(),
-							email:$("#em").val()
+							nombre:$("#cliente").val(),
+							mensaje:$("#info-men").val(),
+							email:$("#contact").val()
 						},
 						success:function(result){
+                            alert(result);
 							alert("Su consulta fue enviada a la brevedad le responderemos")
 						}
 

@@ -23,7 +23,7 @@ class Consultas{
 
 		}
 		
-		public function envioRespConsulta($email,$message,$header){
+		public function envioRespConsulta($email,$cuerpo,$headers){
 
 			mail($email,"Esta es su respuesta!", $cuerpo ,$headers);
 		}

@@ -353,19 +353,16 @@ session_start();
                   </div>
                   <div class="col-md-6 mx-auto">
                      <div class="form-group">
-<<<<<<< HEAD
-                        <label class="control-label text-white" for="nombre">Nombre y apellido</label>
-                        <input type="text" class="form-control text-white" id="nom" placeholder="Escriba su nombre y apellido">
-=======
-                        <label class="control-label text-white" for="nom">Nombre y apellido</label>
-                        <input type="text" class="form-control" id="nom" placeholder="Escriba su nombre y apellido">
->>>>>>> 6c52745d28fdb70aa6a340f576e1bff0ec9afb32
+
+                        <label class="control-label text-white" for="cliente">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="cliente" placeholder="Escriba su nombre y apellido">
+
                      </div>
                      <div class="form-group mb-4">
-                        <label class="control-label text-white" for="em">Email</label>
-                        <input type="email" class="form-control text-white" id="em" placeholder="Escriba su email">
+                        <label class="control-label text-white" for="contact">Email</label>
+                        <input type="email" class="form-control text-white" id="contact" placeholder="Escriba su email">
                      </div>
-                        <textarea class="form-control text-white" cols="40" maxlength="1000" id="men" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                        <textarea class="form-control text-white" cols="40" maxlength="1000" id="info-men" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                         <div class="form-group">
                            <div class="btn d-block">
                               <button type="button" class="btn btn-secondary text-center enviar-formulario">Enviar</button>

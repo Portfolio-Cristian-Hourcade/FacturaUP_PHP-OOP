@@ -21,10 +21,10 @@
 			$fila=mysqli_fetch_assoc($result);
 
 			?>
-			
+			<input type="hidden" value="<?php echo $fila["con_email"]?>" id="email-consulta"> 
 			<input type="hidden" value="<?php echo $fila["con_id"]?>" id="id">
 			<div class="col-md-4"><label>Mensaje</label></div>
-			<div class="col-md-8"><textarea style="width:100%;height: 100px;" placeholder=""><?php echo $fila["con_mensaje"]?></textarea></div>
+			<div class="col-md-8"><p style="width:100%;height: 100px;"><?php echo $fila["con_mensaje"]?></p></div>
 			<br><br>
 			<div class="col-md-4"><label>Respuesta</label></div>
 			<div class="col-md-8"><textarea name="mensaje" id="mensaje" style="width:100%;height: 100px;"></textarea></div>

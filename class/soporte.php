@@ -21,7 +21,7 @@ class Soporte{
 							<?php
 							if(empty($fila["so_respuesta"])){
 							?>
-							<button type="button" class='res-mensaje' value='<?php echo $fila["so_id"];?>'>Enviar Mensaje</button>
+							<button type="button" class='res-mensaje' value='<?php echo $fila["so_id"];?>'>Responder Mensaje</button>
 							<?php
 							}else{
 							?>	

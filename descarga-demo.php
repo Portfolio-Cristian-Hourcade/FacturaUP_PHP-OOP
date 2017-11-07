@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(empty($_SESSION["cl_email"])){
+if(empty($_GET["id"])){
    header("location:index.php");
 }
 
