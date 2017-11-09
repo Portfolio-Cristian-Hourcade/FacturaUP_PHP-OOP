@@ -11,13 +11,14 @@ session_start();
 
 	$NewConnect = new Links();
 
-if(empty($NewConnect->ContarLink($email))){
+if($NewConnect->ContarLink($email)){
 
- $sql = "INSERT INTO link (l_user,l_link,l_ip,l_descargas,l_fecha,l_status) VALUES ('".$_SESSION["cl_email"]."','http://edgardovillafane.com/edgardovillafane/facturaup/descarga-demo.php?id=$email','".$ip."',0,'".$fecha."',1)";
+	echo 0;
+ 
+}else{
+	$sql = "INSERT INTO link (l_user,l_link,l_ip,l_descargas,l_fecha,l_status) VALUES ('".$_SESSION["cl_email"]."','http://edgardovillafane.com/edgardovillafane/facturaup/descarga-demo.php?id=$email','".$ip."',0,'".$fecha."',1)";
  $NewConnect->Alta($sql);
  echo 1;
-}else{
-	echo 0;
 }
 
 

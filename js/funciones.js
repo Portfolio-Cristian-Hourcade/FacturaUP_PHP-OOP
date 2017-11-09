@@ -10,7 +10,7 @@ $(".btn-descargar-demo").on("click",function(){
 			email:$("#email").val()
 		},
 		success:function(result){
-			alert(result);
+			
 			if(result<3){
 				location.href="scripts/demo-descarga.php";
 				
@@ -21,7 +21,7 @@ $(".btn-descargar-demo").on("click",function(){
             			fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
         			},
 					success:function(result){
-					alert(result)
+					
 					location.href="index.php";
 					}
 				});
@@ -41,13 +41,12 @@ $(".btn-descargar-demo").on("click",function(){
 		$.ajax({
 			url:"scripts/user-online.php",
 			success:function(result){
-                alert(result)
+           
 				if(result=="error"){
 					$.ajax({
                             url:"modal/modal-warning.php",
                             success:function(result){
                                $("#modal-advertencia").html("");
-                                // $("#modal-adm").modal("hide");
                                 $("#modal-advertencia").html(result);
                                 $("#titulo-modal").html("Advertencia");
                                 $("#mensaje-modal").html("Usted debe estar haber ingresado para poder descargar el demo o la version premium.");
@@ -76,7 +75,7 @@ $(".demo-btn").on("click",function(){
     $.ajax({
         url:"admin2032/scripts/ver-cuenta.php",
         success:function(result){
-            alert(result);
+      
             if(result==1){
              $.ajax({
                  type:"POST",
@@ -85,6 +84,7 @@ $(".demo-btn").on("click",function(){
                           fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
                         },
                        success:function(result){
+
                        $.ajax({
                            url:"admin2032/scripts/clientes-email.php",
                              success:function(result){
@@ -97,7 +97,7 @@ $(".demo-btn").on("click",function(){
     
     }else{
 
-        alert(result);
+        alert("ERORR");
 
     }
         }
