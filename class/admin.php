@@ -2,14 +2,17 @@
 class Admin{
 		
 		public function Login($sql,$User,$Pass){
+			echo "probando".$sql.$User.$Pass."";
 			$con = new ConnectionMySQL();
 			$con->CreateConnection();
+			echo $con->ExecuteQuery($sql);
 			if($con->ExecuteQuery($sql)==""){
 				echo "Error";
 			}else{
 				$_SESSION["adm_user"]=$User;
 				$_SESSION["adm_id"]=$Pass;
 			}
+			$con->CloseConnection();
 		}
 		public function Alta($sql,$User,$Pass){
 			$con = new ConnectionMySQL();

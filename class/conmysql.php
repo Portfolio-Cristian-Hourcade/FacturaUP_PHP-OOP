@@ -8,7 +8,9 @@ class ConnectionMySQL{
 	private $conn;
 	 
 	public function __construct(){ 
+
 	include_once("config.php");
+	
 	$this->host=HOST;
 	$this->user=USER;
 	$this->password=PASSWORD;

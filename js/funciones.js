@@ -41,6 +41,7 @@ $(".btn-descargar-demo").on("click",function(){
 		$.ajax({
 			url:"scripts/user-online.php",
 			success:function(result){
+                alert(result)
 				if(result=="error"){
 					$.ajax({
                             url:"modal/modal-warning.php",
@@ -75,6 +76,7 @@ $(".demo-btn").on("click",function(){
     $.ajax({
         url:"admin2032/scripts/ver-cuenta.php",
         success:function(result){
+            alert(result);
             if(result==1){
              $.ajax({
                  type:"POST",
@@ -92,15 +94,11 @@ $(".demo-btn").on("click",function(){
 
                         }
                  });
-    //Otro Ajax que se ejecuta a continuación, (no anidado).
-    $.ajax({
-        url:"admin2032/scripts/clientes-email.php",
-        success:function(result){
-            alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
-        }
-    });   
+    
     }else{
-    alert(result)
+
+        alert(result);
+
     }
         }
     });
@@ -148,78 +146,3 @@ $(".demo-btn").on("click",function(){
 (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
 
 
-
-
-// function LogeoRegistro(){
-// $(".clientes-nuevo").on("click",function(){
-    
-// if($("#nombre").val()=="" || $("#apellido").val()=="" || $("#email").val()=="" || $("#contrasena").val()==""){
-//                    $.ajax({
-//                             url:"modal/modal-warning.php",
-//                             success:function(result){
-//                                $("#modal-advertencia").html("");
-                                
-//                                 $("#modal-advertencia").html(result);
-//                                 $("#titulo-modal").html("Error de registro");
-//                                 $("#mensaje-modal").html("Revise que los siguientes campos se hayan completado correctamente.");
-//                                 $("#modal-advertencia").modal("show");
-
-//                             }
-//                         });
-//                    /* alert("Ingrese nombre");*/
-//                 }
-//                  else if($("#contrasena").val()!=$("#contrasena2").val()){
-//                     $.ajax({
-//                             url:"modal/modal-warning.php",
-//                             success:function(result){
-//                                 $("#modal-advertencia").html("");
-//                                 $("#modal-advertencia").html(result);
-//                                 $("#titulo-modal").html("Error de registro");
-//                                 $("#mensaje-modal").html("Las contraseñas ingresadas son diferentes");
-//                                 $("#modal-advertencia").modal("show");
-
-//                             }
-//                         });
-//                 }else{
-//                     $.ajax({
-//                         type:"POST",
-//                         url:"scripts/clientes-store.php",
-//                         data:{
-//                             nombre:$("#nombre").val(),
-//                             telefono:$("#telefono").val(),
-//                             apellido:$("#apellido").val(),
-//                             email:$("#email").val(),
-//                             contrasena:$("#contrasena").val()
-//                         },
-//                         success:function(result){
-
-//                            if(result==0){
-
-//                         $.ajax({
-//                             url:"modal/modal-warning.php",
-//                             success:function(result){
-//                                $("#modal-advertencia").html("");
-//                                 $("#modal-adm").modal("hide");
-//                                 $("#modal-advertencia").html(result);
-//                                 $("#titulo-modal").html("¡Registro exitoso!");
-//                                 $("#mensaje-modal").html("Recuerde confirmar su email para poder concretar la descarga de su producto deseado.");
-//                                 $("#modal-advertencia").modal("show");
-
-//                             }
-//                         });
-//                             location.reload();
-//                             $("#modal-adm").modal("hide");
-//                             $("#modal-adm").html("");
-
-
-//                            }else{
-//                             alert("Este email se encuentra en nuestra base de datos.");
-//                         }
-//                         }
-
-//                     });
-//                 }
-//             });
-
-
-// }
