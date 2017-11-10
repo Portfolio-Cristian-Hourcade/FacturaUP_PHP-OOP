@@ -130,8 +130,19 @@ $("#modificadacontrasena").on("click",function(){
             },
             success:function(result){
                
-              alert("SU CONTRASEÑA HA SIDO MODIFICADA INGRESE NUEVAMENTE A LA CUENTA");
+              /*alert("SU CONTRASEÑA HA SIDO MODIFICADA INGRESE NUEVAMENTE A LA CUENTA");*/
 
+                //Start Ajax
+                    $.ajax({ 
+                        url: "modal/modal-warning.php",
+                        success: function(result) {
+                            $("#modal-advertencia").html("");
+                            $("#modal-advertencia").html(result);
+                            $("#mensaje-modal").html("Su contraseña ha sido odificada; ingrese nuevamente a la cuenta.");
+                            $("#modal-advertencia").modal("show");
+                        }
+                    });
+                //End Ajax
 
         location.href="http://edgardovillafane.com/edgardovillafane/facturaup/index.php"
             }
@@ -152,13 +163,38 @@ $("#recuperarcontra").on("click",function(){
             success:function(result){
                
                 if(result==1){
-                  alert("enviamos un email a su casilla de correo para restablecer la contraseña")
+                 /* alert("enviamos un email a su casilla de correo para restablecer la contraseña")*/
+
+                    //Start Ajax
+                    $.ajax({ 
+                        url: "modal/modal-warning.php",
+                        success: function(result) {
+                            $("#modal-advertencia").html("");
+                            $("#modal-advertencia").html(result);
+                            $("#mensaje-modal").html("Enviamos un email a su casilla de correo para restablecer la contraseña.");
+                            $("#modal-advertencia").modal("show");
+                        }
+                    });
+                //End Ajax
+                       
                        //$('.clientes-nuevo').attr('disabled', false);
                 }else{
-                   alert("ese email no se encuantra en nuestra base de datos")
-                }
-            }
-        });
+                   /*alert("ese email no se encuantra en nuestra base de datos")*/
+
+                   //Start Ajax
+$.ajax({
+url: "modal/modal-warning.php",
+success: function(result) {
+$("#modal-advertencia").html("");
+$("#modal-advertencia").html(result);
+$("#mensaje-modal").html("Este email no se encuantra en nuestra base de datos.");
+$("#modal-advertencia").modal("show");
+}
+});
+//End Ajax
+}
+}
+});
 
 
 });
@@ -171,8 +207,8 @@ $("#recuperarcontra").on("click",function(){
 
 /*-----cierro document ready----*/
 
-function LogeoRegistro(){
-$(".clientes-nuevo").on("click",function(){
+function LogeoRegistro() {
+    $(".clientes-nuevo").on("click", function(){
     
 if($("#nombre").val()=="" || $("#apellido").val()=="" || $("#email").val()=="" || $("#contrasena").val()==""){
                    $.ajax({
