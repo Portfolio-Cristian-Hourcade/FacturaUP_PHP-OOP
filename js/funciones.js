@@ -2,6 +2,7 @@ var f = new Date();
 
 $(document).ready(function() {
 
+<<<<<<< HEAD
     $(".btn-descargar-demo").on("click", function() {
         $.ajax({
             type: "POST",
@@ -38,6 +39,97 @@ $(document).ready(function() {
 
 
     });
+=======
+$(".btn-descargar-demo").on("click",function(){
+	$.ajax({
+		type:"POST",
+		url:"scripts/verifico-descargas.php",
+		data:{
+			email:$("#email").val()
+		},
+		success:function(result){
+			
+			if(result<3){
+				location.href="scripts/demo-descarga.php";
+				
+				$.ajax({
+       				type:"POST",
+					url:"admin2032/scripts/demo-store.php",
+       				data:{
+            			fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
+        			},
+					success:function(result){
+					
+					location.href="index.php";
+					}
+				});
+			}else{
+				alert("Usted ha llegado al limite de descargas, si tiene alguna inquietud puede comunicarse con el equipo de facturaup")
+			}
+			
+		}
+	});
+	
+    
+});
+
+// ------------------------- Mini-Carrito ------------------------------------------ //
+
+	$(".demo-button").on("click",function(){
+		$.ajax({
+			url:"scripts/user-online.php",
+			success:function(result){
+           
+				if(result=="error"){
+					$.ajax({
+                            url:"modal/modal-warning.php",
+                            success:function(result){
+                               $("#modal-advertencia").html("");
+                                $("#modal-advertencia").html(result);
+                                $("#titulo-modal").html("Advertencia");
+                                $("#mensaje-modal").html("Usted debe estar haber ingresado para poder descargar el demo o la version premium.");
+                                $("#modal-advertencia").modal("show");
+                            }
+                        });
+					$.ajax({
+          			 	 url:"modal/modal-nuevo-clientes.php",
+           				 success:function(result){
+           					$("#modal-log").html(result);
+           					$("#modal-log").modal("show");
+            				LogeoRegistro();
+          				}
+   					 }); 
+				}else{
+					location.href="mini_carrito.php";
+				}
+			}
+		});
+	});
+
+// --------------------------------------------------------------------------------//
+// ------------------------ Descargar Demo --------------------------------------- //
+
+$(".demo-btn").on("click",function(){
+    $.ajax({
+        url:"admin2032/scripts/ver-cuenta.php",
+        success:function(result){
+      
+            if(result==1){
+             $.ajax({
+                 type:"POST",
+                     url:"admin2032/scripts/link-store.php",
+                      data:{
+                          fecha: f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
+                        },
+                       success:function(result){
+
+                       $.ajax({
+                           url:"admin2032/scripts/clientes-email.php",
+                             success:function(result){
+                            alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
+                               }
+                         });
+>>>>>>> 2c895fbc62bdb4bbc2b443298299929d3f397af3
 
     // ------------------------- Mini-Carrito ------------------------------------------ //
 
@@ -56,6 +148,7 @@ $(document).ready(function() {
                             $("#mensaje-modal").html("Usted debe estar haber ingresado para poder descargar el demo o la version premium.");
                             $("#modal-advertencia").modal("show");
                         }
+<<<<<<< HEAD
                     });
                     $.ajax({
                         url: "modal/modal-nuevo-clientes.php",
@@ -70,6 +163,16 @@ $(document).ready(function() {
                 }
             }
         });
+=======
+                 });
+    
+    }else{
+
+        alert("ERORR");
+
+    }
+        }
+>>>>>>> 2c895fbc62bdb4bbc2b443298299929d3f397af3
     });
 
     // --------------------------------------------------------------------------------//
@@ -237,6 +340,7 @@ $(document).ready(function() {
 })();
 
 
+<<<<<<< HEAD
 
 
 // function LogeoRegistro(){
@@ -312,3 +416,5 @@ $(document).ready(function() {
 
 
 // }
+=======
+>>>>>>> 2c895fbc62bdb4bbc2b443298299929d3f397af3
