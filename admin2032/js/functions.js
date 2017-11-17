@@ -251,7 +251,7 @@ $.ajax({
                  $("#modal-adm").modal("show");
                  $(".clientes-nuevo").on("click", function() {
 
-                     if ($("#nombre").val() == "") {
+                     if ($("#nombre").val() == "") {|
                          alert("Ingrese nombre");
                      } else if ($("#apellido").val() == "") {
                          alert("Ingrese apellido");
@@ -276,6 +276,7 @@ $.ajax({
 
                                  ListarClientes();
                                  $("#modal-adm").modal("hide");
+                                 $(document).find('body').css('overflow', 'auto');
                                  $("#modal-adm").html("");
                              }
 

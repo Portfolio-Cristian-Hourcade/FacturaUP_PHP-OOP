@@ -9,7 +9,7 @@
 body{
 	font-family: 'Inconsolata', monospace;
 	font-family: 'Cabin', sans-serif;
-	font-family: 'Open Sans', sans-serif!important;
+	font-family: 'Open Sans', sans-serif!important; 
 }
 footer{
 	font-family: 'Dosis', sans-serif;
@@ -488,4 +488,18 @@ font-size: 12px;
 	.secc-iconMedia{
 	padding: 0 25px;
 } 
+}
+
+
+/*Evito que haya empujes y saltos al abrir el modal con respecto al Scrollbar*/
+body.modal-open {
+    overflow: auto;
+}
+body.modal-open[style] {
+    padding-right: 0px !important;
+}
+
+.modal::-webkit-scrollbar {
+    width: 0 !important; /*removes the scrollbar but still scrollable*/
+
 }
