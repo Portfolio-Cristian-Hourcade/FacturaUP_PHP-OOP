@@ -503,3 +503,7 @@ body.modal-open[style] {
     width: 0 !important; /*removes the scrollbar but still scrollable*/
 
 }
+
+#tilde-verde{
+	display: inline;
+}

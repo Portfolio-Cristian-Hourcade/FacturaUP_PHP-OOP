@@ -22,6 +22,9 @@ session_start();
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>
       <script type="text/javascript" src="js/funciones.js"></script>
+      <!-- TynyMCE -->
+      <script src="plugins\tinymce_4.7.2\tinymce\js\tinymce\tinymce.min.js"></script>
+      <script>tinymce.init({ selector:'textarea' });</script>
    </head>
    <body>
       <div class="container-fluid"> <!-- boby wrapper -->
