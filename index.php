@@ -22,9 +22,12 @@ session_start();
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>
       <script type="text/javascript" src="js/funciones.js"></script>
+
+      <script type="text/javascript" src="js/tiny.js"></script>
       <!-- TynyMCE -->
       <script src="plugins\tinymce_4.7.2\tinymce\js\tinymce\tinymce.min.js"></script>
-      <script>tinymce.init({ selector:'textarea' });</script>
+      <script>tinymce.init({ selector:'' });</script>
+
    </head>
    <body>
       <div class="container-fluid"> <!-- boby wrapper -->
@@ -275,8 +278,8 @@ session_start();
                         consequat.</p>
                      </article>
                      <article class="col-md-6 central">
-                       <!--  <div class=""><img src="images/man.jpg" class="img-fluid"></div> -->
-                       <div class="d-flex mt-4"><i class="fa fa-desktop fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
+                        <!--  <div class=""><img src="images/man.jpg" class="img-fluid"></div> -->
+                        <div class="d-flex mt-4"><i class="fa fa-desktop fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
                         <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -286,11 +289,11 @@ session_start();
                      </article>
                      <article class="col-md-3">
                         <div class="d-sm-block d-flex row">
-                        <p class="p-3 flex-last">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                        <div class="flex-first"><img src="images/invoice_2.jpg" class="img-fluid"></div>
+                           <p class="p-3 flex-last">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                           consequat.</p>
+                           <div class="flex-first"><img src="images/invoice_2.jpg" class="img-fluid"></div>
                         </div>
                      </article>
                   </div>
@@ -356,21 +359,19 @@ session_start();
                   </div>
                   <div class="col-md-6 mx-auto">
                      <div class="form-group">
-
                         <label class="control-label text-white" for="cliente">Nombre y apellido</label>
                         <input type="text" class="form-control text-white" id="cliente" placeholder="Escriba su nombre y apellido">
-
                      </div>
                      <div class="form-group mb-4">
                         <label class="control-label text-white" for="contact">Email</label>
                         <input type="email" class="form-control text-white" id="contact" placeholder="Escriba su email">
                      </div>
-                        <textarea class="form-control text-white" cols="40" maxlength="1000" id="info-men" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
-                        <div class="form-group">
-                           <div class="btn d-block">
-                              <button type="button" class="btn btn-secondary text-center enviar-formulario">Enviar</button>
-                           </div>
+                     <textarea class="form-control text-white" cols="40" maxlength="1000" id="info-men" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                     <div class="form-group">
+                        <div class="btn d-block">
+                           <button type="button" class="btn btn-secondary text-center enviar-formulario">Enviar</button>
                         </div>
+                     </div>
                      
                   </div>
                </section>
@@ -379,47 +380,77 @@ session_start();
                <div class="tel-bottom text-white d-flex d-xs-none">
                   <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
                </div>
+
+
+
+               <!-- footer de prueba para tinyCME -->
+               <!-- Button trigger modal -->
               
-              <footer class="col-md-12 container">
-                     <div class="col-md-11 mx-auto">
-                        <div class="row pt-4">
-                           <div class="col-md-4 text-white mb-2">
-                              <h3 class="text-center">Contáctenos</h3>
-                              <ul class="text-center">
-                                 <li>lorem ipsum</li>
-                                 <li>lorem ipsum</li>
-                                 <li>lorem ipsum</li>
-                                 <li>lorem ipsum</li>
-                                 <li>lorem ipsum</li>
-                              </ul>
-                           </div>
-                           <div class="col-md-4 text-white secc-iconMedia mb-2">
-                              <h3 class="text-center mb-4">Síganos</h3>
-                              <div class="row">
-                                 <div class="d-flex mx-auto">
-                                 <i class="fa fa-facebook mx-auto align-self-center" aria-hidden="true"></i></div>
-                                 <div class="d-flex mx-auto">
-                                 <i class="fa fa-twitter mx-auto align-self-center" aria-hidden="true"></i></div>
-                                 <div class="d-flex mx-auto">
-                                 <i class="fa fa-instagram mx-auto align-self-center" aria-hidden="true"></i></div>
-                                 <div class="d-flex mx-auto">
-                                 <i class="fa fa-linkedin mx-auto align-self-center" aria-hidden="true"></i></div>
-                              </div>
-                           </div>
-                           <div class="col-md-4 text-white mb-2">
-                              <h3 class="text-center mb-4">Recuerde</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                 consequat.</p>
-                           </ul>
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+                        <div class="modal-body">
+                          <textarea class="form-control text-white" cols="40" maxlength="1000" id="area-tiny" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                      </div>
                   </div>
-               </footer>
-            </div>
-            <div id="modal-adm" class="modal fade" role="dialog"></div>
-            <div id="modal-log" class="modal fade" role="dialog"></div>
-            <div id="modal-advertencia" class="modal fade" role="dialog"></div>
-         </body>
-      </html>
+               </div>
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+               Launch demo modal
+               </button>
+               
+               <footer class="col-md-12 container">
+                  <div class="col-md-11 mx-auto">
+                     <div class="row pt-4">
+                        <div class="col-md-4 text-white mb-2">
+                           <h3 class="text-center">Contáctenos</h3>
+                           <ul class="text-center">
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                              <li>lorem ipsum</li>
+                           </ul>
+                        </div>
+                        <div class="col-md-4 text-white secc-iconMedia mb-2">
+                           <h3 class="text-center mb-4">Síganos</h3>
+                           <div class="row">
+                              <div class="d-flex mx-auto">
+                              <i class="fa fa-facebook mx-auto align-self-center" aria-hidden="true"></i></div>
+                              <div class="d-flex mx-auto">
+                              <i class="fa fa-twitter mx-auto align-self-center" aria-hidden="true"></i></div>
+                              <div class="d-flex mx-auto">
+                              <i class="fa fa-instagram mx-auto align-self-center" aria-hidden="true"></i></div>
+                              <div class="d-flex mx-auto">
+                              <i class="fa fa-linkedin mx-auto align-self-center" aria-hidden="true"></i></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 text-white mb-2">
+                           <h3 class="text-center mb-4">Recuerde</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                           consequat.</p>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+         </div>
+         <div id="modal-adm" class="modal fade" role="dialog"></div>
+         <div id="modal-log" class="modal fade" role="dialog"></div>
+         <div id="modal-advertencia" class="modal fade" role="dialog"></div>
+      </body>
+   </html>

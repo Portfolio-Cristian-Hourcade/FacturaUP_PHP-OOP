@@ -2,7 +2,6 @@ var f = new Date();
 
 $(document).ready(function() {
 
-<<<<<<< HEAD
     $(".btn-descargar-demo").on("click", function() {
         $.ajax({
             type: "POST",
@@ -39,7 +38,7 @@ $(document).ready(function() {
 
 
     });
-=======
+
 $(".btn-descargar-demo").on("click",function(){
 	$.ajax({
 		type:"POST",
@@ -129,7 +128,7 @@ $(".demo-btn").on("click",function(){
                             alert("Se ha enviado un correo con el link de descarga a tu E-mail registrado. Si tiene problemas para descargar contactese con ayuda al cliente");
                                }
                          });
->>>>>>> 2c895fbc62bdb4bbc2b443298299929d3f397af3
+
 
     // ------------------------- Mini-Carrito ------------------------------------------ //
 
@@ -148,7 +147,7 @@ $(".demo-btn").on("click",function(){
                             $("#mensaje-modal").html("Usted debe estar haber ingresado para poder descargar el demo o la version premium.");
                             $("#modal-advertencia").modal("show");
                         }
-<<<<<<< HEAD
+
                     });
                     $.ajax({
                         url: "modal/modal-nuevo-clientes.php",
@@ -163,18 +162,18 @@ $(".demo-btn").on("click",function(){
                 }
             }
         });
-=======
+
                  });
     
-    }else{
+   /* }else{
 
         alert("ERORR");
 
     }
         }
->>>>>>> 2c895fbc62bdb4bbc2b443298299929d3f397af3
-    });
 
+    });
+*/
     // --------------------------------------------------------------------------------//
     // ------------------------ Descargar Demo --------------------------------------- //
 
@@ -320,12 +319,8 @@ $(".demo-btn").on("click",function(){
     });
 
 
-
-});
-
-
-(function() {
-    function $MPC_load() {
+/*function() {
+    function $MPC_load() {  
         window.$MPC_loaded !== true && (function() {
             var s = document.createElement("script");
             s.type = "text/javascript";
@@ -337,10 +332,14 @@ $(".demo-btn").on("click",function(){
         })();
     }
     window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
-})();
+});*/
 
 
-<<<<<<< HEAD
+
+
+
+
+
 
 
 // function LogeoRegistro(){
@@ -416,5 +415,4 @@ $(".demo-btn").on("click",function(){
 
 
 // }
-=======
->>>>>>> 2c895fbc62bdb4bbc2b443298299929d3f397af3
+
