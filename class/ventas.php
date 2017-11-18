@@ -1,6 +1,11 @@
 <?php
 class Ventas{
-
+		public function AgregarVenta($sql){
+			$con = new ConnectionMySQL();
+			$con->CreateConnection();
+			$con->AltaSql($sql);
+			$con->CloseConnection();
+		}
 		public function ListarVentas($sql){
 			
 			$con = new ConnectionMySQL();

@@ -254,10 +254,12 @@ function LogeoRegistro() {
                                 $("#modal-advertencia").html("");
                                 $("#modal-adm").modal("hide");
                                 $("#modal-advertencia").html(result);
+                                $("#modal-log").modal("hide");
+                                $("#modal-log").html("");
                                 $("#titulo-modal").html("¡Registro exitoso!");
-                                $("#mensaje-modal").html("Recuerde confirmar su email para poder concretar la descarga de su producto deseado.");
+                                $("#mensaje-modal").html("Usted se ha registrado de manera exitosa. <br> Le hemos enviado un email para que confirme sus datos, una vez confirmados, usted tendra acceso total a la version demo y podra comprar la version premium!");
                                 $("#modal-advertencia").modal("show");
-                                setTimeout("r()", 5000);
+                                
                             }
                         });
 
@@ -297,6 +299,7 @@ function verificoemail() {
 
 
             } else {
+                $("#tilde-verde").html("");
                 $.ajax({
                     url: "modal/modal-warning.php",
                     success: function(result) {

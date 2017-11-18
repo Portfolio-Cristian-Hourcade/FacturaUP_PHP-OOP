@@ -21,7 +21,7 @@ if(empty($_SESSION["cl_email"])){
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
 		<link rel="stylesheet" type="text/css" href="css/custom.css">
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/functions.js"></script>
+		
 		<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
@@ -84,5 +84,6 @@ if(empty($_SESSION["cl_email"])){
 		</div>
 	</div>
 
+<div id="modal-advertencia" class="modal fade" role="dialog"></div>
 </body>
 </html>
