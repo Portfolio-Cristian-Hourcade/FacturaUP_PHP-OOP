@@ -40,11 +40,11 @@ session_start();
             </div>
             <div class="collapse navbar-collapse my-auto align-self-start mr-2 justify-content-end" id="navbar-links">
                <ul class="navbar-nav">
-                  <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#services" data-ancla="services">Características</a></li>
+                  <li class="nav-item"><a class="nav-link" id="home" href="#">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" id="caracter" href="#services" data-ancla="services">Características</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">¿Cómo Funciona?</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">Planes</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                  <li class="nav-item"><a class="nav-link" id="footer" href="#">Contacto</a></li>
                   <button class="btn btn-primary btn-nuevo-clientes ml-3" type="button">Registrarse</button>
                   <button class="btn btn-primary btn-sm btn-log-clientes ml-3" type="button">Ingresar</button>
                   <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user fa-fw"></i><?php echo @$_SESSION["cl_email"]?></a></li>
@@ -110,7 +110,7 @@ session_start();
          <!-- section wrapper -->
          <section class="container-fluid soluciones">
             <div class="row text-white">
-               <h2 class="col-md-12 text-center display-4 my-3">Soluciones</h2>
+               <h2 class="col-md-12 text-center display-4 my-3 caracterd">Soluciones</h2>
                <div class="col-md-10 container-fluid mx-auto">
                   <div class="row">
                      <article class="col-4 col-md-3 ">

@@ -1,7 +1,17 @@
 var f = new Date();
 
 $(document).ready(function() {
-
+var altura = $(document).height();
+var soluc = $("#caracterd").height();
+$("#caracter").click(function(){
+    $("html, body").animate({scrollTop:"820px"});
+});
+$("#footer").click(function(){
+      $("html, body").animate({scrollTop:altura+"px"});
+});
+$("#home").click(function(){
+      $("html, body").animate({scrollTop:"0px"});
+});
 
     $(".btn-descargar-demo").on("click", function() {
         $.ajax({
