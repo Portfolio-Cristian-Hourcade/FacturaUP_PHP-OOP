@@ -19,6 +19,7 @@ if($NewConnect->VerificarDescargas($sql)<3){
 	$NewConnect->Alta($update);
 }else{
 	echo "error";
+	echo $NewConnect->VerificarDescargas($sql);
 }
 
 ?>
