@@ -4,12 +4,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai|PT+Sans|Titillium+Web');
 
 
 body{
 	font-family: 'Inconsolata', monospace;
 	font-family: 'Cabin', sans-serif;
-	font-family: 'Open Sans', sans-serif!important; 
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif; 
+	font-family: 'Hind Madurai', sans-serif!important;
+	font-family: 'Titillium Web', sans-serif;
 }
 footer{
 	font-family: 'Dosis', sans-serif;
@@ -112,7 +117,7 @@ box-shadow:0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 .soluciones{
 min-height: 490px;
 /*background-color: #797979;*/
-background: linear-gradient(to right, #4d555a , #6691b5);
+background: linear-gradient(to top, #4d555a , #6691b5);
 }
 
 
@@ -144,7 +149,7 @@ footer ul{
 .art-cuad{
  	background-color: #2f85a7;
     border: solid 0.5px;
-    border-radius:18px;
+    /*border-radius:18px;*/
     width: 15vw;
     height: 15vw;
  }
@@ -435,13 +440,22 @@ font-size: 12px;
 	color:#424242 !important;
 }
 
+/*Avoid Navbar overlapping 'Mercado Pago' Bootstrap Modal*/
+
+.fixed-top {
+    position: absolute !important;
+    z-index: 10 !important;
+}
 
 
+.nav-btn li a{
+width: 50px !important;
+}
 
 
-
-
-
+.soluciones article > .fa {
+	font-size: 3.5em;
+}
 
 
 

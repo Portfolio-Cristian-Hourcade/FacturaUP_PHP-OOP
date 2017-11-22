@@ -197,9 +197,11 @@ $(document).ready(function() {
 
     });
 
+if($(".loginmodal-container input").val().length == 0){ 
+    $(this).addClass("d-none")
+}
 
-
-});
+}); /*cierra documentReady*/
 
 /*-----cierro login de clientes----*/
 
@@ -259,7 +261,7 @@ function LogeoRegistro() {
                                 $("#titulo-modal").html("¡Registro exitoso!");
                                 $("#mensaje-modal").html("Usted se ha registrado de manera exitosa. <br> Le hemos enviado un email para que confirme sus datos, una vez confirmados, usted tendra acceso total a la version demo y podra comprar la version premium!");
                                 $("#modal-advertencia").modal("show");
-                                
+
                             }
                         });
 
@@ -295,11 +297,13 @@ function verificoemail() {
         },
         success: function(result) {
             if (result == 0) {
-                $("#tilde-verde").html("<img src=images/tilde-verde.png>");
+                /*$("#tilde-verde").html("<img src=images/tilde-verde.png>");*/
+                $("#tilde-verde").removeClass("d-none");
 
 
             } else {
                 $("#tilde-verde").html("");
+                /*$("#tilde-verde").addClass("d-none")*/
                 $.ajax({
                     url: "modal/modal-warning.php",
                     success: function(result) {
@@ -316,6 +320,6 @@ function verificoemail() {
     });
 
 }
-
+}
 
 function r() { location.reload(); }

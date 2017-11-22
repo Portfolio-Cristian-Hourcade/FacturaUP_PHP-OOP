@@ -33,27 +33,24 @@ if(empty($_SESSION["cl_email"])){
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="envolto-logo ml-5">
+				<div class="envolto-logo ml-5 bg-danger">
 					<a class="navbar-brand" href="index.html">
 						<img src="images/logo2.png" class="mx-auto d-block img-fluid">
 					</a>
 				</div>
-				<div class="collapse navbar-collapse my-auto align-self-start mr-2 justify-content-center" id="navbar-links">
-					<ul class="navbar-nav mx-auto">
-						
+				<div class="collapse navbar-collapse my-auto align-self-start mr-2 justify-content-center bg-warning" id="navbar-links">
+					<ul class="navbar-nav nav-btn mx-auto bg-success">
 							<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
 							<li class="nav-item"><a class="nav-link" href="#services" data-ancla="services">Características</a></li>
 							<li class="nav-item "><a class="nav-link" href="#">¿Cómo Funciona?</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">Planes</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-					
-
-						
+					</ul>
+					<ul class="navbar-nav bg-info">				
 							<button class="btn btn-primary btn-nuevo-clientes ml-3" type="button">Registrarse</button>
 							<button class="btn btn-primary btn-log-clientes ml-3" type="button">Ingresar</button>
 							<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user fa-fw"></i><?php echo @$_SESSION["cl_email"]?></a></li>
 							<li class="nav-item"><a class="nav-link btn-salir" href="#">Salir</a></li>
-						
 					</ul>
 				</div>
 			</nav>

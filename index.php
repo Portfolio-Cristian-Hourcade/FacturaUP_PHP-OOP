@@ -22,12 +22,10 @@ session_start();
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>
       <script type="text/javascript" src="js/funciones.js"></script>
-
       <script type="text/javascript" src="js/tiny.js"></script>
       <!-- TynyMCE -->
       <script src="plugins\tinymce_4.7.2\tinymce\js\tinymce\tinymce.min.js"></script>
       <script>tinymce.init({ selector:'' });</script>
-
    </head>
    <body>
       <div class="container-fluid"> <!-- boby wrapper -->
@@ -116,37 +114,63 @@ session_start();
                <h2 class="col-md-12 text-center display-4 my-3 caracterd">Soluciones</h2>
                <div class="col-md-10 container-fluid mx-auto">
                   <div class="row">
-                     <article class="col-4 col-md-3 ">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     <article class="col-4 col-md-3 text-center">
+                        <i class="fa fa-ravelry mx-auto mb-3" aria-hidden="true"></i>
+                        <h3 class="text-center">Facturas electrónicas A,B,C, D y E</h3>
+                        <p>Podés emitir todas tus facturas electrónicas desde un solo lugar.</p>
                      </article>
-                     <article class="col-4 col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     <article class="col-4 col-md-3 text-center">
+                        <i class="fa fa-ravelry mx-auto mb-3" aria-hidden="true"></i>
+                        <h3 class="text-center">Acciones masivas</h3>
+                        <p>Con Factura Up podés hacer acciones masivas para que puedas duplicar, autorizar e imprimir varios comprobantes al mismo tiempo.
+                        </p>
                      </article>
-                     <article class="col-4 col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     <article class="col-4 col-md-3 text-center">
+                        <i class="fa fa-ravelry mx-auto mb-3" aria-hidden="true"></i>
+                        <h3 class="text-center">Exportación a Excel</h3>
+                        <p>Para que te sea fácil podés exportar tus facturas a planillas de cálculo.</p>
                      </article>
-                     <article class="col-4 col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     <article class="col-4 col-md-3 text-center">
+                        <i class="fa fa-ravelry mx-auto mb-3" aria-hidden="true"></i>
+                        <h3 class="text-center">Información de Ventas
+                        </h3>
+                        <p>Podés exportar tus ventas en el formato solicitado por la AFIP en el régimen de información de ventas.
+                        </p>
                      </article>
-                     <article class="col-4 col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     <article class="col-4 col-md-3 text-center">
+                        <i class="fa fa-ravelry mx-auto mb-3" aria-hidden="true"></i>
+                        <h3 class="text-center">Facturá tus alquileres
+                        </h3>
+                           Por medio de la RG 2485 se extendió el uso de facturas electrónicas a la locación de inmuebles destinados a casa habitación.
+                        </p>
+                        </article>
+                    <article class="col-4 col-md-3 text-center">
+                        <i class="fa fa-ravelry mx-auto mb-3" aria-hidden="true"></i>
+                        <h3 class="text-center">Todos tus dispositivos
+                        </h3>
+                        <p>Con Factura Up vas a poder hacer comprobantes con tu computadora, tablet o smartphone.
+                        </p>
                      </article>
-                     <article class="col-4 col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     <article class="col-4 col-md-3 text-center">
+                        <i class="fa fa-ravelry mx-auto mb-3" aria-hidden="true"></i>
+                        <h3 class="text-center">Varios usuarios
+                        </h3>
+                        <p>Creá múltiples usuarios con diferentes permisos.
+                        </p>
                      </article>
-                     <article class="col-4 col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     <article class="col-4 col-md-3 text-center">
+                        <i class="fa fa-ravelry mx-auto mb-3" aria-hidden="true"></i>
+                        <h3 class="text-center">Adaptá Factura Up a tu medida
+                        </h3>
+                        <p>Somos desarrolladores de sistemas web, por lo que cualquier adaptación que necesites te lo hacemos a tu medida.
+                        </p>
                      </article>
-                     <article class="col-4 col-md-3">
-                        <div class="d-flex mx-auto art-cuad"><i class="fa fa-ravelry fa-4x mx-auto align-self-center" aria-hidden="true"></i></div>
-                        <h2 class="text-center h2-artIcon">Ventas</h2>
+                     <article class="col-4 col-md-3 text-center mx-auto">
+                        <i class="fa fa-ravelry mx-auto mb-3" aria-hidden="true"></i>
+                        <h3 class="text-center">Protegé tus datos 
+                        </h3>
+                        <p>Nuestra base de datos está registrada en la "Dirección Nacional de Protección de Datos Personales" (Registro N° 71190).
+                        </p>
                      </article>
                   </div>
                </div>
@@ -380,12 +404,9 @@ session_start();
                <div class="tel-bottom text-white d-flex d-xs-none">
                   <div class="d-flex mx-auto"><i class="my-auto fa fa-phone fa-2x" aria-hidden="true"></i><h3 class="my-auto ml-3">4563-4589</h3></div>
                </div>
-
-
-
                <!-- footer de prueba para tinyCME -->
                <!-- Button trigger modal -->
-              
+               
                <!-- Modal -->
                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -397,7 +418,7 @@ session_start();
                            </button>
                         </div>
                         <div class="modal-body">
-                          <textarea class="form-control text-white" cols="40" maxlength="1000" id="area-tiny" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
+                           <textarea class="form-control text-white" cols="40" maxlength="1000" id="area-tiny" placeholder="Mensaje" required="required" rows="10" title="" aria-required="true"></textarea>
                         </div>
                         <div class="modal-footer">
                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -406,8 +427,7 @@ session_start();
                      </div>
                   </div>
                </div>
-
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                Launch demo modal
                </button>
                
