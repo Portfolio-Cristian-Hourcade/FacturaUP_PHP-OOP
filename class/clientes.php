@@ -6,7 +6,7 @@ class Clientes{
 			$resultado=$con->AltaSql($sql);
 			$fila=mysqli_fetch_assoc($resultado);
 			if($fila["cl_email"]==""){
-				return "Error";
+				echo "Error";
 			}else{
 				$_SESSION["cl_email"]=$fila["cl_email"];
 				$_SESSION["cl_pass"]=$fila["cl_pass"];
