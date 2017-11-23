@@ -95,7 +95,6 @@ $(document).ready(function() {
 
                                         }
                                     });
-                                    // alert("Contraseña y/o email incorrectos. Vuelva a intentarlo.");
                                 } else {
                                     location.reload();
                                 }
@@ -169,6 +168,7 @@ $(document).ready(function() {
                         success: function(result) {
                             $("#modal-advertencia").html("");
                             $("#modal-advertencia").html(result);
+                            $("#titulo-modal").html("¡Correo enviado!");
                             $("#mensaje-modal").html("Enviamos un email a su casilla de correo para restablecer la contraseña.");
                             $("#modal-advertencia").modal("show");
                         }
@@ -185,6 +185,7 @@ $(document).ready(function() {
                         success: function(result) {
                             $("#modal-advertencia").html("");
                             $("#modal-advertencia").html(result);
+                            $("#titulo-modal").html("Advertencia");
                             $("#mensaje-modal").html("Este email no se encuantra en nuestra base de datos.");
                             $("#modal-advertencia").modal("show");
                         }

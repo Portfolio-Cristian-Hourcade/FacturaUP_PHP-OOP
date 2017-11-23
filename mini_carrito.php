@@ -8,7 +8,7 @@ if(empty($_SESSION["cl_email"])){
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Añadir cliente</title>
+		<title>Factura Up - Facturacion electronica</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
@@ -72,10 +72,11 @@ if(empty($_SESSION["cl_email"])){
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</article>
 			
-			<article class="col-md-6 ">
-				<img src="images/full_img.png" class="img-fuid d-block mx-auto">
-				<a href="<?php echo $preference['response']['sandbox_init_point']?>" name="MP-Checkout" class="btn btn-primary d-block mx-auto my-4" mp-mode="modal" onreturn="execute_my_onreturn">Comprar Ahora!</a>					<h3>Versión completa</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+				<article class="col-md-6 ">
+					<img src="images/full_img.png" class="img-fuid d-block mx-auto">
+				<a href="<?php echo $preference['response']['init_point']?>" name="MP-Checkout" class="btn btn-primary d-block mx-auto my-4" mp-mode="modal" onreturn="execute_my_onreturn">Comprar Ahora!</a>					<h3>Versión completa</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse

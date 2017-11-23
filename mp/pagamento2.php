@@ -1,8 +1,9 @@
 <?php
 require_once ('mercadopago.php');
 
-$mp = new MP('3564165724970805', 'AmfRspIMgxTJHM2cYRI9VxCEOi0xgxHP');
-$mp->sandbox_mode(TRUE);$preference_data = array(
+$mp = new MP('1963189080821191', 'HbQ7cf8X7oj9KaK84MNUg6DjvfDsIk6u');
+$mp->sandbox_mode(TRUE);
+$preference_data = array(
 	"items" => array(
 		array(
 			"title" =>"FacturaUp",
@@ -14,8 +15,6 @@ $mp->sandbox_mode(TRUE);$preference_data = array(
 		)
 	)
 );
-
-
 
 $preference = $mp->create_preference($preference_data);
 
